@@ -35,6 +35,8 @@
 ///
 /// Service for the `acceleratorTypes` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `AcceleratorTypes` use the `with_*` methods in the type returned
@@ -124,10 +126,7 @@ impl AcceleratorTypes {
             .map(super::tracing::AcceleratorTypes::new)
     }
 
-    /// Retrieves an aggregated list of accelerator types.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of accelerator types. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::accelerator_types::AggregatedList {
         super::builder::accelerator_types::AggregatedList::new(self.inner.clone())
     }
@@ -137,8 +136,7 @@ impl AcceleratorTypes {
         super::builder::accelerator_types::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of accelerator types that are available to the specified
-    /// project.
+    /// Retrieves a list of accelerator types that are available to the specified project.
     pub fn list(&self) -> super::builder::accelerator_types::List {
         super::builder::accelerator_types::List::new(self.inner.clone())
     }
@@ -160,6 +158,8 @@ impl AcceleratorTypes {
 /// # Service Description
 ///
 /// Service for the `addresses` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -249,10 +249,7 @@ impl Addresses {
             .map(super::tracing::Addresses::new)
     }
 
-    /// Retrieves an aggregated list of addresses.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of addresses. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::addresses::AggregatedList {
         super::builder::addresses::AggregatedList::new(self.inner.clone())
     }
@@ -267,14 +264,12 @@ impl Addresses {
         super::builder::addresses::Get::new(self.inner.clone())
     }
 
-    /// Creates an address resource in the specified project by using the data
-    /// included in the request.
+    /// Creates an address resource in the specified project by using the data included in the request.
     pub fn insert(&self) -> super::builder::addresses::Insert {
         super::builder::addresses::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of addresses contained within
-    /// the specified region.
+    /// Retrieves a list of addresses contained within the specified region.
     pub fn list(&self) -> super::builder::addresses::List {
         super::builder::addresses::List::new(self.inner.clone())
     }
@@ -284,8 +279,7 @@ impl Addresses {
         super::builder::addresses::Move::new(self.inner.clone())
     }
 
-    /// Sets the labels on an Address. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on an Address. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::addresses::SetLabels {
         super::builder::addresses::SetLabels::new(self.inner.clone())
     }
@@ -317,6 +311,8 @@ impl Addresses {
 /// # Service Description
 ///
 /// Service for the `advice` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -406,10 +402,7 @@ impl Advice {
             .map(super::tracing::Advice::new)
     }
 
-    /// Advise how, where and when to create the requested amount of instances
-    /// with specified accelerators, within the specified time and location limits.
-    /// The method recommends creating future reservations for the requested
-    /// resources.
+    /// Advise how, where and when to create the requested amount of instances with specified accelerators, within the specified time and location limits. The method recommends creating future reservations for the requested resources.
     pub fn calendar_mode(&self) -> super::builder::advice::CalendarMode {
         super::builder::advice::CalendarMode::new(self.inner.clone())
     }
@@ -431,6 +424,8 @@ impl Advice {
 /// # Service Description
 ///
 /// Service for the `autoscalers` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -520,10 +515,7 @@ impl Autoscalers {
             .map(super::tracing::Autoscalers::new)
     }
 
-    /// Retrieves an aggregated list of autoscalers.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of autoscalers. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::autoscalers::AggregatedList {
         super::builder::autoscalers::AggregatedList::new(self.inner.clone())
     }
@@ -538,22 +530,17 @@ impl Autoscalers {
         super::builder::autoscalers::Get::new(self.inner.clone())
     }
 
-    /// Creates an autoscaler in the specified project using the data
-    /// included in the request.
+    /// Creates an autoscaler in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::autoscalers::Insert {
         super::builder::autoscalers::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of autoscalers contained within
-    /// the specified zone.
+    /// Retrieves a list of autoscalers contained within the specified zone.
     pub fn list(&self) -> super::builder::autoscalers::List {
         super::builder::autoscalers::List::new(self.inner.clone())
     }
 
-    /// Updates an autoscaler in the specified project using the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates an autoscaler in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::autoscalers::Patch {
         super::builder::autoscalers::Patch::new(self.inner.clone())
     }
@@ -563,8 +550,7 @@ impl Autoscalers {
         super::builder::autoscalers::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates an autoscaler in the specified project using the data
-    /// included in the request.
+    /// Updates an autoscaler in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::autoscalers::Update {
         super::builder::autoscalers::Update::new(self.inner.clone())
     }
@@ -591,6 +577,8 @@ impl Autoscalers {
 /// # Service Description
 ///
 /// Service for the `backendBuckets` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -680,17 +668,12 @@ impl BackendBuckets {
             .map(super::tracing::BackendBuckets::new)
     }
 
-    /// Adds a key for validating requests with signed URLs for this backend
-    /// bucket.
+    /// Adds a key for validating requests with signed URLs for this backend bucket.
     pub fn add_signed_url_key(&self) -> super::builder::backend_buckets::AddSignedUrlKey {
         super::builder::backend_buckets::AddSignedUrlKey::new(self.inner.clone())
     }
 
-    /// Retrieves the list of all BackendBucket resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all BackendBucket resources, regional and global, available to the specified project. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::backend_buckets::AggregatedList {
         super::builder::backend_buckets::AggregatedList::new(self.inner.clone())
     }
@@ -700,8 +683,7 @@ impl BackendBuckets {
         super::builder::backend_buckets::Delete::new(self.inner.clone())
     }
 
-    /// Deletes a key for validating requests with signed URLs for this backend
-    /// bucket.
+    /// Deletes a key for validating requests with signed URLs for this backend bucket.
     pub fn delete_signed_url_key(&self) -> super::builder::backend_buckets::DeleteSignedUrlKey {
         super::builder::backend_buckets::DeleteSignedUrlKey::new(self.inner.clone())
     }
@@ -711,20 +693,17 @@ impl BackendBuckets {
         super::builder::backend_buckets::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::backend_buckets::GetIamPolicy {
         super::builder::backend_buckets::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a BackendBucket resource in the specified project using
-    /// the data included in the request.
+    /// Creates a BackendBucket resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::backend_buckets::Insert {
         super::builder::backend_buckets::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of BackendBucket resources available to the specified
-    /// project.
+    /// Retrieves the list of BackendBucket resources available to the specified project.
     pub fn list(&self) -> super::builder::backend_buckets::List {
         super::builder::backend_buckets::List::new(self.inner.clone())
     }
@@ -734,10 +713,7 @@ impl BackendBuckets {
         super::builder::backend_buckets::ListUsable::new(self.inner.clone())
     }
 
-    /// Updates the specified BackendBucket resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified BackendBucket resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::backend_buckets::Patch {
         super::builder::backend_buckets::Patch::new(self.inner.clone())
     }
@@ -749,8 +725,7 @@ impl BackendBuckets {
         super::builder::backend_buckets::SetEdgeSecurityPolicy::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::backend_buckets::SetIamPolicy {
         super::builder::backend_buckets::SetIamPolicy::new(self.inner.clone())
     }
@@ -760,8 +735,7 @@ impl BackendBuckets {
         super::builder::backend_buckets::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified BackendBucket resource with the data included in the
-    /// request.
+    /// Updates the specified BackendBucket resource with the data included in the request.
     pub fn update(&self) -> super::builder::backend_buckets::Update {
         super::builder::backend_buckets::Update::new(self.inner.clone())
     }
@@ -788,6 +762,8 @@ impl BackendBuckets {
 /// # Service Description
 ///
 /// Service for the `backendServices` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -877,17 +853,12 @@ impl BackendServices {
             .map(super::tracing::BackendServices::new)
     }
 
-    /// Adds a key for validating requests with signed URLs for this backend
-    /// service.
+    /// Adds a key for validating requests with signed URLs for this backend service.
     pub fn add_signed_url_key(&self) -> super::builder::backend_services::AddSignedUrlKey {
         super::builder::backend_services::AddSignedUrlKey::new(self.inner.clone())
     }
 
-    /// Retrieves the list of all BackendService resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all BackendService resources, regional and global, available to the specified project. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::backend_services::AggregatedList {
         super::builder::backend_services::AggregatedList::new(self.inner.clone())
     }
@@ -897,8 +868,7 @@ impl BackendServices {
         super::builder::backend_services::Delete::new(self.inner.clone())
     }
 
-    /// Deletes a key for validating requests with signed URLs for this backend
-    /// service.
+    /// Deletes a key for validating requests with signed URLs for this backend service.
     pub fn delete_signed_url_key(&self) -> super::builder::backend_services::DeleteSignedUrlKey {
         super::builder::backend_services::DeleteSignedUrlKey::new(self.inner.clone())
     }
@@ -915,50 +885,32 @@ impl BackendServices {
         super::builder::backend_services::GetEffectiveSecurityPolicies::new(self.inner.clone())
     }
 
-    /// Gets the most recent health check results for this
-    /// BackendService.
-    ///
-    /// Example request body:
-    ///
-    /// {
-    /// "group": "/zones/us-east1-b/instanceGroups/lb-backend-example"
-    /// }
+    /// Gets the most recent health check results for this BackendService. Example request body: { "group": "/zones/us-east1-b/instanceGroups/lb-backend-example" }
     pub fn get_health(&self) -> super::builder::backend_services::GetHealth {
         super::builder::backend_services::GetHealth::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::backend_services::GetIamPolicy {
         super::builder::backend_services::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a BackendService resource in the specified project using
-    /// the data included in the request. For more information, see
-    /// Backend services overview.
+    /// Creates a BackendService resource in the specified project using the data included in the request. For more information, see Backend services overview .
     pub fn insert(&self) -> super::builder::backend_services::Insert {
         super::builder::backend_services::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of BackendService resources available to the specified
-    /// project.
+    /// Retrieves the list of BackendService resources available to the specified project.
     pub fn list(&self) -> super::builder::backend_services::List {
         super::builder::backend_services::List::new(self.inner.clone())
     }
 
-    /// Retrieves a list of all usable backend services for Application Load
-    /// Balancers and Proxy Network Load Balancers in the specified project.
-    /// Backend services for external and internal passthrough Network Load
-    /// Balancers are not included in the response.
+    /// Retrieves a list of all usable backend services for Application Load Balancers and Proxy Network Load Balancers in the specified project. Backend services for external and internal passthrough Network Load Balancers are not included in the response.
     pub fn list_usable(&self) -> super::builder::backend_services::ListUsable {
         super::builder::backend_services::ListUsable::new(self.inner.clone())
     }
 
-    /// Patches the specified BackendService resource with the data included in the
-    /// request. For more information, see
-    /// Backend services overview. This method
-    /// supports PATCH semantics and uses the JSON merge
-    /// patch format and processing rules.
+    /// Patches the specified BackendService resource with the data included in the request. For more information, see Backend services overview. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::backend_services::Patch {
         super::builder::backend_services::Patch::new(self.inner.clone())
     }
@@ -970,15 +922,12 @@ impl BackendServices {
         super::builder::backend_services::SetEdgeSecurityPolicy::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::backend_services::SetIamPolicy {
         super::builder::backend_services::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the Google Cloud Armor security policy for the specified backend
-    /// service. For more information, seeGoogle
-    /// Cloud Armor Overview
+    /// Sets the Google Cloud Armor security policy for the specified backend service. For more information, see Google Cloud Armor Overview
     pub fn set_security_policy(&self) -> super::builder::backend_services::SetSecurityPolicy {
         super::builder::backend_services::SetSecurityPolicy::new(self.inner.clone())
     }
@@ -988,9 +937,7 @@ impl BackendServices {
         super::builder::backend_services::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified BackendService resource with the data included in the
-    /// request. For more information, seeBackend
-    /// services overview.
+    /// Updates the specified BackendService resource with the data included in the request. For more information, see Backend services overview.
     pub fn update(&self) -> super::builder::backend_services::Update {
         super::builder::backend_services::Update::new(self.inner.clone())
     }
@@ -1017,6 +964,8 @@ impl BackendServices {
 /// # Service Description
 ///
 /// Service for the `crossSiteNetworks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1117,8 +1066,7 @@ impl CrossSiteNetworks {
         super::builder::cross_site_networks::Get::new(self.inner.clone())
     }
 
-    /// Creates a cross-site network in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a cross-site network in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::cross_site_networks::Insert {
         super::builder::cross_site_networks::Insert::new(self.inner.clone())
     }
@@ -1128,10 +1076,7 @@ impl CrossSiteNetworks {
         super::builder::cross_site_networks::List::new(self.inner.clone())
     }
 
-    /// Updates the specified cross-site network with the data included in
-    /// the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified cross-site network with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::cross_site_networks::Patch {
         super::builder::cross_site_networks::Patch::new(self.inner.clone())
     }
@@ -1158,6 +1103,8 @@ impl CrossSiteNetworks {
 /// # Service Description
 ///
 /// Service for the `diskTypes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1247,10 +1194,7 @@ impl DiskTypes {
             .map(super::tracing::DiskTypes::new)
     }
 
-    /// Retrieves an aggregated list of disk types.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of disk types. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::disk_types::AggregatedList {
         super::builder::disk_types::AggregatedList::new(self.inner.clone())
     }
@@ -1260,8 +1204,7 @@ impl DiskTypes {
         super::builder::disk_types::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of disk types available to the specified
-    /// project.
+    /// Retrieves a list of disk types available to the specified project.
     pub fn list(&self) -> super::builder::disk_types::List {
         super::builder::disk_types::List::new(self.inner.clone())
     }
@@ -1283,6 +1226,8 @@ impl DiskTypes {
 /// # Service Description
 ///
 /// Service for the `disks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1372,17 +1317,12 @@ impl Disks {
             .map(super::tracing::Disks::new)
     }
 
-    /// Adds existing resource policies to a disk. You can only add one
-    /// policy which will be applied to this disk for scheduling snapshot
-    /// creation.
+    /// Adds existing resource policies to a disk. You can only add one policy which will be applied to this disk for scheduling snapshot creation.
     pub fn add_resource_policies(&self) -> super::builder::disks::AddResourcePolicies {
         super::builder::disks::AddResourcePolicies::new(self.inner.clone())
     }
 
-    /// Retrieves an aggregated list of persistent disks.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of persistent disks. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::disks::AggregatedList {
         super::builder::disks::AggregatedList::new(self.inner.clone())
     }
@@ -1392,25 +1332,17 @@ impl Disks {
         super::builder::disks::BulkInsert::new(self.inner.clone())
     }
 
-    /// Sets the labels on many disks at once. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on many disks at once. To learn more about labels, read the Labeling Resources documentation.
     pub fn bulk_set_labels(&self) -> super::builder::disks::BulkSetLabels {
         super::builder::disks::BulkSetLabels::new(self.inner.clone())
     }
 
-    /// Creates a snapshot of a specified persistent disk. For regular snapshot
-    /// creation, consider using snapshots.insert
-    /// instead, as that method supports more features, such as creating snapshots
-    /// in a project different from the source disk project.
+    /// Creates a snapshot of a specified persistent disk. For regular snapshot creation, consider using snapshots.insert instead, as that method supports more features, such as creating snapshots in a project different from the source disk project.
     pub fn create_snapshot(&self) -> super::builder::disks::CreateSnapshot {
         super::builder::disks::CreateSnapshot::new(self.inner.clone())
     }
 
-    /// Deletes the specified persistent disk. Deleting a disk removes its data
-    /// permanently and is irreversible. However, deleting a disk does not
-    /// delete any snapshots
-    /// previously made from the disk. You must separatelydelete
-    /// snapshots.
+    /// Deletes the specified persistent disk. Deleting a disk removes its data permanently and is irreversible. However, deleting a disk does not delete any snapshots previously made from the disk. You must separately delete snapshots.
     pub fn delete(&self) -> super::builder::disks::Delete {
         super::builder::disks::Delete::new(self.inner.clone())
     }
@@ -1420,23 +1352,17 @@ impl Disks {
         super::builder::disks::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::disks::GetIamPolicy {
         super::builder::disks::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a persistent disk in the specified project using the data
-    /// in the request. You can create a disk from a source
-    /// (sourceImage, sourceSnapshot, orsourceDisk) or create an empty 500 GB data disk by
-    /// omitting all properties. You can also create a disk that is larger than
-    /// the default size by specifying the sizeGb property.
+    /// Creates a persistent disk in the specified project using the data in the request. You can create a disk from a source (sourceImage, sourceSnapshot, or sourceDisk) or create an empty 500 GB data disk by omitting all properties. You can also create a disk that is larger than the default size by specifying the sizeGb property.
     pub fn insert(&self) -> super::builder::disks::Insert {
         super::builder::disks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of persistent disks contained within
-    /// the specified zone.
+    /// Retrieves a list of persistent disks contained within the specified zone.
     pub fn list(&self) -> super::builder::disks::List {
         super::builder::disks::List::new(self.inner.clone())
     }
@@ -1446,38 +1372,32 @@ impl Disks {
         super::builder::disks::RemoveResourcePolicies::new(self.inner.clone())
     }
 
-    /// Resizes the specified persistent disk.
-    /// You can only increase the size of the disk.
+    /// Resizes the specified persistent disk. You can only increase the size of the disk.
     pub fn resize(&self) -> super::builder::disks::Resize {
         super::builder::disks::Resize::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::disks::SetIamPolicy {
         super::builder::disks::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a disk. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a disk. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::disks::SetLabels {
         super::builder::disks::SetLabels::new(self.inner.clone())
     }
 
-    /// Starts asynchronous replication.
-    /// Must be invoked on the primary disk.
+    /// Starts asynchronous replication. Must be invoked on the primary disk.
     pub fn start_async_replication(&self) -> super::builder::disks::StartAsyncReplication {
         super::builder::disks::StartAsyncReplication::new(self.inner.clone())
     }
 
-    /// Stops asynchronous replication.
-    /// Can be invoked either on the primary or on the secondary disk.
+    /// Stops asynchronous replication. Can be invoked either on the primary or on the secondary disk.
     pub fn stop_async_replication(&self) -> super::builder::disks::StopAsyncReplication {
         super::builder::disks::StopAsyncReplication::new(self.inner.clone())
     }
 
-    /// Stops asynchronous replication for a consistency group of disks.
-    /// Can be invoked either in the primary or secondary scope.
+    /// Stops asynchronous replication for a consistency group of disks. Can be invoked either in the primary or secondary scope.
     pub fn stop_group_async_replication(&self) -> super::builder::disks::StopGroupAsyncReplication {
         super::builder::disks::StopGroupAsyncReplication::new(self.inner.clone())
     }
@@ -1487,15 +1407,12 @@ impl Disks {
         super::builder::disks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified disk with the data included in the request.
-    /// The update is performed only on selected fields included as part
-    /// of update-mask.
+    /// Updates the specified disk with the data included in the request. The update is performed only on selected fields included as part of update-mask.
     pub fn update(&self) -> super::builder::disks::Update {
         super::builder::disks::Update::new(self.inner.clone())
     }
 
-    /// Rotates the customer-managed
-    /// encryption key to the latest version for the specified persistent disk.
+    /// Rotates the customer-managed encryption key to the latest version for the specified persistent disk.
     pub fn update_kms_key(&self) -> super::builder::disks::UpdateKmsKey {
         super::builder::disks::UpdateKmsKey::new(self.inner.clone())
     }
@@ -1522,6 +1439,8 @@ impl Disks {
 /// # Service Description
 ///
 /// Service for the `externalVpnGateways` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1617,27 +1536,22 @@ impl ExternalVpnGateways {
         super::builder::external_vpn_gateways::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified externalVpnGateway. Get a list of available
-    /// externalVpnGateways by making a list() request.
+    /// Returns the specified externalVpnGateway. Get a list of available externalVpnGateways by making a list() request.
     pub fn get(&self) -> super::builder::external_vpn_gateways::Get {
         super::builder::external_vpn_gateways::Get::new(self.inner.clone())
     }
 
-    /// Creates a ExternalVpnGateway in the specified project using
-    /// the data included in the request.
+    /// Creates a ExternalVpnGateway in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::external_vpn_gateways::Insert {
         super::builder::external_vpn_gateways::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of ExternalVpnGateway available to the specified
-    /// project.
+    /// Retrieves the list of ExternalVpnGateway available to the specified project.
     pub fn list(&self) -> super::builder::external_vpn_gateways::List {
         super::builder::external_vpn_gateways::List::new(self.inner.clone())
     }
 
-    /// Sets the labels on an ExternalVpnGateway. To learn more about labels,
-    /// read the Labeling
-    /// Resources documentation.
+    /// Sets the labels on an ExternalVpnGateway. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::external_vpn_gateways::SetLabels {
         super::builder::external_vpn_gateways::SetLabels::new(self.inner.clone())
     }
@@ -1671,6 +1585,8 @@ impl ExternalVpnGateways {
 /// # Service Description
 ///
 /// Service for the `firewallPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1791,8 +1707,7 @@ impl FirewallPolicies {
         super::builder::firewall_policies::GetAssociation::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::firewall_policies::GetIamPolicy {
         super::builder::firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
@@ -1802,14 +1717,12 @@ impl FirewallPolicies {
         super::builder::firewall_policies::GetRule::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified project using the data included in
-    /// the request.
+    /// Creates a new policy in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::firewall_policies::Insert {
         super::builder::firewall_policies::Insert::new(self.inner.clone())
     }
 
-    /// Lists all the policies that have been configured for the specified
-    /// folder or organization.
+    /// Lists all the policies that have been configured for the specified folder or organization.
     pub fn list(&self) -> super::builder::firewall_policies::List {
         super::builder::firewall_policies::List::new(self.inner.clone())
     }
@@ -1844,8 +1757,7 @@ impl FirewallPolicies {
         super::builder::firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::firewall_policies::SetIamPolicy {
         super::builder::firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
@@ -1855,8 +1767,7 @@ impl FirewallPolicies {
         super::builder::firewall_policies::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Retrieves the specified Operations resource. Gets a list of operations
-    /// by making a `list()` request.
+    /// Retrieves the specified Operations resource. Gets a list of operations by making a `list()` request.
     pub fn get_operation(&self) -> super::builder::firewall_policies::GetOperation {
         super::builder::firewall_policies::GetOperation::new(self.inner.clone())
     }
@@ -1878,6 +1789,8 @@ impl FirewallPolicies {
 /// # Service Description
 ///
 /// Service for the `firewalls` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -1977,22 +1890,17 @@ impl Firewalls {
         super::builder::firewalls::Get::new(self.inner.clone())
     }
 
-    /// Creates a firewall rule in the specified project using the data
-    /// included in the request.
+    /// Creates a firewall rule in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::firewalls::Insert {
         super::builder::firewalls::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of firewall rules available to the specified
-    /// project.
+    /// Retrieves the list of firewall rules available to the specified project.
     pub fn list(&self) -> super::builder::firewalls::List {
         super::builder::firewalls::List::new(self.inner.clone())
     }
 
-    /// Updates the specified firewall rule with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified firewall rule with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::firewalls::Patch {
         super::builder::firewalls::Patch::new(self.inner.clone())
     }
@@ -2002,10 +1910,7 @@ impl Firewalls {
         super::builder::firewalls::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified firewall rule with the data included in the
-    /// request.
-    /// Note that all fields will be updated if using PUT, even fields that are not
-    /// specified. To update individual fields, please use PATCH instead.
+    /// Updates the specified firewall rule with the data included in the request. Note that all fields will be updated if using PUT, even fields that are not specified. To update individual fields, please use PATCH instead.
     pub fn update(&self) -> super::builder::firewalls::Update {
         super::builder::firewalls::Update::new(self.inner.clone())
     }
@@ -2032,6 +1937,8 @@ impl Firewalls {
 /// # Service Description
 ///
 /// Service for the `forwardingRules` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2121,10 +2028,7 @@ impl ForwardingRules {
             .map(super::tracing::ForwardingRules::new)
     }
 
-    /// Retrieves an aggregated list of forwarding rules.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of forwarding rules. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::forwarding_rules::AggregatedList {
         super::builder::forwarding_rules::AggregatedList::new(self.inner.clone())
     }
@@ -2139,36 +2043,27 @@ impl ForwardingRules {
         super::builder::forwarding_rules::Get::new(self.inner.clone())
     }
 
-    /// Creates a ForwardingRule resource in the specified project and region using
-    /// the data included in the request.
+    /// Creates a ForwardingRule resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::forwarding_rules::Insert {
         super::builder::forwarding_rules::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of ForwardingRule resources available to the specified
-    /// project and region.
+    /// Retrieves a list of ForwardingRule resources available to the specified project and region.
     pub fn list(&self) -> super::builder::forwarding_rules::List {
         super::builder::forwarding_rules::List::new(self.inner.clone())
     }
 
-    /// Updates the specified forwarding rule with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules. Currently, you can only
-    /// patch the network_tier field.
+    /// Updates the specified forwarding rule with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules. Currently, you can only patch the network_tier field.
     pub fn patch(&self) -> super::builder::forwarding_rules::Patch {
         super::builder::forwarding_rules::Patch::new(self.inner.clone())
     }
 
-    /// Sets the labels on the specified resource. To learn more about labels,
-    /// read the
-    /// Labeling Resources documentation.
+    /// Sets the labels on the specified resource. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::forwarding_rules::SetLabels {
         super::builder::forwarding_rules::SetLabels::new(self.inner.clone())
     }
 
-    /// Changes target URL for forwarding rule. The new target should be of the
-    /// same type as the old target.
+    /// Changes target URL for forwarding rule. The new target should be of the same type as the old target.
     pub fn set_target(&self) -> super::builder::forwarding_rules::SetTarget {
         super::builder::forwarding_rules::SetTarget::new(self.inner.clone())
     }
@@ -2195,6 +2090,8 @@ impl ForwardingRules {
 /// # Service Description
 ///
 /// Service for the `futureReservations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2285,10 +2182,7 @@ impl FutureReservations {
             .map(super::tracing::FutureReservations::new)
     }
 
-    /// Retrieves an aggregated list of future reservations.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of future reservations. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::future_reservations::AggregatedList {
         super::builder::future_reservations::AggregatedList::new(self.inner.clone())
     }
@@ -2313,8 +2207,7 @@ impl FutureReservations {
         super::builder::future_reservations::Insert::new(self.inner.clone())
     }
 
-    /// A list of all the future reservations that have been configured for the
-    /// specified project in specified zone.
+    /// A list of all the future reservations that have been configured for the specified project in specified zone.
     pub fn list(&self) -> super::builder::future_reservations::List {
         super::builder::future_reservations::List::new(self.inner.clone())
     }
@@ -2346,6 +2239,8 @@ impl FutureReservations {
 /// # Service Description
 ///
 /// Service for the `globalAddresses` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2445,8 +2340,7 @@ impl GlobalAddresses {
         super::builder::global_addresses::Get::new(self.inner.clone())
     }
 
-    /// Creates an address resource in the specified project by using the data
-    /// included in the request.
+    /// Creates an address resource in the specified project by using the data included in the request.
     pub fn insert(&self) -> super::builder::global_addresses::Insert {
         super::builder::global_addresses::Insert::new(self.inner.clone())
     }
@@ -2461,8 +2355,7 @@ impl GlobalAddresses {
         super::builder::global_addresses::Move::new(self.inner.clone())
     }
 
-    /// Sets the labels on a GlobalAddress. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a GlobalAddress. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::global_addresses::SetLabels {
         super::builder::global_addresses::SetLabels::new(self.inner.clone())
     }
@@ -2494,6 +2387,8 @@ impl GlobalAddresses {
 /// # Service Description
 ///
 /// Service for the `globalForwardingRules` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2589,42 +2484,32 @@ impl GlobalForwardingRules {
         super::builder::global_forwarding_rules::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified GlobalForwardingRule resource. Gets a list of
-    /// available forwarding rules by making a list() request.
+    /// Returns the specified GlobalForwardingRule resource. Gets a list of available forwarding rules by making a list() request.
     pub fn get(&self) -> super::builder::global_forwarding_rules::Get {
         super::builder::global_forwarding_rules::Get::new(self.inner.clone())
     }
 
-    /// Creates a GlobalForwardingRule resource in the specified project using
-    /// the data included in the request.
+    /// Creates a GlobalForwardingRule resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::global_forwarding_rules::Insert {
         super::builder::global_forwarding_rules::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of GlobalForwardingRule resources available to the
-    /// specified project.
+    /// Retrieves a list of GlobalForwardingRule resources available to the specified project.
     pub fn list(&self) -> super::builder::global_forwarding_rules::List {
         super::builder::global_forwarding_rules::List::new(self.inner.clone())
     }
 
-    /// Updates the specified forwarding rule with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules. Currently, you can only
-    /// patch the network_tier field.
+    /// Updates the specified forwarding rule with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules. Currently, you can only patch the network_tier field.
     pub fn patch(&self) -> super::builder::global_forwarding_rules::Patch {
         super::builder::global_forwarding_rules::Patch::new(self.inner.clone())
     }
 
-    /// Sets the labels on the specified resource. To learn more about labels,
-    /// read the
-    /// Labeling resources documentation.
+    /// Sets the labels on the specified resource. To learn more about labels, read the Labeling resources documentation.
     pub fn set_labels(&self) -> super::builder::global_forwarding_rules::SetLabels {
         super::builder::global_forwarding_rules::SetLabels::new(self.inner.clone())
     }
 
-    /// Changes target URL for the GlobalForwardingRule resource. The new target
-    /// should be of the same type as the old target.
+    /// Changes target URL for the GlobalForwardingRule resource. The new target should be of the same type as the old target.
     pub fn set_target(&self) -> super::builder::global_forwarding_rules::SetTarget {
         super::builder::global_forwarding_rules::SetTarget::new(self.inner.clone())
     }
@@ -2651,6 +2536,8 @@ impl GlobalForwardingRules {
 /// # Service Description
 ///
 /// Service for the `globalNetworkEndpointGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2751,8 +2638,7 @@ impl GlobalNetworkEndpointGroups {
         )
     }
 
-    /// Deletes the specified network endpoint group.Note that the NEG cannot be
-    /// deleted if there are backend services referencing it.
+    /// Deletes the specified network endpoint group.Note that the NEG cannot be deleted if there are backend services referencing it.
     pub fn delete(&self) -> super::builder::global_network_endpoint_groups::Delete {
         super::builder::global_network_endpoint_groups::Delete::new(self.inner.clone())
     }
@@ -2771,25 +2657,12 @@ impl GlobalNetworkEndpointGroups {
         super::builder::global_network_endpoint_groups::Get::new(self.inner.clone())
     }
 
-    /// Creates a network endpoint group in the specified project using the
-    /// parameters that are included in the request.
-    ///
-    /// Note: Use the following APIs to manage network endpoint groups:
-    ///
-    /// - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity
-    ///   NEGs): zonal
-    ///   API
-    /// - To manage NEGs with regional scope (such as regional internet NEGs,
-    ///   serverless NEGs, Private Service Connect NEGs): regional
-    ///   API
-    /// - To manage NEGs with global scope (such as global internet NEGs):global
-    ///   API
+    /// Creates a network endpoint group in the specified project using the parameters that are included in the request. Note: Use the following APIs to manage network endpoint groups: - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity NEGs): zonal API - To manage NEGs with regional scope (such as regional internet NEGs, serverless NEGs, Private Service Connect NEGs): regional API - To manage NEGs with global scope (such as global internet NEGs): global API
     pub fn insert(&self) -> super::builder::global_network_endpoint_groups::Insert {
         super::builder::global_network_endpoint_groups::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of network endpoint groups that are located in the
-    /// specified project.
+    /// Retrieves the list of network endpoint groups that are located in the specified project.
     pub fn list(&self) -> super::builder::global_network_endpoint_groups::List {
         super::builder::global_network_endpoint_groups::List::new(self.inner.clone())
     }
@@ -2825,6 +2698,8 @@ impl GlobalNetworkEndpointGroups {
 /// # Service Description
 ///
 /// Service for the `globalOperations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -2915,10 +2790,7 @@ impl GlobalOperations {
             .map(super::tracing::GlobalOperations::new)
     }
 
-    /// Retrieves an aggregated list of all operations.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of all operations. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::global_operations::AggregatedList {
         super::builder::global_operations::AggregatedList::new(self.inner.clone())
     }
@@ -2933,30 +2805,12 @@ impl GlobalOperations {
         super::builder::global_operations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of Operation resources contained within the specified
-    /// project.
+    /// Retrieves a list of Operation resources contained within the specified project.
     pub fn list(&self) -> super::builder::global_operations::List {
         super::builder::global_operations::List::new(self.inner.clone())
     }
 
-    /// Waits for the specified Operation resource to return as `DONE`
-    /// or for the request to approach the 2 minute deadline, and retrieves the
-    /// specified Operation resource. This method differs from the
-    /// `GET` method in that it waits for no more than the default
-    /// deadline (2 minutes) and then returns the current state of the operation,
-    /// which might be `DONE` or still in progress.
-    ///
-    /// This method is called on a best-effort basis. Specifically:
-    ///
-    /// ```norust
-    /// - In uncommon cases, when the server is overloaded, the request might
-    /// return before the default deadline is reached, or might return after zero
-    /// seconds.
-    /// ```
-    ///
-    /// - If the default deadline is reached, there is no guarantee that the
-    ///   operation is actually done when the method returns. Be prepared to retry
-    ///   if the operation is not `DONE`.
+    /// Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. This method differs from the `GET` method in that it waits for no more than the default deadline (2 minutes) and then returns the current state of the operation, which might be `DONE` or still in progress. This method is called on a best-effort basis. Specifically: - In uncommon cases, when the server is overloaded, the request might return before the default deadline is reached, or might return after zero seconds. - If the default deadline is reached, there is no guarantee that the operation is actually done when the method returns. Be prepared to retry if the operation is not `DONE`.
     pub fn wait(&self) -> super::builder::global_operations::Wait {
         super::builder::global_operations::Wait::new(self.inner.clone())
     }
@@ -2978,6 +2832,8 @@ impl GlobalOperations {
 /// # Service Description
 ///
 /// Service for the `globalOrganizationOperations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3074,14 +2930,12 @@ impl GlobalOrganizationOperations {
         super::builder::global_organization_operations::Delete::new(self.inner.clone())
     }
 
-    /// Retrieves the specified Operations resource. Gets a list of operations
-    /// by making a `list()` request.
+    /// Retrieves the specified Operations resource. Gets a list of operations by making a `list()` request.
     pub fn get(&self) -> super::builder::global_organization_operations::Get {
         super::builder::global_organization_operations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of Operation resources contained within the specified
-    /// organization.
+    /// Retrieves a list of Operation resources contained within the specified organization.
     pub fn list(&self) -> super::builder::global_organization_operations::List {
         super::builder::global_organization_operations::List::new(self.inner.clone())
     }
@@ -3103,6 +2957,8 @@ impl GlobalOrganizationOperations {
 /// # Service Description
 ///
 /// Service for the `globalPublicDelegatedPrefixes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3204,8 +3060,7 @@ impl GlobalPublicDelegatedPrefixes {
         super::builder::global_public_delegated_prefixes::Get::new(self.inner.clone())
     }
 
-    /// Creates a global PublicDelegatedPrefix in the specified project using the
-    /// parameters that are included in the request.
+    /// Creates a global PublicDelegatedPrefix in the specified project using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::global_public_delegated_prefixes::Insert {
         super::builder::global_public_delegated_prefixes::Insert::new(self.inner.clone())
     }
@@ -3215,10 +3070,7 @@ impl GlobalPublicDelegatedPrefixes {
         super::builder::global_public_delegated_prefixes::List::new(self.inner.clone())
     }
 
-    /// Patches the specified global PublicDelegatedPrefix resource with the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified global PublicDelegatedPrefix resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::global_public_delegated_prefixes::Patch {
         super::builder::global_public_delegated_prefixes::Patch::new(self.inner.clone())
     }
@@ -3245,6 +3097,8 @@ impl GlobalPublicDelegatedPrefixes {
 /// # Service Description
 ///
 /// Service for the `globalVmExtensionPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3336,21 +3190,12 @@ impl GlobalVmExtensionPolicies {
             .map(super::tracing::GlobalVmExtensionPolicies::new)
     }
 
-    /// Retrieves the list of all VM Extension Policy resources
-    /// available to the specified project.
-    ///
-    /// To prevent failure, it's recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all VM Extension Policy resources available to the specified project. To prevent failure, it's recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::global_vm_extension_policies::AggregatedList {
         super::builder::global_vm_extension_policies::AggregatedList::new(self.inner.clone())
     }
 
-    /// Purge scoped resources (zonal policies) from a global VM extension
-    /// policy, and then delete the global VM extension policy. Purge of the scoped
-    /// resources is a pre-condition of the global VM extension policy deletion.
-    /// The deletion of the global VM extension policy happens after the purge
-    /// rollout is done, so it's not a part of the LRO. It's an automatic process
-    /// that triggers in the backend.
+    /// Purge scoped resources (zonal policies) from a global VM extension policy, and then delete the global VM extension policy. Purge of the scoped resources is a pre-condition of the global VM extension policy deletion. The deletion of the global VM extension policy happens after the purge rollout is done, so it's not a part of the LRO. It's an automatic process that triggers in the backend.
     pub fn delete(&self) -> super::builder::global_vm_extension_policies::Delete {
         super::builder::global_vm_extension_policies::Delete::new(self.inner.clone())
     }
@@ -3397,6 +3242,8 @@ impl GlobalVmExtensionPolicies {
 /// # Service Description
 ///
 /// Service for the `healthChecks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3486,11 +3333,7 @@ impl HealthChecks {
             .map(super::tracing::HealthChecks::new)
     }
 
-    /// Retrieves the list of all HealthCheck resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all HealthCheck resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::health_checks::AggregatedList {
         super::builder::health_checks::AggregatedList::new(self.inner.clone())
     }
@@ -3505,22 +3348,17 @@ impl HealthChecks {
         super::builder::health_checks::Get::new(self.inner.clone())
     }
 
-    /// Creates a HealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Creates a HealthCheck resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::health_checks::Insert {
         super::builder::health_checks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of HealthCheck resources available to the specified
-    /// project.
+    /// Retrieves the list of HealthCheck resources available to the specified project.
     pub fn list(&self) -> super::builder::health_checks::List {
         super::builder::health_checks::List::new(self.inner.clone())
     }
 
-    /// Updates a HealthCheck resource in the specified project using the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates a HealthCheck resource in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::health_checks::Patch {
         super::builder::health_checks::Patch::new(self.inner.clone())
     }
@@ -3530,8 +3368,7 @@ impl HealthChecks {
         super::builder::health_checks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates a HealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Updates a HealthCheck resource in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::health_checks::Update {
         super::builder::health_checks::Update::new(self.inner.clone())
     }
@@ -3558,6 +3395,8 @@ impl HealthChecks {
 /// # Service Description
 ///
 /// Service for the `hosts` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3685,6 +3524,8 @@ impl Hosts {
 ///
 /// Service for the `httpHealthChecks` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `HttpHealthChecks` use the `with_*` methods in the type returned
@@ -3784,22 +3625,17 @@ impl HttpHealthChecks {
         super::builder::http_health_checks::Get::new(self.inner.clone())
     }
 
-    /// Creates a HttpHealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Creates a HttpHealthCheck resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::http_health_checks::Insert {
         super::builder::http_health_checks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of HttpHealthCheck resources available to the specified
-    /// project.
+    /// Retrieves the list of HttpHealthCheck resources available to the specified project.
     pub fn list(&self) -> super::builder::http_health_checks::List {
         super::builder::http_health_checks::List::new(self.inner.clone())
     }
 
-    /// Updates a HttpHealthCheck resource in the specified project using the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates a HttpHealthCheck resource in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::http_health_checks::Patch {
         super::builder::http_health_checks::Patch::new(self.inner.clone())
     }
@@ -3809,8 +3645,7 @@ impl HttpHealthChecks {
         super::builder::http_health_checks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates a HttpHealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Updates a HttpHealthCheck resource in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::http_health_checks::Update {
         super::builder::http_health_checks::Update::new(self.inner.clone())
     }
@@ -3837,6 +3672,8 @@ impl HttpHealthChecks {
 /// # Service Description
 ///
 /// Service for the `httpsHealthChecks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -3937,22 +3774,17 @@ impl HttpsHealthChecks {
         super::builder::https_health_checks::Get::new(self.inner.clone())
     }
 
-    /// Creates a HttpsHealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Creates a HttpsHealthCheck resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::https_health_checks::Insert {
         super::builder::https_health_checks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of HttpsHealthCheck resources available to the specified
-    /// project.
+    /// Retrieves the list of HttpsHealthCheck resources available to the specified project.
     pub fn list(&self) -> super::builder::https_health_checks::List {
         super::builder::https_health_checks::List::new(self.inner.clone())
     }
 
-    /// Updates a HttpsHealthCheck resource in the specified project using the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates a HttpsHealthCheck resource in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::https_health_checks::Patch {
         super::builder::https_health_checks::Patch::new(self.inner.clone())
     }
@@ -3962,8 +3794,7 @@ impl HttpsHealthChecks {
         super::builder::https_health_checks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates a HttpsHealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Updates a HttpsHealthCheck resource in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::https_health_checks::Update {
         super::builder::https_health_checks::Update::new(self.inner.clone())
     }
@@ -3990,6 +3821,8 @@ impl HttpsHealthChecks {
 /// # Service Description
 ///
 /// Service for the `imageFamilyViews` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -4080,8 +3913,7 @@ impl ImageFamilyViews {
             .map(super::tracing::ImageFamilyViews::new)
     }
 
-    /// Returns the latest image that is part of an image family, is not
-    /// deprecated and is rolled out in the specified zone.
+    /// Returns the latest image that is part of an image family, is not deprecated and is rolled out in the specified zone.
     pub fn get(&self) -> super::builder::image_family_views::Get {
         super::builder::image_family_views::Get::new(self.inner.clone())
     }
@@ -4103,6 +3935,8 @@ impl ImageFamilyViews {
 /// # Service Description
 ///
 /// Service for the `images` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -4197,9 +4031,7 @@ impl Images {
         super::builder::images::Delete::new(self.inner.clone())
     }
 
-    /// Sets the deprecation status of an image.
-    ///
-    /// If an empty request body is given, clears the deprecation status instead.
+    /// Sets the deprecation status of an image. If an empty request body is given, clears the deprecation status instead.
     pub fn deprecate(&self) -> super::builder::images::Deprecate {
         super::builder::images::Deprecate::new(self.inner.clone())
     }
@@ -4209,51 +4041,37 @@ impl Images {
         super::builder::images::Get::new(self.inner.clone())
     }
 
-    /// Returns the latest image that is part of an image family and is not
-    /// deprecated. For more information on image families, seePublic
-    /// image families documentation.
+    /// Returns the latest image that is part of an image family and is not deprecated. For more information on image families, see Public image families documentation.
     pub fn get_from_family(&self) -> super::builder::images::GetFromFamily {
         super::builder::images::GetFromFamily::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::images::GetIamPolicy {
         super::builder::images::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates an image in the specified project using the data included
-    /// in the request.
+    /// Creates an image in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::images::Insert {
         super::builder::images::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of custom images
-    /// available to the specified project. Custom images are images you
-    /// create that belong to your project. This method does not
-    /// get any images that belong to other projects, including publicly-available
-    /// images, like Debian 8. If you want to get a list of publicly-available
-    /// images, use this method to make a request to the respective image project,
-    /// such as debian-cloud or windows-cloud.
+    /// Retrieves the list of custom images available to the specified project. Custom images are images you create that belong to your project. This method does not get any images that belong to other projects, including publicly-available images, like Debian 8. If you want to get a list of publicly-available images, use this method to make a request to the respective image project, such as debian-cloud or windows-cloud.
     pub fn list(&self) -> super::builder::images::List {
         super::builder::images::List::new(self.inner.clone())
     }
 
-    /// Patches the specified image with the data included in the request.
-    /// Only the following fields can be modified: family, description,
-    /// deprecation status.
+    /// Patches the specified image with the data included in the request. Only the following fields can be modified: family, description, deprecation status.
     pub fn patch(&self) -> super::builder::images::Patch {
         super::builder::images::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::images::SetIamPolicy {
         super::builder::images::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on an image. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on an image. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::images::SetLabels {
         super::builder::images::SetLabels::new(self.inner.clone())
     }
@@ -4285,6 +4103,8 @@ impl Images {
 /// # Service Description
 ///
 /// Service for the `instanceGroupManagerResizeRequests` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -4378,17 +4198,12 @@ impl InstanceGroupManagerResizeRequests {
             .map(super::tracing::InstanceGroupManagerResizeRequests::new)
     }
 
-    /// Cancels the specified resize request and removes it from the queue.
-    /// Cancelled resize request does no longer wait for the resources to be
-    /// provisioned. Cancel is only possible for requests that are accepted in the
-    /// queue.
+    /// Cancels the specified resize request and removes it from the queue. Cancelled resize request does no longer wait for the resources to be provisioned. Cancel is only possible for requests that are accepted in the queue.
     pub fn cancel(&self) -> super::builder::instance_group_manager_resize_requests::Cancel {
         super::builder::instance_group_manager_resize_requests::Cancel::new(self.inner.clone())
     }
 
-    /// Deletes the specified, inactive resize request. Requests that are still
-    /// active cannot be deleted. Deleting request does not delete instances that
-    /// were provisioned previously.
+    /// Deletes the specified, inactive resize request. Requests that are still active cannot be deleted. Deleting request does not delete instances that were provisioned previously.
     pub fn delete(&self) -> super::builder::instance_group_manager_resize_requests::Delete {
         super::builder::instance_group_manager_resize_requests::Delete::new(self.inner.clone())
     }
@@ -4398,14 +4213,12 @@ impl InstanceGroupManagerResizeRequests {
         super::builder::instance_group_manager_resize_requests::Get::new(self.inner.clone())
     }
 
-    /// Creates a new resize request that starts provisioning VMs immediately
-    /// or queues VM creation.
+    /// Creates a new resize request that starts provisioning VMs immediately or queues VM creation.
     pub fn insert(&self) -> super::builder::instance_group_manager_resize_requests::Insert {
         super::builder::instance_group_manager_resize_requests::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of resize requests that are contained in the
-    /// managed instance group.
+    /// Retrieves a list of resize requests that are contained in the managed instance group.
     pub fn list(&self) -> super::builder::instance_group_manager_resize_requests::List {
         super::builder::instance_group_manager_resize_requests::List::new(self.inner.clone())
     }
@@ -4436,6 +4249,8 @@ impl InstanceGroupManagerResizeRequests {
 /// # Service Description
 ///
 /// Service for the `instanceGroupManagers` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -4526,78 +4341,39 @@ impl InstanceGroupManagers {
             .map(super::tracing::InstanceGroupManagers::new)
     }
 
-    /// Flags the specified instances to be removed from the
-    /// managed instance group. Abandoning an instance does not delete the
-    /// instance, but it does remove the instance from any target pools that are
-    /// applied by the managed instance group. This method reduces thetargetSize of the managed instance group by the
-    /// number of instances that you abandon. This operation is marked asDONE when the action is scheduled even if the instances have
-    /// not yet been removed from the group. You must separately verify the
-    /// status of the abandoning action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances to be removed from the managed instance group. Abandoning an instance does not delete the instance, but it does remove the instance from any target pools that are applied by the managed instance group. This method reduces the targetSize of the managed instance group by the number of instances that you abandon. This operation is marked as DONE when the action is scheduled even if the instances have not yet been removed from the group. You must separately verify the status of the abandoning action with the listmanagedinstances method. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn abandon_instances(&self) -> super::builder::instance_group_managers::AbandonInstances {
         super::builder::instance_group_managers::AbandonInstances::new(self.inner.clone())
     }
 
-    /// Retrieves the list of managed instance groups and groups them by zone.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of managed instance groups and groups them by zone. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::instance_group_managers::AggregatedList {
         super::builder::instance_group_managers::AggregatedList::new(self.inner.clone())
     }
 
-    /// Applies changes to selected instances on the managed instance group.
-    /// This method can be used to apply new overrides and/or new versions.
+    /// Applies changes to selected instances on the managed instance group. This method can be used to apply new overrides and/or new versions.
     pub fn apply_updates_to_instances(
         &self,
     ) -> super::builder::instance_group_managers::ApplyUpdatesToInstances {
         super::builder::instance_group_managers::ApplyUpdatesToInstances::new(self.inner.clone())
     }
 
-    /// Creates instances with per-instance configurations in this managed instance
-    /// group. Instances are created using the current instance template. Thecreate instances operation is marked DONE if thecreateInstances request is successful. The underlying actions
-    /// take additional time. You must separately verify the status of thecreating or actions with the listmanagedinstances
-    /// method.
+    /// Creates instances with per-instance configurations in this managed instance group. Instances are created using the current instance template. The create instances operation is marked DONE if the createInstances request is successful. The underlying actions take additional time. You must separately verify the status of the creating or actions with the listmanagedinstances method.
     pub fn create_instances(&self) -> super::builder::instance_group_managers::CreateInstances {
         super::builder::instance_group_managers::CreateInstances::new(self.inner.clone())
     }
 
-    /// Deletes the specified managed instance group and all of the instances
-    /// in that group. Note that the instance group must not belong to a
-    /// backend service. Read
-    /// Deleting an instance group for more information.
+    /// Deletes the specified managed instance group and all of the instances in that group. Note that the instance group must not belong to a backend service. Read Deleting an instance group for more information.
     pub fn delete(&self) -> super::builder::instance_group_managers::Delete {
         super::builder::instance_group_managers::Delete::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group for immediate
-    /// deletion. The instances are also removed from any target
-    /// pools of which they were a member. This method reduces thetargetSize of the managed instance group by the number of
-    /// instances that you delete. This operation is marked as DONE
-    /// when the action is scheduled even if the instances are still being deleted.
-    /// You must separately verify the status of the deleting action
-    /// with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group for immediate deletion. The instances are also removed from any target pools of which they were a member. This method reduces the targetSize of the managed instance group by the number of instances that you delete. This operation is marked as DONE when the action is scheduled even if the instances are still being deleted. You must separately verify the status of the deleting action with the listmanagedinstances method. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn delete_instances(&self) -> super::builder::instance_group_managers::DeleteInstances {
         super::builder::instance_group_managers::DeleteInstances::new(self.inner.clone())
     }
 
-    /// Deletes selected per-instance configurations for the managed instance
-    /// group.
+    /// Deletes selected per-instance configurations for the managed instance group.
     pub fn delete_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::DeletePerInstanceConfigs {
@@ -4609,249 +4385,90 @@ impl InstanceGroupManagers {
         super::builder::instance_group_managers::Get::new(self.inner.clone())
     }
 
-    /// Creates a managed instance group using the information that you specify
-    /// in the request. After the group is created, instances in the group are
-    /// created using the specified instance template.
-    /// This operation is marked as DONE when the group is created
-    /// even if the instances in the group have not yet been created. You
-    /// must separately verify the status of the individual instances with thelistmanagedinstances
-    /// method.
-    ///
-    /// A managed instance group can have up to 1000 VM instances per group. Please
-    /// contact Cloud Support if you need an increase in
-    /// this limit.
+    /// Creates a managed instance group using the information that you specify in the request. After the group is created, instances in the group are created using the specified instance template. This operation is marked as DONE when the group is created even if the instances in the group have not yet been created. You must separately verify the status of the individual instances with the listmanagedinstances method. A managed instance group can have up to 1000 VM instances per group. Please contact Cloud Support if you need an increase in this limit.
     pub fn insert(&self) -> super::builder::instance_group_managers::Insert {
         super::builder::instance_group_managers::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of managed instance groups that are contained within the
-    /// specified project and zone.
+    /// Retrieves a list of managed instance groups that are contained within the specified project and zone.
     pub fn list(&self) -> super::builder::instance_group_managers::List {
         super::builder::instance_group_managers::List::new(self.inner.clone())
     }
 
-    /// Lists all errors thrown by actions on instances for a given managed
-    /// instance group. The filter and orderBy query
-    /// parameters are not supported.
+    /// Lists all errors thrown by actions on instances for a given managed instance group. The filter and orderBy query parameters are not supported.
     pub fn list_errors(&self) -> super::builder::instance_group_managers::ListErrors {
         super::builder::instance_group_managers::ListErrors::new(self.inner.clone())
     }
 
-    /// Lists all of the instances in the managed instance group. Each instance
-    /// in the list has a currentAction, which indicates the action
-    /// that the managed instance group is performing on the instance. For example,
-    /// if the group is still creating an instance, the currentAction
-    /// is CREATING. If a previous action failed, the
-    /// list displays the errors for that failed action. The orderBy
-    /// query parameter is not supported. The `pageToken` query parameter is
-    /// supported only if the group's `listManagedInstancesResults` field is set
-    /// to `PAGINATED`.
+    /// Lists all of the instances in the managed instance group. Each instance in the list has a currentAction, which indicates the action that the managed instance group is performing on the instance. For example, if the group is still creating an instance, the currentAction is CREATING. If a previous action failed, the list displays the errors for that failed action. The orderBy query parameter is not supported. The `pageToken` query parameter is supported only if the group's `listManagedInstancesResults` field is set to `PAGINATED`.
     pub fn list_managed_instances(
         &self,
     ) -> super::builder::instance_group_managers::ListManagedInstances {
         super::builder::instance_group_managers::ListManagedInstances::new(self.inner.clone())
     }
 
-    /// Lists all of the per-instance configurations defined for the managed
-    /// instance group. The orderBy query parameter is not supported.
+    /// Lists all of the per-instance configurations defined for the managed instance group. The orderBy query parameter is not supported.
     pub fn list_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::ListPerInstanceConfigs {
         super::builder::instance_group_managers::ListPerInstanceConfigs::new(self.inner.clone())
     }
 
-    /// Updates a managed instance group using the information that you specify
-    /// in the request.
-    /// This operation is marked as DONE when the group is patched
-    /// even if the instances in the group are still in the process of being
-    /// patched. You must separately verify the status of the individual instances
-    /// with thelistManagedInstances
-    /// method. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
-    ///
-    /// If you update your group to specify a new template or instance
-    /// configuration, it's possible that your intended specification for each VM
-    /// in the group is different from the current state of that VM. To learn how
-    /// to apply an updated configuration to the VMs in a MIG, seeUpdating instances in
-    /// a MIG.
+    /// Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is patched even if the instances in the group are still in the process of being patched. You must separately verify the status of the individual instances with the listManagedInstances method. This method supports PATCH semantics and uses the JSON merge patch format and processing rules. If you update your group to specify a new template or instance configuration, it's possible that your intended specification for each VM in the group is different from the current state of that VM. To learn how to apply an updated configuration to the VMs in a MIG, see Updating instances in a MIG.
     pub fn patch(&self) -> super::builder::instance_group_managers::Patch {
         super::builder::instance_group_managers::Patch::new(self.inner.clone())
     }
 
-    /// Inserts or patches per-instance configurations for the managed instance
-    /// group. perInstanceConfig.name serves as a key used to
-    /// distinguish whether to perform insert or patch.
+    /// Inserts or patches per-instance configurations for the managed instance group. perInstanceConfig.name serves as a key used to distinguish whether to perform insert or patch.
     pub fn patch_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::PatchPerInstanceConfigs {
         super::builder::instance_group_managers::PatchPerInstanceConfigs::new(self.inner.clone())
     }
 
-    /// Flags the specified VM instances in the managed instance group to be
-    /// immediately recreated. Each instance is recreated using the group's current
-    /// configuration. This operation is marked as DONE when the flag
-    /// is set even if the instances have not yet been recreated. You must
-    /// separately verify the status of each instance by checking itscurrentAction field; for more information, see Checking
-    /// the status of managed instances.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified VM instances in the managed instance group to be immediately recreated. Each instance is recreated using the group's current configuration. This operation is marked as DONE when the flag is set even if the instances have not yet been recreated. You must separately verify the status of each instance by checking its currentAction field; for more information, see Checking the status of managed instances. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn recreate_instances(&self) -> super::builder::instance_group_managers::RecreateInstances {
         super::builder::instance_group_managers::RecreateInstances::new(self.inner.clone())
     }
 
-    /// Resizes the managed instance group. If you increase the size, the group
-    /// creates new instances using the current instance template. If you decrease
-    /// the size, the group deletes instances. The resize operation is markedDONE when the resize actions are scheduled even if the group
-    /// has not yet added or deleted any instances. You must separately
-    /// verify the status of the creating or deleting
-    /// actions with thelistmanagedinstances
-    /// method.
-    ///
-    /// When resizing down, the instance group arbitrarily chooses the order in
-    /// which VMs are deleted. The group takes into account some VM attributes when
-    /// making the selection including:
-    ///
-    /// + The status of the VM instance.
-    /// + The health of the VM instance.
-    /// + The instance template version the VM is based on.
-    /// + For regional managed instance groups, the location of the VM instance.
-    ///
-    /// This list is subject to change.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
+    /// Resizes the managed instance group. If you increase the size, the group creates new instances using the current instance template. If you decrease the size, the group deletes instances. The resize operation is marked DONE when the resize actions are scheduled even if the group has not yet added or deleted any instances. You must separately verify the status of the creating or deleting actions with the listmanagedinstances method. When resizing down, the instance group arbitrarily chooses the order in which VMs are deleted. The group takes into account some VM attributes when making the selection including: + The status of the VM instance. + The health of the VM instance. + The instance template version the VM is based on. + For regional managed instance groups, the location of the VM instance. This list is subject to change. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted.
     pub fn resize(&self) -> super::builder::instance_group_managers::Resize {
         super::builder::instance_group_managers::Resize::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// resumed. This method increases thetargetSize and decreases the targetSuspendedSize
-    /// of the managed instance group by the number of instances that you resume.
-    /// The resumeInstances operation is marked DONE if
-    /// the resumeInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theRESUMING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// In this request, you can only specify instances that are suspended. For
-    /// example, if an instance was previously suspended using the suspendInstances
-    /// method, it can be resumed using the resumeInstances method.
-    ///
-    /// If a health check is attached to the managed instance group, the specified
-    /// instances will be verified as healthy after they are resumed.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be resumed. This method increases the targetSize and decreases the targetSuspendedSize of the managed instance group by the number of instances that you resume. The resumeInstances operation is marked DONE if the resumeInstances request is successful. The underlying actions take additional time. You must separately verify the status of the RESUMING action with the listmanagedinstances method. In this request, you can only specify instances that are suspended. For example, if an instance was previously suspended using the suspendInstances method, it can be resumed using the resumeInstances method. If a health check is attached to the managed instance group, the specified instances will be verified as healthy after they are resumed. You can specify a maximum of 1000 instances with this method per request.
     pub fn resume_instances(&self) -> super::builder::instance_group_managers::ResumeInstances {
         super::builder::instance_group_managers::ResumeInstances::new(self.inner.clone())
     }
 
-    /// Specifies the instance template to use when creating new instances in this
-    /// group. The templates for existing instances in the group do not change
-    /// unless you run recreateInstances, runapplyUpdatesToInstances, or set the group'supdatePolicy.type to PROACTIVE.
+    /// Specifies the instance template to use when creating new instances in this group. The templates for existing instances in the group do not change unless you run recreateInstances, run applyUpdatesToInstances, or set the group's updatePolicy.type to PROACTIVE.
     pub fn set_instance_template(
         &self,
     ) -> super::builder::instance_group_managers::SetInstanceTemplate {
         super::builder::instance_group_managers::SetInstanceTemplate::new(self.inner.clone())
     }
 
-    /// Modifies the target pools to which all instances in this managed instance
-    /// group are assigned. The target pools automatically apply to all of the
-    /// instances in the managed instance group. This operation is markedDONE when you make the request even if the instances have not
-    /// yet been added to their target pools. The change might take some time to
-    /// apply to all of the instances in the group depending on the size of the
-    /// group.
+    /// Modifies the target pools to which all instances in this managed instance group are assigned. The target pools automatically apply to all of the instances in the managed instance group. This operation is marked DONE when you make the request even if the instances have not yet been added to their target pools. The change might take some time to apply to all of the instances in the group depending on the size of the group.
     pub fn set_target_pools(&self) -> super::builder::instance_group_managers::SetTargetPools {
         super::builder::instance_group_managers::SetTargetPools::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// started. This method increases thetargetSize and decreases the targetStoppedSize
-    /// of the managed instance group by the number of instances that you start.
-    /// The startInstances operation is marked DONE if
-    /// the startInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSTARTING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// In this request, you can only specify instances that are stopped. For
-    /// example, if an instance was previously stopped using the stopInstances
-    /// method, it can be started using the startInstances method.
-    ///
-    /// If a health check is attached to the managed instance group, the specified
-    /// instances will be verified as healthy after they are started.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be started. This method increases the targetSize and decreases the targetStoppedSize of the managed instance group by the number of instances that you start. The startInstances operation is marked DONE if the startInstances request is successful. The underlying actions take additional time. You must separately verify the status of the STARTING action with the listmanagedinstances method. In this request, you can only specify instances that are stopped. For example, if an instance was previously stopped using the stopInstances method, it can be started using the startInstances method. If a health check is attached to the managed instance group, the specified instances will be verified as healthy after they are started. You can specify a maximum of 1000 instances with this method per request.
     pub fn start_instances(&self) -> super::builder::instance_group_managers::StartInstances {
         super::builder::instance_group_managers::StartInstances::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// immediately stopped. You can only specify instances that are running in
-    /// this request. This method reduces thetargetSize and increases the targetStoppedSize
-    /// of the managed instance group by the number of instances that you stop.
-    /// The stopInstances operation is marked DONE if
-    /// the stopInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSTOPPING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the standbyPolicy.initialDelaySec field is set, the group
-    /// delays stopping the instances until initialDelaySec have
-    /// passed from instance.creationTimestamp (that is, when the
-    /// instance was created). This delay gives your application time to
-    /// set itself up and initialize on the instance. If more thaninitialDelaySec seconds have passed sinceinstance.creationTimestamp when this method is called, there
-    /// will be zero delay.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is stopped.
-    ///
-    /// Stopped instances can be started using the startInstances
-    /// method.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be immediately stopped. You can only specify instances that are running in this request. This method reduces the targetSize and increases the targetStoppedSize of the managed instance group by the number of instances that you stop. The stopInstances operation is marked DONE if the stopInstances request is successful. The underlying actions take additional time. You must separately verify the status of the STOPPING action with the listmanagedinstances method. If the standbyPolicy.initialDelaySec field is set, the group delays stopping the instances until initialDelaySec have passed from instance.creationTimestamp (that is, when the instance was created). This delay gives your application time to set itself up and initialize on the instance. If more than initialDelaySec seconds have passed since instance.creationTimestamp when this method is called, there will be zero delay. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is stopped. Stopped instances can be started using the startInstances method. You can specify a maximum of 1000 instances with this method per request.
     pub fn stop_instances(&self) -> super::builder::instance_group_managers::StopInstances {
         super::builder::instance_group_managers::StopInstances::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// immediately suspended. You can only specify instances that are running in
-    /// this request. This method reduces thetargetSize and increases the targetSuspendedSize
-    /// of the managed instance group by the number of instances that you suspend.
-    /// The suspendInstances operation is marked DONE if
-    /// the suspendInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSUSPENDING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the standbyPolicy.initialDelaySec field is set, the group
-    /// delays suspension of the instances until initialDelaySec have
-    /// passed from instance.creationTimestamp (that is, when the
-    /// instance was created). This delay gives your application time to
-    /// set itself up and initialize on the instance. If more thaninitialDelaySec seconds have passed sinceinstance.creationTimestamp when this method is called, there
-    /// will be zero delay.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is suspended.
-    ///
-    /// Suspended instances can be resumed using the resumeInstances
-    /// method.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be immediately suspended. You can only specify instances that are running in this request. This method reduces the targetSize and increases the targetSuspendedSize of the managed instance group by the number of instances that you suspend. The suspendInstances operation is marked DONE if the suspendInstances request is successful. The underlying actions take additional time. You must separately verify the status of the SUSPENDING action with the listmanagedinstances method. If the standbyPolicy.initialDelaySec field is set, the group delays suspension of the instances until initialDelaySec have passed from instance.creationTimestamp (that is, when the instance was created). This delay gives your application time to set itself up and initialize on the instance. If more than initialDelaySec seconds have passed since instance.creationTimestamp when this method is called, there will be zero delay. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is suspended. Suspended instances can be resumed using the resumeInstances method. You can specify a maximum of 1000 instances with this method per request.
     pub fn suspend_instances(&self) -> super::builder::instance_group_managers::SuspendInstances {
         super::builder::instance_group_managers::SuspendInstances::new(self.inner.clone())
     }
 
-    /// Inserts or updates per-instance configurations for the managed instance
-    /// group. perInstanceConfig.name serves as a key used to
-    /// distinguish whether to perform insert or patch.
+    /// Inserts or updates per-instance configurations for the managed instance group. perInstanceConfig.name serves as a key used to distinguish whether to perform insert or patch.
     pub fn update_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::UpdatePerInstanceConfigs {
@@ -4880,6 +4497,8 @@ impl InstanceGroupManagers {
 /// # Service Description
 ///
 /// Service for the `instanceGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -4969,71 +4588,42 @@ impl InstanceGroups {
             .map(super::tracing::InstanceGroups::new)
     }
 
-    /// Adds a list of instances to the specified instance group.  All of the
-    /// instances in the instance group must be in the same network/subnetwork.
-    /// Read
-    /// Adding instances for more information.
+    /// Adds a list of instances to the specified instance group. All of the instances in the instance group must be in the same network/subnetwork. Read Adding instances for more information.
     pub fn add_instances(&self) -> super::builder::instance_groups::AddInstances {
         super::builder::instance_groups::AddInstances::new(self.inner.clone())
     }
 
-    /// Retrieves the list of instance groups and sorts them by zone.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of instance groups and sorts them by zone. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::instance_groups::AggregatedList {
         super::builder::instance_groups::AggregatedList::new(self.inner.clone())
     }
 
-    /// Deletes the specified instance group. The instances in the group are not
-    /// deleted. Note that instance group must not belong to a backend service.
-    /// Read
-    /// Deleting an instance group for more information.
+    /// Deletes the specified instance group. The instances in the group are not deleted. Note that instance group must not belong to a backend service. Read Deleting an instance group for more information.
     pub fn delete(&self) -> super::builder::instance_groups::Delete {
         super::builder::instance_groups::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified zonal instance group. Get a list of available zonal
-    /// instance groups by making a list() request.
-    ///
-    /// For managed instance groups, use theinstanceGroupManagers
-    /// or regionInstanceGroupManagers
-    /// methods instead.
+    /// Returns the specified zonal instance group. Get a list of available zonal instance groups by making a list() request. For managed instance groups, use the instanceGroupManagers or regionInstanceGroupManagers methods instead.
     pub fn get(&self) -> super::builder::instance_groups::Get {
         super::builder::instance_groups::Get::new(self.inner.clone())
     }
 
-    /// Creates an instance group in the specified project using the
-    /// parameters that are included in the request.
+    /// Creates an instance group in the specified project using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::instance_groups::Insert {
         super::builder::instance_groups::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of zonal instance group resources contained within the
-    /// specified zone.
-    ///
-    /// For managed instance groups, use theinstanceGroupManagers
-    /// or regionInstanceGroupManagers
-    /// methods instead.
+    /// Retrieves the list of zonal instance group resources contained within the specified zone. For managed instance groups, use the instanceGroupManagers or regionInstanceGroupManagers methods instead.
     pub fn list(&self) -> super::builder::instance_groups::List {
         super::builder::instance_groups::List::new(self.inner.clone())
     }
 
-    /// Lists the instances in the specified instance group.
-    /// The orderBy query parameter is not supported.
-    /// The filter query parameter is supported, but only for
-    /// expressions that use `eq` (equal) or `ne` (not equal) operators.
+    /// Lists the instances in the specified instance group. The orderBy query parameter is not supported. The filter query parameter is supported, but only for expressions that use `eq` (equal) or `ne` (not equal) operators.
     pub fn list_instances(&self) -> super::builder::instance_groups::ListInstances {
         super::builder::instance_groups::ListInstances::new(self.inner.clone())
     }
 
-    /// Removes one or more instances from the specified instance group, but does
-    /// not delete those instances.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration before the VM instance is removed or deleted.
+    /// Removes one or more instances from the specified instance group, but does not delete those instances. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration before the VM instance is removed or deleted.
     pub fn remove_instances(&self) -> super::builder::instance_groups::RemoveInstances {
         super::builder::instance_groups::RemoveInstances::new(self.inner.clone())
     }
@@ -5070,6 +4660,8 @@ impl InstanceGroups {
 /// # Service Description
 ///
 /// Service for the `instanceSettings` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -5193,6 +4785,8 @@ impl InstanceSettings {
 ///
 /// Service for the `instanceTemplates` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `InstanceTemplates` use the `with_*` methods in the type returned
@@ -5282,18 +4876,12 @@ impl InstanceTemplates {
             .map(super::tracing::InstanceTemplates::new)
     }
 
-    /// Retrieves the list of all InstanceTemplates resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all InstanceTemplates resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::instance_templates::AggregatedList {
         super::builder::instance_templates::AggregatedList::new(self.inner.clone())
     }
 
-    /// Deletes the specified instance template. Deleting an instance template is
-    /// permanent and cannot be undone. It is not possible to delete templates
-    /// that are already in use by a managed instance group.
+    /// Deletes the specified instance template. Deleting an instance template is permanent and cannot be undone. It is not possible to delete templates that are already in use by a managed instance group.
     pub fn delete(&self) -> super::builder::instance_templates::Delete {
         super::builder::instance_templates::Delete::new(self.inner.clone())
     }
@@ -5303,29 +4891,22 @@ impl InstanceTemplates {
         super::builder::instance_templates::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::instance_templates::GetIamPolicy {
         super::builder::instance_templates::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates an instance template in the specified project using the
-    /// data that is included in the request. If you are creating a new template to
-    /// update an existing instance group, your new instance template must use the
-    /// same network or, if applicable, the same subnetwork as the original
-    /// template.
+    /// Creates an instance template in the specified project using the data that is included in the request. If you are creating a new template to update an existing instance group, your new instance template must use the same network or, if applicable, the same subnetwork as the original template.
     pub fn insert(&self) -> super::builder::instance_templates::Insert {
         super::builder::instance_templates::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of instance templates that are contained within
-    /// the specified project.
+    /// Retrieves a list of instance templates that are contained within the specified project.
     pub fn list(&self) -> super::builder::instance_templates::List {
         super::builder::instance_templates::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::instance_templates::SetIamPolicy {
         super::builder::instance_templates::SetIamPolicy::new(self.inner.clone())
     }
@@ -5357,6 +4938,8 @@ impl InstanceTemplates {
 /// # Service Description
 ///
 /// Service for the `instances` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -5456,42 +5039,27 @@ impl Instances {
         super::builder::instances::AddNetworkInterface::new(self.inner.clone())
     }
 
-    /// Adds existing resource policies to an instance. You can only add one
-    /// policy right now which will be applied to this instance for scheduling live
-    /// migrations.
+    /// Adds existing resource policies to an instance. You can only add one policy right now which will be applied to this instance for scheduling live migrations.
     pub fn add_resource_policies(&self) -> super::builder::instances::AddResourcePolicies {
         super::builder::instances::AddResourcePolicies::new(self.inner.clone())
     }
 
-    /// Retrieves an aggregated list of all of the instances in your project
-    /// across all regions and zones.
-    ///
-    /// The performance of this method degrades when a filter is specified on a
-    /// project that has a very large number of instances.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of all of the instances in your project across all regions and zones. The performance of this method degrades when a filter is specified on a project that has a very large number of instances. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::instances::AggregatedList {
         super::builder::instances::AggregatedList::new(self.inner.clone())
     }
 
-    /// Attaches an existing Disk resource to an instance. You must first
-    /// create the disk before you can attach it. It is not possible to create
-    /// and attach a disk at the same time. For more information, readAdding a
-    /// persistent disk to your instance.
+    /// Attaches an existing Disk resource to an instance. You must first create the disk before you can attach it. It is not possible to create and attach a disk at the same time. For more information, read Adding a persistent disk to your instance.
     pub fn attach_disk(&self) -> super::builder::instances::AttachDisk {
         super::builder::instances::AttachDisk::new(self.inner.clone())
     }
 
-    /// Creates multiple instances. Count specifies the number of instances to
-    /// create. For more information, seeAbout bulk
-    /// creation of VMs.
+    /// Creates multiple instances. Count specifies the number of instances to create. For more information, see About bulk creation of VMs.
     pub fn bulk_insert(&self) -> super::builder::instances::BulkInsert {
         super::builder::instances::BulkInsert::new(self.inner.clone())
     }
 
-    /// Deletes the specified Instance resource. For more information, seeDeleting
-    /// an instance.
+    /// Deletes the specified Instance resource. For more information, see Deleting an instance.
     pub fn delete(&self) -> super::builder::instances::Delete {
         super::builder::instances::Delete::new(self.inner.clone())
     }
@@ -5501,12 +5069,7 @@ impl Instances {
         super::builder::instances::DeleteAccessConfig::new(self.inner.clone())
     }
 
-    /// Deletes one dynamic network interface from an active instance.
-    /// InstancesDeleteNetworkInterfaceRequest indicates:
-    ///
-    /// - instance from which to delete, using project+zone+resource_id fields;
-    /// - dynamic network interface to be deleted, using network_interface_name
-    ///   field;
+    /// Deletes one dynamic network interface from an active instance. InstancesDeleteNetworkInterfaceRequest indicates: - instance from which to delete, using project+zone+resource_id fields; - dynamic network interface to be deleted, using network_interface_name field;
     pub fn delete_network_interface(&self) -> super::builder::instances::DeleteNetworkInterface {
         super::builder::instances::DeleteNetworkInterface::new(self.inner.clone())
     }
@@ -5531,8 +5094,7 @@ impl Instances {
         super::builder::instances::GetGuestAttributes::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::instances::GetIamPolicy {
         super::builder::instances::GetIamPolicy::new(self.inner.clone())
     }
@@ -5554,23 +5116,17 @@ impl Instances {
         super::builder::instances::GetShieldedInstanceIdentity::new(self.inner.clone())
     }
 
-    /// Creates an instance resource in the specified project using the data
-    /// included in the request.
+    /// Creates an instance resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::instances::Insert {
         super::builder::instances::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of instances contained within
-    /// the specified zone.
+    /// Retrieves the list of instances contained within the specified zone.
     pub fn list(&self) -> super::builder::instances::List {
         super::builder::instances::List::new(self.inner.clone())
     }
 
-    /// Retrieves a list of resources that refer to the VM instance specified in
-    /// the request. For example, if the VM instance is part of a managed or
-    /// unmanaged instance group, the referrers list includes the instance group.
-    /// For more information, readViewing
-    /// referrers to VM instances.
+    /// Retrieves a list of resources that refer to the VM instance specified in the request. For example, if the VM instance is part of a managed or unmanaged instance group, the referrers list includes the instance group. For more information, read Viewing referrers to VM instances.
     pub fn list_referrers(&self) -> super::builder::instances::ListReferrers {
         super::builder::instances::ListReferrers::new(self.inner.clone())
     }
@@ -5590,15 +5146,12 @@ impl Instances {
         super::builder::instances::ReportHostAsFaulty::new(self.inner.clone())
     }
 
-    /// Performs a reset on the instance. This is a hard reset. The VM
-    /// does not do a graceful shutdown. For more information, seeResetting
-    /// an instance.
+    /// Performs a reset on the instance. This is a hard reset. The VM does not do a graceful shutdown. For more information, see Resetting an instance.
     pub fn reset(&self) -> super::builder::instances::Reset {
         super::builder::instances::Reset::new(self.inner.clone())
     }
 
-    /// Resumes an instance that was suspended using theinstances().suspend
-    /// method.
+    /// Resumes an instance that was suspended using the instances().suspend method.
     pub fn resume(&self) -> super::builder::instances::Resume {
         super::builder::instances::Resume::new(self.inner.clone())
     }
@@ -5618,40 +5171,32 @@ impl Instances {
         super::builder::instances::SetDiskAutoDelete::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::instances::SetIamPolicy {
         super::builder::instances::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets labels on an instance.  To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets labels on an instance. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::instances::SetLabels {
         super::builder::instances::SetLabels::new(self.inner.clone())
     }
 
-    /// Changes the number and/or type of accelerator for a stopped instance to the
-    /// values specified in the request.
+    /// Changes the number and/or type of accelerator for a stopped instance to the values specified in the request.
     pub fn set_machine_resources(&self) -> super::builder::instances::SetMachineResources {
         super::builder::instances::SetMachineResources::new(self.inner.clone())
     }
 
-    /// Changes the machine type for a stopped instance to the machine
-    /// type specified in the request.
+    /// Changes the machine type for a stopped instance to the machine type specified in the request.
     pub fn set_machine_type(&self) -> super::builder::instances::SetMachineType {
         super::builder::instances::SetMachineType::new(self.inner.clone())
     }
 
-    /// Sets metadata for the specified instance to the data included
-    /// in the request.
+    /// Sets metadata for the specified instance to the data included in the request.
     pub fn set_metadata(&self) -> super::builder::instances::SetMetadata {
         super::builder::instances::SetMetadata::new(self.inner.clone())
     }
 
-    /// Changes the minimum CPU platform that this instance should use.
-    /// This method can only
-    /// be called on a stopped instance. For more information, readSpecifying a
-    /// Minimum CPU Platform.
+    /// Changes the minimum CPU platform that this instance should use. This method can only be called on a stopped instance. For more information, read Specifying a Minimum CPU Platform.
     pub fn set_min_cpu_platform(&self) -> super::builder::instances::SetMinCpuPlatform {
         super::builder::instances::SetMinCpuPlatform::new(self.inner.clone())
     }
@@ -5661,85 +5206,56 @@ impl Instances {
         super::builder::instances::SetName::new(self.inner.clone())
     }
 
-    /// Sets an instance's scheduling options. You can only call this method on astopped instance,
-    /// that is, a VM instance that is in a `TERMINATED` state. SeeInstance Life
-    /// Cycle for more information on the possible instance states.
-    /// For more information about setting scheduling options for a VM, seeSet
-    /// VM host maintenance policy.
+    /// Sets an instance's scheduling options. You can only call this method on a stopped instance, that is, a VM instance that is in a `TERMINATED` state. See Instance Life Cycle for more information on the possible instance states. For more information about setting scheduling options for a VM, see Set VM host maintenance policy.
     pub fn set_scheduling(&self) -> super::builder::instances::SetScheduling {
         super::builder::instances::SetScheduling::new(self.inner.clone())
     }
 
-    /// Sets the Google Cloud Armor security policy for the specified instance.
-    /// For more information, seeGoogle
-    /// Cloud Armor Overview
+    /// Sets the Google Cloud Armor security policy for the specified instance. For more information, see Google Cloud Armor Overview
     pub fn set_security_policy(&self) -> super::builder::instances::SetSecurityPolicy {
         super::builder::instances::SetSecurityPolicy::new(self.inner.clone())
     }
 
-    /// Sets the service account on the instance. For more information,
-    /// readChanging
-    /// the service account and access scopes for an instance.
+    /// Sets the service account on the instance. For more information, read Changing the service account and access scopes for an instance.
     pub fn set_service_account(&self) -> super::builder::instances::SetServiceAccount {
         super::builder::instances::SetServiceAccount::new(self.inner.clone())
     }
 
-    /// Sets the Shielded Instance integrity policy for an instance. You can
-    /// only use this method on a running instance. This method
-    /// supports PATCH semantics and uses the JSON merge
-    /// patch format and processing rules.
+    /// Sets the Shielded Instance integrity policy for an instance. You can only use this method on a running instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn set_shielded_instance_integrity_policy(
         &self,
     ) -> super::builder::instances::SetShieldedInstanceIntegrityPolicy {
         super::builder::instances::SetShieldedInstanceIntegrityPolicy::new(self.inner.clone())
     }
 
-    /// Sets network tags
-    /// for the specified instance to the data included in the request.
+    /// Sets network tags for the specified instance to the data included in the request.
     pub fn set_tags(&self) -> super::builder::instances::SetTags {
         super::builder::instances::SetTags::new(self.inner.clone())
     }
 
-    /// Simulates a host maintenance event on a VM. For more information, see
-    /// Simulate a host maintenance event.
+    /// Simulates a host maintenance event on a VM. For more information, see Simulate a host maintenance event.
     pub fn simulate_maintenance_event(
         &self,
     ) -> super::builder::instances::SimulateMaintenanceEvent {
         super::builder::instances::SimulateMaintenanceEvent::new(self.inner.clone())
     }
 
-    /// Starts an instance that was stopped using theinstances().stop
-    /// method. For more information, seeRestart an
-    /// instance.
+    /// Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance.
     pub fn start(&self) -> super::builder::instances::Start {
         super::builder::instances::Start::new(self.inner.clone())
     }
 
-    /// Starts an instance that was stopped using theinstances().stop
-    /// method. For more information, seeRestart an
-    /// instance.
+    /// Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance.
     pub fn start_with_encryption_key(&self) -> super::builder::instances::StartWithEncryptionKey {
         super::builder::instances::StartWithEncryptionKey::new(self.inner.clone())
     }
 
-    /// Stops a running instance, shutting it down cleanly, and allows
-    /// you to restart the instance at a later time. Stopped instances do not incur
-    /// VM usage charges while they are stopped. However, resources that the VM is
-    /// using, such as persistent disks and static IP addresses, will continue to
-    /// be charged until they are deleted. For more information, seeStopping
-    /// an instance.
+    /// Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur VM usage charges while they are stopped. However, resources that the VM is using, such as persistent disks and static IP addresses, will continue to be charged until they are deleted. For more information, see Stopping an instance.
     pub fn stop(&self) -> super::builder::instances::Stop {
         super::builder::instances::Stop::new(self.inner.clone())
     }
 
-    /// This method suspends a running instance, saving its state to persistent
-    /// storage, and allows you to resume the instance at a later time. Suspended
-    /// instances have no compute costs (cores or RAM), and incur only storage
-    /// charges for the saved VM memory and localSSD data. Any charged resources
-    /// the virtual machine was using, such as persistent disks and static IP
-    /// addresses, will continue to be charged while the instance is suspended.
-    /// For more information, see
-    /// Suspending and resuming an instance.
+    /// This method suspends a running instance, saving its state to persistent storage, and allows you to resume the instance at a later time. Suspended instances have no compute costs (cores or RAM), and incur only storage charges for the saved VM memory and localSSD data. Any charged resources the virtual machine was using, such as persistent disks and static IP addresses, will continue to be charged while the instance is suspended. For more information, see Suspending and resuming an instance.
     pub fn suspend(&self) -> super::builder::instances::Suspend {
         super::builder::instances::Suspend::new(self.inner.clone())
     }
@@ -5749,44 +5265,27 @@ impl Instances {
         super::builder::instances::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates an instance only if the necessary resources are available. This
-    /// method can update only a specific set of instance properties. See
-    /// Updating a running instance for a list of updatable instance
-    /// properties.
+    /// Updates an instance only if the necessary resources are available. This method can update only a specific set of instance properties. See Updating a running instance for a list of updatable instance properties.
     pub fn update(&self) -> super::builder::instances::Update {
         super::builder::instances::Update::new(self.inner.clone())
     }
 
-    /// Updates the specified access config from an instance's network interface
-    /// with the data included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified access config from an instance's network interface with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn update_access_config(&self) -> super::builder::instances::UpdateAccessConfig {
         super::builder::instances::UpdateAccessConfig::new(self.inner.clone())
     }
 
-    /// Updates the Display config for a VM instance. You can
-    /// only use this method on a stopped VM instance. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the Display config for a VM instance. You can only use this method on a stopped VM instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn update_display_device(&self) -> super::builder::instances::UpdateDisplayDevice {
         super::builder::instances::UpdateDisplayDevice::new(self.inner.clone())
     }
 
-    /// Updates an instance's network interface. This method can only update an
-    /// interface's alias IP range and attached network. See Modifying
-    /// alias IP ranges for an existing instance for instructions on
-    /// changing alias IP ranges. See Migrating
-    /// a VM between networks for instructions on migrating an interface.
-    /// This method follows PATCH semantics.
+    /// Updates an instance's network interface. This method can only update an interface's alias IP range and attached network. See Modifying alias IP ranges for an existing instance for instructions on changing alias IP ranges. See Migrating a VM between networks for instructions on migrating an interface. This method follows PATCH semantics.
     pub fn update_network_interface(&self) -> super::builder::instances::UpdateNetworkInterface {
         super::builder::instances::UpdateNetworkInterface::new(self.inner.clone())
     }
 
-    /// Updates the Shielded Instance config for an instance. You can
-    /// only use this method on a stopped instance. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the Shielded Instance config for an instance. You can only use this method on a stopped instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn update_shielded_instance_config(
         &self,
     ) -> super::builder::instances::UpdateShieldedInstanceConfig {
@@ -5815,6 +5314,8 @@ impl Instances {
 /// # Service Description
 ///
 /// Service for the `instantSnapshotGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -5915,8 +5416,7 @@ impl InstantSnapshotGroups {
         super::builder::instant_snapshot_groups::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::instant_snapshot_groups::GetIamPolicy {
         super::builder::instant_snapshot_groups::GetIamPolicy::new(self.inner.clone())
     }
@@ -5926,14 +5426,12 @@ impl InstantSnapshotGroups {
         super::builder::instant_snapshot_groups::Insert::new(self.inner.clone())
     }
 
-    /// retrieves the list of InstantSnapshotGroup resources contained within
-    /// the specified zone.
+    /// retrieves the list of InstantSnapshotGroup resources contained within the specified zone.
     pub fn list(&self) -> super::builder::instant_snapshot_groups::List {
         super::builder::instant_snapshot_groups::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::instant_snapshot_groups::SetIamPolicy {
         super::builder::instant_snapshot_groups::SetIamPolicy::new(self.inner.clone())
     }
@@ -5967,6 +5465,8 @@ impl InstantSnapshotGroups {
 /// # Service Description
 ///
 /// Service for the `instantSnapshots` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6057,22 +5557,12 @@ impl InstantSnapshots {
             .map(super::tracing::InstantSnapshots::new)
     }
 
-    /// Retrieves an aggregated list of instantSnapshots.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of instantSnapshots. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::instant_snapshots::AggregatedList {
         super::builder::instant_snapshots::AggregatedList::new(self.inner.clone())
     }
 
-    /// Deletes the specified InstantSnapshot resource. Keep in mind that deleting
-    /// a single instantSnapshot might not necessarily delete all the data on that
-    /// instantSnapshot. If any data on the instantSnapshot that is marked for
-    /// deletion is needed for subsequent instantSnapshots, the data will be moved
-    /// to the next corresponding instantSnapshot.
-    ///
-    /// For more information, seeDeleting
-    /// instantSnapshots.
+    /// Deletes the specified InstantSnapshot resource. Keep in mind that deleting a single instantSnapshot might not necessarily delete all the data on that instantSnapshot. If any data on the instantSnapshot that is marked for deletion is needed for subsequent instantSnapshots, the data will be moved to the next corresponding instantSnapshot. For more information, see Deleting instantSnapshots.
     pub fn delete(&self) -> super::builder::instant_snapshots::Delete {
         super::builder::instant_snapshots::Delete::new(self.inner.clone())
     }
@@ -6082,8 +5572,7 @@ impl InstantSnapshots {
         super::builder::instant_snapshots::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::instant_snapshots::GetIamPolicy {
         super::builder::instant_snapshots::GetIamPolicy::new(self.inner.clone())
     }
@@ -6093,21 +5582,17 @@ impl InstantSnapshots {
         super::builder::instant_snapshots::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of InstantSnapshot resources contained within
-    /// the specified zone.
+    /// Retrieves the list of InstantSnapshot resources contained within the specified zone.
     pub fn list(&self) -> super::builder::instant_snapshots::List {
         super::builder::instant_snapshots::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::instant_snapshots::SetIamPolicy {
         super::builder::instant_snapshots::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a instantSnapshot in the given zone. To learn more about
-    /// labels, read the Labeling
-    /// Resources documentation.
+    /// Sets the labels on a instantSnapshot in the given zone. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::instant_snapshots::SetLabels {
         super::builder::instant_snapshots::SetLabels::new(self.inner.clone())
     }
@@ -6139,6 +5624,8 @@ impl InstantSnapshots {
 /// # Service Description
 ///
 /// Service for the `interconnectAttachmentGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6235,20 +5722,17 @@ impl InterconnectAttachmentGroups {
         super::builder::interconnect_attachment_groups::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified InterconnectAttachmentGroup resource in the given
-    /// scope.
+    /// Returns the specified InterconnectAttachmentGroup resource in the given scope.
     pub fn get(&self) -> super::builder::interconnect_attachment_groups::Get {
         super::builder::interconnect_attachment_groups::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::interconnect_attachment_groups::GetIamPolicy {
         super::builder::interconnect_attachment_groups::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Returns the InterconnectAttachmentStatuses for the specified
-    /// InterconnectAttachmentGroup resource.
+    /// Returns the InterconnectAttachmentStatuses for the specified InterconnectAttachmentGroup resource.
     pub fn get_operational_status(
         &self,
     ) -> super::builder::interconnect_attachment_groups::GetOperationalStatus {
@@ -6257,8 +5741,7 @@ impl InterconnectAttachmentGroups {
         )
     }
 
-    /// Creates a InterconnectAttachmentGroup in the specified project in the given
-    /// scope using the parameters that are included in the request.
+    /// Creates a InterconnectAttachmentGroup in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::interconnect_attachment_groups::Insert {
         super::builder::interconnect_attachment_groups::Insert::new(self.inner.clone())
     }
@@ -6268,16 +5751,12 @@ impl InterconnectAttachmentGroups {
         super::builder::interconnect_attachment_groups::List::new(self.inner.clone())
     }
 
-    /// Patches the specified InterconnectAttachmentGroup resource with the data
-    /// included in the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified InterconnectAttachmentGroup resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::interconnect_attachment_groups::Patch {
         super::builder::interconnect_attachment_groups::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::interconnect_attachment_groups::SetIamPolicy {
         super::builder::interconnect_attachment_groups::SetIamPolicy::new(self.inner.clone())
     }
@@ -6311,6 +5790,8 @@ impl InterconnectAttachmentGroups {
 /// # Service Description
 ///
 /// Service for the `interconnectAttachments` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6401,10 +5882,7 @@ impl InterconnectAttachments {
             .map(super::tracing::InterconnectAttachments::new)
     }
 
-    /// Retrieves an aggregated list of interconnect attachments.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of interconnect attachments. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::interconnect_attachments::AggregatedList {
         super::builder::interconnect_attachments::AggregatedList::new(self.inner.clone())
     }
@@ -6419,29 +5897,22 @@ impl InterconnectAttachments {
         super::builder::interconnect_attachments::Get::new(self.inner.clone())
     }
 
-    /// Creates an InterconnectAttachment in the specified project using the data
-    /// included in the request.
+    /// Creates an InterconnectAttachment in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::interconnect_attachments::Insert {
         super::builder::interconnect_attachments::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of interconnect attachments contained within
-    /// the specified region.
+    /// Retrieves the list of interconnect attachments contained within the specified region.
     pub fn list(&self) -> super::builder::interconnect_attachments::List {
         super::builder::interconnect_attachments::List::new(self.inner.clone())
     }
 
-    /// Updates the specified interconnect attachment with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified interconnect attachment with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::interconnect_attachments::Patch {
         super::builder::interconnect_attachments::Patch::new(self.inner.clone())
     }
 
-    /// Sets the labels on an InterconnectAttachment. To learn more about labels,
-    /// read the Labeling
-    /// Resources documentation.
+    /// Sets the labels on an InterconnectAttachment. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::interconnect_attachments::SetLabels {
         super::builder::interconnect_attachments::SetLabels::new(self.inner.clone())
     }
@@ -6468,6 +5939,8 @@ impl InterconnectAttachments {
 /// # Service Description
 ///
 /// Service for the `interconnectGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6558,8 +6031,7 @@ impl InterconnectGroups {
             .map(super::tracing::InterconnectGroups::new)
     }
 
-    /// Create Interconnects with redundancy by creating them in a specified
-    /// interconnect group.
+    /// Create Interconnects with redundancy by creating them in a specified interconnect group.
     pub fn create_members(&self) -> super::builder::interconnect_groups::CreateMembers {
         super::builder::interconnect_groups::CreateMembers::new(self.inner.clone())
     }
@@ -6574,22 +6046,19 @@ impl InterconnectGroups {
         super::builder::interconnect_groups::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::interconnect_groups::GetIamPolicy {
         super::builder::interconnect_groups::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Returns the interconnectStatuses for the specified
-    /// InterconnectGroup.
+    /// Returns the interconnectStatuses for the specified InterconnectGroup.
     pub fn get_operational_status(
         &self,
     ) -> super::builder::interconnect_groups::GetOperationalStatus {
         super::builder::interconnect_groups::GetOperationalStatus::new(self.inner.clone())
     }
 
-    /// Creates a InterconnectGroup in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a InterconnectGroup in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::interconnect_groups::Insert {
         super::builder::interconnect_groups::Insert::new(self.inner.clone())
     }
@@ -6599,16 +6068,12 @@ impl InterconnectGroups {
         super::builder::interconnect_groups::List::new(self.inner.clone())
     }
 
-    /// Patches the specified InterconnectGroup resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified InterconnectGroup resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::interconnect_groups::Patch {
         super::builder::interconnect_groups::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::interconnect_groups::SetIamPolicy {
         super::builder::interconnect_groups::SetIamPolicy::new(self.inner.clone())
     }
@@ -6640,6 +6105,8 @@ impl InterconnectGroups {
 /// # Service Description
 ///
 /// Service for the `interconnectLocations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6730,14 +6197,12 @@ impl InterconnectLocations {
             .map(super::tracing::InterconnectLocations::new)
     }
 
-    /// Returns the details for the specified interconnect location. Gets a list of
-    /// available interconnect locations by making a list() request.
+    /// Returns the details for the specified interconnect location. Gets a list of available interconnect locations by making a list() request.
     pub fn get(&self) -> super::builder::interconnect_locations::Get {
         super::builder::interconnect_locations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves the list of interconnect locations available to the specified
-    /// project.
+    /// Retrieves the list of interconnect locations available to the specified project.
     pub fn list(&self) -> super::builder::interconnect_locations::List {
         super::builder::interconnect_locations::List::new(self.inner.clone())
     }
@@ -6759,6 +6224,8 @@ impl InterconnectLocations {
 /// # Service Description
 ///
 /// Service for the `interconnectRemoteLocations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6850,14 +6317,12 @@ impl InterconnectRemoteLocations {
             .map(super::tracing::InterconnectRemoteLocations::new)
     }
 
-    /// Returns the details for the specified interconnect remote location. Gets a
-    /// list of available interconnect remote locations by making alist() request.
+    /// Returns the details for the specified interconnect remote location. Gets a list of available interconnect remote locations by making a list() request.
     pub fn get(&self) -> super::builder::interconnect_remote_locations::Get {
         super::builder::interconnect_remote_locations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves the list of interconnect remote locations available to the
-    /// specified project.
+    /// Retrieves the list of interconnect remote locations available to the specified project.
     pub fn list(&self) -> super::builder::interconnect_remote_locations::List {
         super::builder::interconnect_remote_locations::List::new(self.inner.clone())
     }
@@ -6879,6 +6344,8 @@ impl InterconnectRemoteLocations {
 /// # Service Description
 ///
 /// Service for the `interconnects` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -6973,34 +6440,22 @@ impl Interconnects {
         super::builder::interconnects::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified Interconnect. Get a list of available Interconnects
-    /// by making a list() request.
+    /// Returns the specified Interconnect. Get a list of available Interconnects by making a list() request.
     pub fn get(&self) -> super::builder::interconnects::Get {
         super::builder::interconnects::Get::new(self.inner.clone())
     }
 
-    /// Returns the interconnectDiagnostics for the specified
-    /// Interconnect.
-    ///
-    /// In the event of a
-    /// global outage, do not use this API to make decisions about where to
-    /// redirect your network traffic.
-    ///
-    /// Unlike a VLAN attachment, which is regional, a Cloud Interconnect
-    /// connection is a global resource. A global outage can prevent this
-    /// API from functioning properly.
+    /// Returns the interconnectDiagnostics for the specified Interconnect. In the event of a global outage, do not use this API to make decisions about where to redirect your network traffic. Unlike a VLAN attachment, which is regional, a Cloud Interconnect connection is a global resource. A global outage can prevent this API from functioning properly.
     pub fn get_diagnostics(&self) -> super::builder::interconnects::GetDiagnostics {
         super::builder::interconnects::GetDiagnostics::new(self.inner.clone())
     }
 
-    /// Returns the interconnectMacsecConfig for the specified
-    /// Interconnect.
+    /// Returns the interconnectMacsecConfig for the specified Interconnect.
     pub fn get_macsec_config(&self) -> super::builder::interconnects::GetMacsecConfig {
         super::builder::interconnects::GetMacsecConfig::new(self.inner.clone())
     }
 
-    /// Creates an Interconnect in the specified project using
-    /// the data included in the request.
+    /// Creates an Interconnect in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::interconnects::Insert {
         super::builder::interconnects::Insert::new(self.inner.clone())
     }
@@ -7010,17 +6465,12 @@ impl Interconnects {
         super::builder::interconnects::List::new(self.inner.clone())
     }
 
-    /// Updates the specified Interconnect with the data included in the request.
-    /// This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified Interconnect with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::interconnects::Patch {
         super::builder::interconnects::Patch::new(self.inner.clone())
     }
 
-    /// Sets the labels on an Interconnect. To learn more about labels,
-    /// read the Labeling
-    /// Resources documentation.
+    /// Sets the labels on an Interconnect. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::interconnects::SetLabels {
         super::builder::interconnects::SetLabels::new(self.inner.clone())
     }
@@ -7047,6 +6497,8 @@ impl Interconnects {
 /// # Service Description
 ///
 /// Service for the `licenseCodes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7136,37 +6588,22 @@ impl LicenseCodes {
             .map(super::tracing::LicenseCodes::new)
     }
 
-    /// Return a specified license code. License codes are mirrored across
-    /// all projects that have permissions to read the License Code.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Return a specified license code. License codes are mirrored across all projects that have permissions to read the License Code. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn get(&self) -> super::builder::license_codes::Get {
         super::builder::license_codes::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn get_iam_policy(&self) -> super::builder::license_codes::GetIamPolicy {
         super::builder::license_codes::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn set_iam_policy(&self) -> super::builder::license_codes::SetIamPolicy {
         super::builder::license_codes::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Returns permissions that a caller has on the specified resource.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Returns permissions that a caller has on the specified resource. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn test_iam_permissions(&self) -> super::builder::license_codes::TestIamPermissions {
         super::builder::license_codes::TestIamPermissions::new(self.inner.clone())
     }
@@ -7188,6 +6625,8 @@ impl LicenseCodes {
 /// # Service Description
 ///
 /// Service for the `licenses` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7277,73 +6716,42 @@ impl Licenses {
             .map(super::tracing::Licenses::new)
     }
 
-    /// Deletes the specified license.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Deletes the specified license. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn delete(&self) -> super::builder::licenses::Delete {
         super::builder::licenses::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified License resource.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Returns the specified License resource. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn get(&self) -> super::builder::licenses::Get {
         super::builder::licenses::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn get_iam_policy(&self) -> super::builder::licenses::GetIamPolicy {
         super::builder::licenses::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Create a License resource in the specified project.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Create a License resource in the specified project. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn insert(&self) -> super::builder::licenses::Insert {
         super::builder::licenses::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of licenses
-    /// available in the specified project. This method does not
-    /// get any licenses that belong to other projects, including licenses attached
-    /// to publicly-available images, like Debian 9. If you want to get a list of
-    /// publicly-available licenses, use this method to make a request to the
-    /// respective image project, such as debian-cloud orwindows-cloud.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Retrieves the list of licenses available in the specified project. This method does not get any licenses that belong to other projects, including licenses attached to publicly-available images, like Debian 9. If you want to get a list of publicly-available licenses, use this method to make a request to the respective image project, such as debian-cloud or windows-cloud. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn list(&self) -> super::builder::licenses::List {
         super::builder::licenses::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn set_iam_policy(&self) -> super::builder::licenses::SetIamPolicy {
         super::builder::licenses::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Returns permissions that a caller has on the specified resource.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Returns permissions that a caller has on the specified resource. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn test_iam_permissions(&self) -> super::builder::licenses::TestIamPermissions {
         super::builder::licenses::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates a License resource in the specified project.
-    /// *Caution* This resource is intended
-    /// for use only by third-party partners who are creatingCloud Marketplace
-    /// images.
+    /// Updates a License resource in the specified project. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.
     pub fn update(&self) -> super::builder::licenses::Update {
         super::builder::licenses::Update::new(self.inner.clone())
     }
@@ -7370,6 +6778,8 @@ impl Licenses {
 /// # Service Description
 ///
 /// Service for the `machineImages` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7459,8 +6869,7 @@ impl MachineImages {
             .map(super::tracing::MachineImages::new)
     }
 
-    /// Deletes the specified machine image. Deleting a machine image is permanent
-    /// and cannot be undone.
+    /// Deletes the specified machine image. Deleting a machine image is permanent and cannot be undone.
     pub fn delete(&self) -> super::builder::machine_images::Delete {
         super::builder::machine_images::Delete::new(self.inner.clone())
     }
@@ -7470,35 +6879,27 @@ impl MachineImages {
         super::builder::machine_images::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::machine_images::GetIamPolicy {
         super::builder::machine_images::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a machine image in the specified project using the
-    /// data that is included in the request. If you are creating a new machine
-    /// image to update an existing instance, your new machine image should use the
-    /// same network or, if applicable, the same subnetwork as the original
-    /// instance.
+    /// Creates a machine image in the specified project using the data that is included in the request. If you are creating a new machine image to update an existing instance, your new machine image should use the same network or, if applicable, the same subnetwork as the original instance.
     pub fn insert(&self) -> super::builder::machine_images::Insert {
         super::builder::machine_images::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of machine images that are contained within
-    /// the specified project.
+    /// Retrieves a list of machine images that are contained within the specified project.
     pub fn list(&self) -> super::builder::machine_images::List {
         super::builder::machine_images::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::machine_images::SetIamPolicy {
         super::builder::machine_images::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a machine image. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a machine image. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::machine_images::SetLabels {
         super::builder::machine_images::SetLabels::new(self.inner.clone())
     }
@@ -7530,6 +6931,8 @@ impl MachineImages {
 /// # Service Description
 ///
 /// Service for the `machineTypes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7619,10 +7022,7 @@ impl MachineTypes {
             .map(super::tracing::MachineTypes::new)
     }
 
-    /// Retrieves an aggregated list of machine types.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of machine types. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::machine_types::AggregatedList {
         super::builder::machine_types::AggregatedList::new(self.inner.clone())
     }
@@ -7632,8 +7032,7 @@ impl MachineTypes {
         super::builder::machine_types::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of machine types available to the specified
-    /// project.
+    /// Retrieves a list of machine types available to the specified project.
     pub fn list(&self) -> super::builder::machine_types::List {
         super::builder::machine_types::List::new(self.inner.clone())
     }
@@ -7655,6 +7054,8 @@ impl MachineTypes {
 /// # Service Description
 ///
 /// Service for the `networkAttachments` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7745,11 +7146,7 @@ impl NetworkAttachments {
             .map(super::tracing::NetworkAttachments::new)
     }
 
-    /// Retrieves the list of all NetworkAttachment resources,
-    /// regional and global, available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all NetworkAttachment resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::network_attachments::AggregatedList {
         super::builder::network_attachments::AggregatedList::new(self.inner.clone())
     }
@@ -7764,14 +7161,12 @@ impl NetworkAttachments {
         super::builder::network_attachments::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::network_attachments::GetIamPolicy {
         super::builder::network_attachments::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a NetworkAttachment in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a NetworkAttachment in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::network_attachments::Insert {
         super::builder::network_attachments::Insert::new(self.inner.clone())
     }
@@ -7781,16 +7176,12 @@ impl NetworkAttachments {
         super::builder::network_attachments::List::new(self.inner.clone())
     }
 
-    /// Patches the specified NetworkAttachment resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified NetworkAttachment resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::network_attachments::Patch {
         super::builder::network_attachments::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::network_attachments::SetIamPolicy {
         super::builder::network_attachments::SetIamPolicy::new(self.inner.clone())
     }
@@ -7822,6 +7213,8 @@ impl NetworkAttachments {
 /// # Service Description
 ///
 /// Service for the `networkEdgeSecurityServices` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -7913,11 +7306,7 @@ impl NetworkEdgeSecurityServices {
             .map(super::tracing::NetworkEdgeSecurityServices::new)
     }
 
-    /// Retrieves the list of all NetworkEdgeSecurityService resources available to
-    /// the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all NetworkEdgeSecurityService resources available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(
         &self,
     ) -> super::builder::network_edge_security_services::AggregatedList {
@@ -7934,8 +7323,7 @@ impl NetworkEdgeSecurityServices {
         super::builder::network_edge_security_services::Get::new(self.inner.clone())
     }
 
-    /// Creates a new service in the specified project using the data included in
-    /// the request.
+    /// Creates a new service in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::network_edge_security_services::Insert {
         super::builder::network_edge_security_services::Insert::new(self.inner.clone())
     }
@@ -7967,6 +7355,8 @@ impl NetworkEdgeSecurityServices {
 /// # Service Description
 ///
 /// Service for the `networkEndpointGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8057,10 +7447,7 @@ impl NetworkEndpointGroups {
             .map(super::tracing::NetworkEndpointGroups::new)
     }
 
-    /// Retrieves the list of network endpoint groups and sorts them by zone.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of network endpoint groups and sorts them by zone. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::network_endpoint_groups::AggregatedList {
         super::builder::network_endpoint_groups::AggregatedList::new(self.inner.clone())
     }
@@ -8072,16 +7459,12 @@ impl NetworkEndpointGroups {
         super::builder::network_endpoint_groups::AttachNetworkEndpoints::new(self.inner.clone())
     }
 
-    /// Deletes the specified network endpoint group. The network endpoints in the
-    /// NEG and the VM instances they belong to are not terminated when the NEG is
-    /// deleted. Note that the NEG cannot be deleted if there are backend services
-    /// referencing it.
+    /// Deletes the specified network endpoint group. The network endpoints in the NEG and the VM instances they belong to are not terminated when the NEG is deleted. Note that the NEG cannot be deleted if there are backend services referencing it.
     pub fn delete(&self) -> super::builder::network_endpoint_groups::Delete {
         super::builder::network_endpoint_groups::Delete::new(self.inner.clone())
     }
 
-    /// Detach a list of network endpoints from the specified network endpoint
-    /// group.
+    /// Detach a list of network endpoints from the specified network endpoint group.
     pub fn detach_network_endpoints(
         &self,
     ) -> super::builder::network_endpoint_groups::DetachNetworkEndpoints {
@@ -8093,25 +7476,12 @@ impl NetworkEndpointGroups {
         super::builder::network_endpoint_groups::Get::new(self.inner.clone())
     }
 
-    /// Creates a network endpoint group in the specified project using the
-    /// parameters that are included in the request.
-    ///
-    /// Note: Use the following APIs to manage network endpoint groups:
-    ///
-    /// - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity
-    ///   NEGs): zonal
-    ///   API
-    /// - To manage NEGs with regional scope (such as regional internet NEGs,
-    ///   serverless NEGs, Private Service Connect NEGs): regional
-    ///   API
-    /// - To manage NEGs with global scope (such as global internet NEGs):global
-    ///   API
+    /// Creates a network endpoint group in the specified project using the parameters that are included in the request. Note: Use the following APIs to manage network endpoint groups: - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity NEGs): zonal API - To manage NEGs with regional scope (such as regional internet NEGs, serverless NEGs, Private Service Connect NEGs): regional API - To manage NEGs with global scope (such as global internet NEGs): global API
     pub fn insert(&self) -> super::builder::network_endpoint_groups::Insert {
         super::builder::network_endpoint_groups::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of network endpoint groups that are located in the
-    /// specified project and zone.
+    /// Retrieves the list of network endpoint groups that are located in the specified project and zone.
     pub fn list(&self) -> super::builder::network_endpoint_groups::List {
         super::builder::network_endpoint_groups::List::new(self.inner.clone())
     }
@@ -8152,6 +7522,8 @@ impl NetworkEndpointGroups {
 /// # Service Description
 ///
 /// Service for the `networkFirewallPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8259,12 +7631,7 @@ impl NetworkFirewallPolicies {
         super::builder::network_firewall_policies::AddRule::new(self.inner.clone())
     }
 
-    /// Retrieves an aggregated list of network firewall policies, listing network
-    /// firewall policies from all applicable scopes (global and regional) and
-    /// grouping the results per scope.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of network firewall policies, listing network firewall policies from all applicable scopes (global and regional) and grouping the results per scope. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::network_firewall_policies::AggregatedList {
         super::builder::network_firewall_policies::AggregatedList::new(self.inner.clone())
     }
@@ -8289,8 +7656,7 @@ impl NetworkFirewallPolicies {
         super::builder::network_firewall_policies::GetAssociation::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::network_firewall_policies::GetIamPolicy {
         super::builder::network_firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
@@ -8307,8 +7673,7 @@ impl NetworkFirewallPolicies {
         super::builder::network_firewall_policies::GetRule::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified project using the data included in
-    /// the request.
+    /// Creates a new policy in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::network_firewall_policies::Insert {
         super::builder::network_firewall_policies::Insert::new(self.inner.clone())
     }
@@ -8356,8 +7721,7 @@ impl NetworkFirewallPolicies {
         super::builder::network_firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::network_firewall_policies::SetIamPolicy {
         super::builder::network_firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
@@ -8391,6 +7755,8 @@ impl NetworkFirewallPolicies {
 /// # Service Description
 ///
 /// Service for the `networkProfiles` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8485,8 +7851,7 @@ impl NetworkProfiles {
         super::builder::network_profiles::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of network profiles available to the specified
-    /// project.
+    /// Retrieves a list of network profiles available to the specified project.
     pub fn list(&self) -> super::builder::network_profiles::List {
         super::builder::network_profiles::List::new(self.inner.clone())
     }
@@ -8508,6 +7873,8 @@ impl NetworkProfiles {
 /// # Service Description
 ///
 /// Service for the `networks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8602,9 +7969,7 @@ impl Networks {
         super::builder::networks::AddPeering::new(self.inner.clone())
     }
 
-    /// Cancel requests to remove a peering from the specified network. Applicable
-    /// only for PeeringConnection with update_strategy=CONSENSUS.  Cancels a
-    /// request to remove a peering from the specified network.
+    /// Cancel requests to remove a peering from the specified network. Applicable only for PeeringConnection with update_strategy=CONSENSUS. Cancels a request to remove a peering from the specified network.
     pub fn cancel_request_remove_peering(
         &self,
     ) -> super::builder::networks::CancelRequestRemovePeering {
@@ -8626,8 +7991,7 @@ impl Networks {
         super::builder::networks::GetEffectiveFirewalls::new(self.inner.clone())
     }
 
-    /// Creates a network in the specified project using the data included
-    /// in the request.
+    /// Creates a network in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::networks::Insert {
         super::builder::networks::Insert::new(self.inner.clone())
     }
@@ -8642,8 +8006,7 @@ impl Networks {
         super::builder::networks::ListPeeringRoutes::new(self.inner.clone())
     }
 
-    /// Patches the specified network with the data included in the request.
-    /// Only routingConfig can be modified.
+    /// Patches the specified network with the data included in the request. Only routingConfig can be modified.
     pub fn patch(&self) -> super::builder::networks::Patch {
         super::builder::networks::Patch::new(self.inner.clone())
     }
@@ -8653,8 +8016,7 @@ impl Networks {
         super::builder::networks::RemovePeering::new(self.inner.clone())
     }
 
-    /// Requests to remove a peering from the specified network. Applicable only
-    /// for PeeringConnection with update_strategy=CONSENSUS.
+    /// Requests to remove a peering from the specified network. Applicable only for PeeringConnection with update_strategy=CONSENSUS.
     pub fn request_remove_peering(&self) -> super::builder::networks::RequestRemovePeering {
         super::builder::networks::RequestRemovePeering::new(self.inner.clone())
     }
@@ -8664,9 +8026,7 @@ impl Networks {
         super::builder::networks::SwitchToCustomMode::new(self.inner.clone())
     }
 
-    /// Updates the specified network peering with the data included in the
-    /// request. You can only modify the NetworkPeering.export_custom_routes field
-    /// and the NetworkPeering.import_custom_routes field.
+    /// Updates the specified network peering with the data included in the request. You can only modify the NetworkPeering.export_custom_routes field and the NetworkPeering.import_custom_routes field.
     pub fn update_peering(&self) -> super::builder::networks::UpdatePeering {
         super::builder::networks::UpdatePeering::new(self.inner.clone())
     }
@@ -8693,6 +8053,8 @@ impl Networks {
 /// # Service Description
 ///
 /// Service for the `nodeGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8787,11 +8149,7 @@ impl NodeGroups {
         super::builder::node_groups::AddNodes::new(self.inner.clone())
     }
 
-    /// Retrieves an aggregated list of node groups.
-    /// Note: use nodeGroups.listNodes for more details about each group.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of node groups. Note: use nodeGroups.listNodes for more details about each group. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::node_groups::AggregatedList {
         super::builder::node_groups::AggregatedList::new(self.inner.clone())
     }
@@ -8806,28 +8164,22 @@ impl NodeGroups {
         super::builder::node_groups::DeleteNodes::new(self.inner.clone())
     }
 
-    /// Returns the specified NodeGroup. Get a list of available NodeGroups
-    /// by making a list() request.
-    /// Note: the "nodes" field should not be used. Use nodeGroups.listNodes
-    /// instead.
+    /// Returns the specified NodeGroup. Get a list of available NodeGroups by making a list() request. Note: the "nodes" field should not be used. Use nodeGroups.listNodes instead.
     pub fn get(&self) -> super::builder::node_groups::Get {
         super::builder::node_groups::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::node_groups::GetIamPolicy {
         super::builder::node_groups::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a NodeGroup resource in the specified project using the data
-    /// included in the request.
+    /// Creates a NodeGroup resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::node_groups::Insert {
         super::builder::node_groups::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of node groups available to the specified project.
-    /// Note: use nodeGroups.listNodes for more details about each group.
+    /// Retrieves a list of node groups available to the specified project. Note: use nodeGroups.listNodes for more details about each group.
     pub fn list(&self) -> super::builder::node_groups::List {
         super::builder::node_groups::List::new(self.inner.clone())
     }
@@ -8847,8 +8199,7 @@ impl NodeGroups {
         super::builder::node_groups::PerformMaintenance::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::node_groups::SetIamPolicy {
         super::builder::node_groups::SetIamPolicy::new(self.inner.clone())
     }
@@ -8892,6 +8243,8 @@ impl NodeGroups {
 /// # Service Description
 ///
 /// Service for the `nodeTemplates` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -8981,10 +8334,7 @@ impl NodeTemplates {
             .map(super::tracing::NodeTemplates::new)
     }
 
-    /// Retrieves an aggregated list of node templates.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of node templates. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::node_templates::AggregatedList {
         super::builder::node_templates::AggregatedList::new(self.inner.clone())
     }
@@ -8999,26 +8349,22 @@ impl NodeTemplates {
         super::builder::node_templates::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::node_templates::GetIamPolicy {
         super::builder::node_templates::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a NodeTemplate resource in the specified project using the data
-    /// included in the request.
+    /// Creates a NodeTemplate resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::node_templates::Insert {
         super::builder::node_templates::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of node templates available to the specified
-    /// project.
+    /// Retrieves a list of node templates available to the specified project.
     pub fn list(&self) -> super::builder::node_templates::List {
         super::builder::node_templates::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::node_templates::SetIamPolicy {
         super::builder::node_templates::SetIamPolicy::new(self.inner.clone())
     }
@@ -9050,6 +8396,8 @@ impl NodeTemplates {
 /// # Service Description
 ///
 /// Service for the `nodeTypes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -9139,10 +8487,7 @@ impl NodeTypes {
             .map(super::tracing::NodeTypes::new)
     }
 
-    /// Retrieves an aggregated list of node types.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of node types. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::node_types::AggregatedList {
         super::builder::node_types::AggregatedList::new(self.inner.clone())
     }
@@ -9152,8 +8497,7 @@ impl NodeTypes {
         super::builder::node_types::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of node types available to the specified
-    /// project.
+    /// Retrieves a list of node types available to the specified project.
     pub fn list(&self) -> super::builder::node_types::List {
         super::builder::node_types::List::new(self.inner.clone())
     }
@@ -9175,6 +8519,8 @@ impl NodeTypes {
 /// # Service Description
 ///
 /// Service for the `organizationSecurityPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -9266,114 +8612,63 @@ impl OrganizationSecurityPolicies {
             .map(super::tracing::OrganizationSecurityPolicies::new)
     }
 
-    /// Inserts an association for the specified security policy.
-    ///
-    /// This has billing implications.  Projects in the hierarchy with effective
-    /// hierarchical security policies will be automatically enrolled into Cloud
-    /// Armor Enterprise if not already enrolled.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.addAssociation
-    /// instead.
+    /// Inserts an association for the specified security policy. This has billing implications. Projects in the hierarchy with effective hierarchical security policies will be automatically enrolled into Cloud Armor Enterprise if not already enrolled. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.addAssociation instead.
     pub fn add_association(
         &self,
     ) -> super::builder::organization_security_policies::AddAssociation {
         super::builder::organization_security_policies::AddAssociation::new(self.inner.clone())
     }
 
-    /// Inserts a rule into a security policy.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.addRule instead.
+    /// Inserts a rule into a security policy. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.addRule instead.
     pub fn add_rule(&self) -> super::builder::organization_security_policies::AddRule {
         super::builder::organization_security_policies::AddRule::new(self.inner.clone())
     }
 
-    /// Copies rules to the specified security policy.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.cloneRules
-    /// instead.
+    /// Copies rules to the specified security policy. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.cloneRules instead.
     pub fn copy_rules(&self) -> super::builder::organization_security_policies::CopyRules {
         super::builder::organization_security_policies::CopyRules::new(self.inner.clone())
     }
 
-    /// Deletes the specified policy.
-    ///
-    /// Use this API to remove Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to remove firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.delete instead.
+    /// Deletes the specified policy. Use this API to remove Cloud Armor policies. Previously, alpha and beta versions of this API were used to remove firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.delete instead.
     pub fn delete(&self) -> super::builder::organization_security_policies::Delete {
         super::builder::organization_security_policies::Delete::new(self.inner.clone())
     }
 
-    /// List all of the ordered rules present in a single specified policy.
-    ///
-    /// Use this API to read Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to read firewall policies. This usage is now
-    /// disabled for most organizations. Use firewallPolicies.get instead.
+    /// List all of the ordered rules present in a single specified policy. Use this API to read Cloud Armor policies. Previously, alpha and beta versions of this API were used to read firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.get instead.
     pub fn get(&self) -> super::builder::organization_security_policies::Get {
         super::builder::organization_security_policies::Get::new(self.inner.clone())
     }
 
-    /// Gets an association with the specified name.
-    ///
-    /// Use this API to read Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to read firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.getAssociation
-    /// instead.
+    /// Gets an association with the specified name. Use this API to read Cloud Armor policies. Previously, alpha and beta versions of this API were used to read firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.getAssociation instead.
     pub fn get_association(
         &self,
     ) -> super::builder::organization_security_policies::GetAssociation {
         super::builder::organization_security_policies::GetAssociation::new(self.inner.clone())
     }
 
-    /// Gets a rule at the specified priority.
-    ///
-    /// Use this API to read Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to read firewall policies. This usage is now
-    /// disabled for most organizations. Use firewallPolicies.getRule instead.
+    /// Gets a rule at the specified priority. Use this API to read Cloud Armor policies. Previously, alpha and beta versions of this API were used to read firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.getRule instead.
     pub fn get_rule(&self) -> super::builder::organization_security_policies::GetRule {
         super::builder::organization_security_policies::GetRule::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified organization using the data included
-    /// in the request.
-    ///
-    /// Use this API to add Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to add firewall policies. This usage is now
-    /// disabled for most organizations. Use firewallPolicies.insert instead.
+    /// Creates a new policy in the specified organization using the data included in the request. Use this API to add Cloud Armor policies. Previously, alpha and beta versions of this API were used to add firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.insert instead.
     pub fn insert(&self) -> super::builder::organization_security_policies::Insert {
         super::builder::organization_security_policies::Insert::new(self.inner.clone())
     }
 
-    /// List all the policies that have been configured for the specified
-    /// organization.
-    ///
-    /// Use this API to read Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to read firewall policies. This usage is now
-    /// disabled for most organizations. Use firewallPolicies.list instead.
+    /// List all the policies that have been configured for the specified organization. Use this API to read Cloud Armor policies. Previously, alpha and beta versions of this API were used to read firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.list instead.
     pub fn list(&self) -> super::builder::organization_security_policies::List {
         super::builder::organization_security_policies::List::new(self.inner.clone())
     }
 
-    /// Lists associations of a specified target, i.e., organization or folder.
-    ///
-    /// Use this API to read Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to read firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.listAssociations
-    /// instead.
+    /// Lists associations of a specified target, i.e., organization or folder. Use this API to read Cloud Armor policies. Previously, alpha and beta versions of this API were used to read firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.listAssociations instead.
     pub fn list_associations(
         &self,
     ) -> super::builder::organization_security_policies::ListAssociations {
         super::builder::organization_security_policies::ListAssociations::new(self.inner.clone())
     }
 
-    /// Gets the current list of preconfigured Web Application Firewall (WAF)
-    /// expressions.
+    /// Gets the current list of preconfigured Web Application Firewall (WAF) expressions.
     pub fn list_preconfigured_expression_sets(
         &self,
     ) -> super::builder::organization_security_policies::ListPreconfiguredExpressionSets {
@@ -9382,58 +8677,34 @@ impl OrganizationSecurityPolicies {
         )
     }
 
-    /// Moves the specified security policy.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.move instead.
+    /// Moves the specified security policy. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.move instead.
     pub fn r#move(&self) -> super::builder::organization_security_policies::Move {
         super::builder::organization_security_policies::Move::new(self.inner.clone())
     }
 
-    /// Patches the specified policy with the data included in the request.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.patch instead.
+    /// Patches the specified policy with the data included in the request. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.patch instead.
     pub fn patch(&self) -> super::builder::organization_security_policies::Patch {
         super::builder::organization_security_policies::Patch::new(self.inner.clone())
     }
 
-    /// Patches a rule at the specified priority.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.patchRule
-    /// instead.
+    /// Patches a rule at the specified priority. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.patchRule instead.
     pub fn patch_rule(&self) -> super::builder::organization_security_policies::PatchRule {
         super::builder::organization_security_policies::PatchRule::new(self.inner.clone())
     }
 
-    /// Removes an association for the specified security policy.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.removeAssociation
-    /// instead.
+    /// Removes an association for the specified security policy. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.removeAssociation instead.
     pub fn remove_association(
         &self,
     ) -> super::builder::organization_security_policies::RemoveAssociation {
         super::builder::organization_security_policies::RemoveAssociation::new(self.inner.clone())
     }
 
-    /// Deletes a rule at the specified priority.
-    ///
-    /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
-    /// versions of this API were used to modify firewall policies. This usage is
-    /// now disabled for most organizations. Use firewallPolicies.removeRule
-    /// instead.
+    /// Deletes a rule at the specified priority. Use this API to modify Cloud Armor policies. Previously, alpha and beta versions of this API were used to modify firewall policies. This usage is now disabled for most organizations. Use firewallPolicies.removeRule instead.
     pub fn remove_rule(&self) -> super::builder::organization_security_policies::RemoveRule {
         super::builder::organization_security_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Retrieves the specified Operations resource. Gets a list of operations
-    /// by making a `list()` request.
+    /// Retrieves the specified Operations resource. Gets a list of operations by making a `list()` request.
     pub fn get_operation(&self) -> super::builder::organization_security_policies::GetOperation {
         super::builder::organization_security_policies::GetOperation::new(self.inner.clone())
     }
@@ -9455,6 +8726,8 @@ impl OrganizationSecurityPolicies {
 /// # Service Description
 ///
 /// Service for the `packetMirrorings` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -9545,10 +8818,7 @@ impl PacketMirrorings {
             .map(super::tracing::PacketMirrorings::new)
     }
 
-    /// Retrieves an aggregated list of packetMirrorings.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of packetMirrorings. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::packet_mirrorings::AggregatedList {
         super::builder::packet_mirrorings::AggregatedList::new(self.inner.clone())
     }
@@ -9563,22 +8833,17 @@ impl PacketMirrorings {
         super::builder::packet_mirrorings::Get::new(self.inner.clone())
     }
 
-    /// Creates a PacketMirroring resource in the specified project and region
-    /// using the data included in the request.
+    /// Creates a PacketMirroring resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::packet_mirrorings::Insert {
         super::builder::packet_mirrorings::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of PacketMirroring resources available to the specified
-    /// project and region.
+    /// Retrieves a list of PacketMirroring resources available to the specified project and region.
     pub fn list(&self) -> super::builder::packet_mirrorings::List {
         super::builder::packet_mirrorings::List::new(self.inner.clone())
     }
 
-    /// Patches the specified PacketMirroring resource with the data included in
-    /// the request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified PacketMirroring resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::packet_mirrorings::Patch {
         super::builder::packet_mirrorings::Patch::new(self.inner.clone())
     }
@@ -9610,6 +8875,8 @@ impl PacketMirrorings {
 /// # Service Description
 ///
 /// Service for the `previewFeatures` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -9709,8 +8976,7 @@ impl PreviewFeatures {
         super::builder::preview_features::List::new(self.inner.clone())
     }
 
-    /// Patches the given PreviewFeature. This method is used to enable or disable
-    /// a PreviewFeature.
+    /// Patches the given PreviewFeature. This method is used to enable or disable a PreviewFeature.
     pub fn update(&self) -> super::builder::preview_features::Update {
         super::builder::preview_features::Update::new(self.inner.clone())
     }
@@ -9737,6 +9003,8 @@ impl PreviewFeatures {
 /// # Service Description
 ///
 /// Service for the `projects` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -9831,8 +9099,7 @@ impl Projects {
         super::builder::projects::DisableXpnHost::new(self.inner.clone())
     }
 
-    /// Disable a service resource (also known as service project) associated with
-    /// this host project.
+    /// Disable a service resource (also known as service project) associated with this host project.
     pub fn disable_xpn_resource(&self) -> super::builder::projects::DisableXpnResource {
         super::builder::projects::DisableXpnResource::new(self.inner.clone())
     }
@@ -9842,34 +9109,22 @@ impl Projects {
         super::builder::projects::EnableXpnHost::new(self.inner.clone())
     }
 
-    /// Enable service resource (a.k.a service project) for a host project, so that
-    /// subnets in the host project can be used by instances in the service
-    /// project.
+    /// Enable service resource (a.k.a service project) for a host project, so that subnets in the host project can be used by instances in the service project.
     pub fn enable_xpn_resource(&self) -> super::builder::projects::EnableXpnResource {
         super::builder::projects::EnableXpnResource::new(self.inner.clone())
     }
 
-    /// Returns the specified Project resource.
-    ///
-    /// To decrease latency for this method, you can optionally omit any unneeded
-    /// information from the response by using a field mask. This practice is
-    /// especially recommended for unused quota information (the `quotas` field).
-    /// To exclude one or more fields, set your request's `fields` query parameter
-    /// to only include the fields you need. For example, to only include the `id`
-    /// and `selfLink` fields, add the query parameter `?fields=id,selfLink` to
-    /// your request.
+    /// Returns the specified Project resource. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request.
     pub fn get(&self) -> super::builder::projects::Get {
         super::builder::projects::Get::new(self.inner.clone())
     }
 
-    /// Gets the shared VPC host project that this project links to. May be empty
-    /// if no link exists.
+    /// Gets the shared VPC host project that this project links to. May be empty if no link exists.
     pub fn get_xpn_host(&self) -> super::builder::projects::GetXpnHost {
         super::builder::projects::GetXpnHost::new(self.inner.clone())
     }
 
-    /// Gets service resources (a.k.a service project) associated with this host
-    /// project.
+    /// Gets service resources (a.k.a service project) associated with this host project.
     pub fn get_xpn_resources(&self) -> super::builder::projects::GetXpnResources {
         super::builder::projects::GetXpnResources::new(self.inner.clone())
     }
@@ -9879,63 +9134,36 @@ impl Projects {
         super::builder::projects::ListXpnHosts::new(self.inner.clone())
     }
 
-    /// Moves a persistent disk from one zone to another.
-    /// *Note*: The moveDisk API will be deprecated on September 29, 2026.
-    ///
-    /// Starting September 29, 2025, you can't use the moveDisk API on new
-    /// projects. To move a disk to a different region or zone, follow the steps in
-    /// [Change the location of a
-    /// disk](https://cloud.google.com/compute/docs/disks/migrate-to-hyperdisk#migrate-to-hd).
-    ///
-    /// Projects that already use the moveDisk API can continue usage until
-    /// September 29, 2026.
-    ///
-    /// Starting November 1, 2025, API responses will include a warning message in
-    /// the response body about the upcoming deprecation. You can skip the message
-    /// to continue using the service without interruption.
+    /// Moves a persistent disk from one zone to another. *Note*: The moveDisk API will be deprecated on September 29, 2026. Starting September 29, 2025, you can't use the moveDisk API on new projects. To move a disk to a different region or zone, follow the steps in [Change the location of a disk](https://cloud.google.com/compute/docs/disks/migrate-to-hyperdisk#migrate-to-hd). Projects that already use the moveDisk API can continue usage until September 29, 2026. Starting November 1, 2025, API responses will include a warning message in the response body about the upcoming deprecation. You can skip the message to continue using the service without interruption.
     #[deprecated]
     pub fn move_disk(&self) -> super::builder::projects::MoveDisk {
         super::builder::projects::MoveDisk::new(self.inner.clone())
     }
 
-    /// Moves an instance and its attached persistent disks from one zone to
-    /// another.
-    /// *Note*: Moving VMs or disks by using this method might
-    /// cause unexpected behavior. For more information, see the [known
-    /// issue](/compute/docs/troubleshooting/known-issues#moving_vms_or_disks_using_the_moveinstance_api_or_the_causes_unexpected_behavior).
-    /// [Deprecated] This method is deprecated. See [moving instance across
-    /// zones](/compute/docs/instances/moving-instance-across-zones) instead.
+    /// Moves an instance and its attached persistent disks from one zone to another. *Note*: Moving VMs or disks by using this method might cause unexpected behavior. For more information, see the [known issue](/compute/docs/troubleshooting/known-issues#moving_vms_or_disks_using_the_moveinstance_api_or_the_causes_unexpected_behavior). [Deprecated] This method is deprecated. See [moving instance across zones](/compute/docs/instances/moving-instance-across-zones) instead.
     #[deprecated]
     pub fn move_instance(&self) -> super::builder::projects::MoveInstance {
         super::builder::projects::MoveInstance::new(self.inner.clone())
     }
 
-    /// Sets the Cloud Armor tier of the project. To set ENTERPRISE or above the
-    /// billing account of the project must be subscribed to Cloud Armor
-    /// Enterprise. See Subscribing
-    /// to Cloud Armor Enterprise for more information.
+    /// Sets the Cloud Armor tier of the project. To set ENTERPRISE or above the billing account of the project must be subscribed to Cloud Armor Enterprise. See Subscribing to Cloud Armor Enterprise for more information.
     pub fn set_cloud_armor_tier(&self) -> super::builder::projects::SetCloudArmorTier {
         super::builder::projects::SetCloudArmorTier::new(self.inner.clone())
     }
 
-    /// Sets metadata common to all instances within the specified project using
-    /// the data included in the request.
+    /// Sets metadata common to all instances within the specified project using the data included in the request.
     pub fn set_common_instance_metadata(
         &self,
     ) -> super::builder::projects::SetCommonInstanceMetadata {
         super::builder::projects::SetCommonInstanceMetadata::new(self.inner.clone())
     }
 
-    /// Sets the default network tier of the project. The default network tier is
-    /// used when an address/forwardingRule/instance is created without specifying
-    /// the network tier field.
+    /// Sets the default network tier of the project. The default network tier is used when an address/forwardingRule/instance is created without specifying the network tier field.
     pub fn set_default_network_tier(&self) -> super::builder::projects::SetDefaultNetworkTier {
         super::builder::projects::SetDefaultNetworkTier::new(self.inner.clone())
     }
 
-    /// Enables the usage export feature and sets theusage export bucket
-    /// where reports are stored. If you provide an empty request body using this
-    /// method, the usage export feature will be disabled.
+    /// Enables the usage export feature and sets the usage export bucket where reports are stored. If you provide an empty request body using this method, the usage export feature will be disabled.
     pub fn set_usage_export_bucket(&self) -> super::builder::projects::SetUsageExportBucket {
         super::builder::projects::SetUsageExportBucket::new(self.inner.clone())
     }
@@ -9962,6 +9190,8 @@ impl Projects {
 /// # Service Description
 ///
 /// Service for the `publicAdvertisedPrefixes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10068,8 +9298,7 @@ impl PublicAdvertisedPrefixes {
         super::builder::public_advertised_prefixes::Get::new(self.inner.clone())
     }
 
-    /// Creates a PublicAdvertisedPrefix in the specified project
-    /// using the parameters that are included in the request.
+    /// Creates a PublicAdvertisedPrefix in the specified project using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::public_advertised_prefixes::Insert {
         super::builder::public_advertised_prefixes::Insert::new(self.inner.clone())
     }
@@ -10079,10 +9308,7 @@ impl PublicAdvertisedPrefixes {
         super::builder::public_advertised_prefixes::List::new(self.inner.clone())
     }
 
-    /// Patches the specified Router resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified Router resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::public_advertised_prefixes::Patch {
         super::builder::public_advertised_prefixes::Patch::new(self.inner.clone())
     }
@@ -10114,6 +9340,8 @@ impl PublicAdvertisedPrefixes {
 /// # Service Description
 ///
 /// Service for the `publicDelegatedPrefixes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10204,11 +9432,7 @@ impl PublicDelegatedPrefixes {
             .map(super::tracing::PublicDelegatedPrefixes::new)
     }
 
-    /// Lists all PublicDelegatedPrefix resources owned by the specific project
-    /// across all scopes.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Lists all PublicDelegatedPrefix resources owned by the specific project across all scopes. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::public_delegated_prefixes::AggregatedList {
         super::builder::public_delegated_prefixes::AggregatedList::new(self.inner.clone())
     }
@@ -10228,8 +9452,7 @@ impl PublicDelegatedPrefixes {
         super::builder::public_delegated_prefixes::Get::new(self.inner.clone())
     }
 
-    /// Creates a PublicDelegatedPrefix in the specified project in the given
-    /// region using the parameters that are included in the request.
+    /// Creates a PublicDelegatedPrefix in the specified project in the given region using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::public_delegated_prefixes::Insert {
         super::builder::public_delegated_prefixes::Insert::new(self.inner.clone())
     }
@@ -10239,10 +9462,7 @@ impl PublicDelegatedPrefixes {
         super::builder::public_delegated_prefixes::List::new(self.inner.clone())
     }
 
-    /// Patches the specified PublicDelegatedPrefix resource with the data included
-    /// in the request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified PublicDelegatedPrefix resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::public_delegated_prefixes::Patch {
         super::builder::public_delegated_prefixes::Patch::new(self.inner.clone())
     }
@@ -10274,6 +9494,8 @@ impl PublicDelegatedPrefixes {
 /// # Service Description
 ///
 /// Service for the `regionAutoscalers` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10374,22 +9596,17 @@ impl RegionAutoscalers {
         super::builder::region_autoscalers::Get::new(self.inner.clone())
     }
 
-    /// Creates an autoscaler in the specified project using
-    /// the data included in the request.
+    /// Creates an autoscaler in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_autoscalers::Insert {
         super::builder::region_autoscalers::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of autoscalers contained within
-    /// the specified region.
+    /// Retrieves a list of autoscalers contained within the specified region.
     pub fn list(&self) -> super::builder::region_autoscalers::List {
         super::builder::region_autoscalers::List::new(self.inner.clone())
     }
 
-    /// Updates an autoscaler in the specified project using
-    /// the data included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates an autoscaler in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_autoscalers::Patch {
         super::builder::region_autoscalers::Patch::new(self.inner.clone())
     }
@@ -10399,8 +9616,7 @@ impl RegionAutoscalers {
         super::builder::region_autoscalers::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates an autoscaler in the specified project using
-    /// the data included in the request.
+    /// Updates an autoscaler in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::region_autoscalers::Update {
         super::builder::region_autoscalers::Update::new(self.inner.clone())
     }
@@ -10427,6 +9643,8 @@ impl RegionAutoscalers {
 /// # Service Description
 ///
 /// Service for the `regionBackendBuckets` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10527,40 +9745,32 @@ impl RegionBackendBuckets {
         super::builder::region_backend_buckets::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_backend_buckets::GetIamPolicy {
         super::builder::region_backend_buckets::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a RegionBackendBucket in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a RegionBackendBucket in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::region_backend_buckets::Insert {
         super::builder::region_backend_buckets::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of BackendBucket resources available to the specified
-    /// project in the given region.
+    /// Retrieves the list of BackendBucket resources available to the specified project in the given region.
     pub fn list(&self) -> super::builder::region_backend_buckets::List {
         super::builder::region_backend_buckets::List::new(self.inner.clone())
     }
 
-    /// Retrieves a list of all usable backend buckets in the specified project in
-    /// the given region.
+    /// Retrieves a list of all usable backend buckets in the specified project in the given region.
     pub fn list_usable(&self) -> super::builder::region_backend_buckets::ListUsable {
         super::builder::region_backend_buckets::ListUsable::new(self.inner.clone())
     }
 
-    /// Updates the specified  BackendBucket resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified BackendBucket resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_backend_buckets::Patch {
         super::builder::region_backend_buckets::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_backend_buckets::SetIamPolicy {
         super::builder::region_backend_buckets::SetIamPolicy::new(self.inner.clone())
     }
@@ -10594,6 +9804,8 @@ impl RegionBackendBuckets {
 /// # Service Description
 ///
 /// Service for the `regionBackendServices` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10694,57 +9906,42 @@ impl RegionBackendServices {
         super::builder::region_backend_services::Get::new(self.inner.clone())
     }
 
-    /// Gets the most recent health check results for this
-    /// regional BackendService.
+    /// Gets the most recent health check results for this regional BackendService.
     pub fn get_health(&self) -> super::builder::region_backend_services::GetHealth {
         super::builder::region_backend_services::GetHealth::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_backend_services::GetIamPolicy {
         super::builder::region_backend_services::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a regional BackendService resource in the specified project using
-    /// the data included in the request. For more information, see
-    /// Backend services overview.
+    /// Creates a regional BackendService resource in the specified project using the data included in the request. For more information, see Backend services overview.
     pub fn insert(&self) -> super::builder::region_backend_services::Insert {
         super::builder::region_backend_services::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of regional BackendService resources available to the
-    /// specified project in the given region.
+    /// Retrieves the list of regional BackendService resources available to the specified project in the given region.
     pub fn list(&self) -> super::builder::region_backend_services::List {
         super::builder::region_backend_services::List::new(self.inner.clone())
     }
 
-    /// Retrieves a list of all usable backend services for Application Load
-    /// Balancers and Proxy Network Load Balancers in the specified project in the
-    /// given region. Backend services for external and internal passthrough
-    /// Network Load Balancers are not included in the response.
+    /// Retrieves a list of all usable backend services for Application Load Balancers and Proxy Network Load Balancers in the specified project in the given region. Backend services for external and internal passthrough Network Load Balancers are not included in the response.
     pub fn list_usable(&self) -> super::builder::region_backend_services::ListUsable {
         super::builder::region_backend_services::ListUsable::new(self.inner.clone())
     }
 
-    /// Updates the specified regional BackendService resource with the data
-    /// included in the request. For more information, see
-    /// Understanding backend services This method
-    /// supports PATCH semantics and uses the JSON merge
-    /// patch format and processing rules.
+    /// Updates the specified regional BackendService resource with the data included in the request. For more information, see Understanding backend services This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_backend_services::Patch {
         super::builder::region_backend_services::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_backend_services::SetIamPolicy {
         super::builder::region_backend_services::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the Google Cloud Armor security policy for the specified backend
-    /// service. For more information, seeGoogle
-    /// Cloud Armor Overview
+    /// Sets the Google Cloud Armor security policy for the specified backend service. For more information, see Google Cloud Armor Overview
     pub fn set_security_policy(
         &self,
     ) -> super::builder::region_backend_services::SetSecurityPolicy {
@@ -10758,10 +9955,7 @@ impl RegionBackendServices {
         super::builder::region_backend_services::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified regional BackendService resource with the data
-    /// included in the request. For more information,
-    /// see
-    /// Backend services overview.
+    /// Updates the specified regional BackendService resource with the data included in the request. For more information, see Backend services overview .
     pub fn update(&self) -> super::builder::region_backend_services::Update {
         super::builder::region_backend_services::Update::new(self.inner.clone())
     }
@@ -10788,6 +9982,8 @@ impl RegionBackendServices {
 /// # Service Description
 ///
 /// Service for the `regionCommitments` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -10878,10 +10074,7 @@ impl RegionCommitments {
             .map(super::tracing::RegionCommitments::new)
     }
 
-    /// Retrieves an aggregated list of commitments by region.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of commitments by region. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::region_commitments::AggregatedList {
         super::builder::region_commitments::AggregatedList::new(self.inner.clone())
     }
@@ -10891,21 +10084,17 @@ impl RegionCommitments {
         super::builder::region_commitments::Get::new(self.inner.clone())
     }
 
-    /// Creates a commitment in the specified project using the data
-    /// included in the request.
+    /// Creates a commitment in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_commitments::Insert {
         super::builder::region_commitments::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of commitments contained within
-    /// the specified region.
+    /// Retrieves a list of commitments contained within the specified region.
     pub fn list(&self) -> super::builder::region_commitments::List {
         super::builder::region_commitments::List::new(self.inner.clone())
     }
 
-    /// Updates the specified commitment with the data included in the request.
-    /// Update is performed only on selected fields included as part of
-    /// update-mask. Only the following fields can be updated: auto_renew and plan.
+    /// Updates the specified commitment with the data included in the request. Update is performed only on selected fields included as part of update-mask. Only the following fields can be updated: auto_renew and plan.
     pub fn update(&self) -> super::builder::region_commitments::Update {
         super::builder::region_commitments::Update::new(self.inner.clone())
     }
@@ -10932,6 +10121,8 @@ impl RegionCommitments {
 /// # Service Description
 ///
 /// Service for the `regionCompositeHealthChecks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -11023,11 +10214,7 @@ impl RegionCompositeHealthChecks {
             .map(super::tracing::RegionCompositeHealthChecks::new)
     }
 
-    /// Retrieves the list of all CompositeHealthCheck resources (all
-    /// regional) available to the specified project.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all CompositeHealthCheck resources (all regional) available to the specified project. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(
         &self,
     ) -> super::builder::region_composite_health_checks::AggregatedList {
@@ -11044,14 +10231,12 @@ impl RegionCompositeHealthChecks {
         super::builder::region_composite_health_checks::Get::new(self.inner.clone())
     }
 
-    /// Gets the most recent health check results for this
-    /// regional CompositeHealthCheck.
+    /// Gets the most recent health check results for this regional CompositeHealthCheck.
     pub fn get_health(&self) -> super::builder::region_composite_health_checks::GetHealth {
         super::builder::region_composite_health_checks::GetHealth::new(self.inner.clone())
     }
 
-    /// Create a CompositeHealthCheck in the specified project in the given region
-    /// using the parameters that are included in the request.
+    /// Create a CompositeHealthCheck in the specified project in the given region using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::region_composite_health_checks::Insert {
         super::builder::region_composite_health_checks::Insert::new(self.inner.clone())
     }
@@ -11061,10 +10246,7 @@ impl RegionCompositeHealthChecks {
         super::builder::region_composite_health_checks::List::new(self.inner.clone())
     }
 
-    /// Updates the specified regional CompositeHealthCheck resource
-    /// with the data included in the request.  This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified regional CompositeHealthCheck resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_composite_health_checks::Patch {
         super::builder::region_composite_health_checks::Patch::new(self.inner.clone())
     }
@@ -11098,6 +10280,8 @@ impl RegionCompositeHealthChecks {
 /// # Service Description
 ///
 /// Service for the `regionDiskTypes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -11215,6 +10399,8 @@ impl RegionDiskTypes {
 ///
 /// Service for the `regionDisks` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `RegionDisks` use the `with_*` methods in the type returned
@@ -11303,9 +10489,7 @@ impl RegionDisks {
             .map(super::tracing::RegionDisks::new)
     }
 
-    /// Adds existing resource policies to a regional disk. You can only add one
-    /// policy which will be applied to this disk for scheduling snapshot
-    /// creation.
+    /// Adds existing resource policies to a regional disk. You can only add one policy which will be applied to this disk for scheduling snapshot creation.
     pub fn add_resource_policies(&self) -> super::builder::region_disks::AddResourcePolicies {
         super::builder::region_disks::AddResourcePolicies::new(self.inner.clone())
     }
@@ -11315,19 +10499,12 @@ impl RegionDisks {
         super::builder::region_disks::BulkInsert::new(self.inner.clone())
     }
 
-    /// Creates a snapshot of a specified persistent disk. For regular snapshot
-    /// creation, consider using snapshots.insert
-    /// instead, as that method supports more features, such as creating snapshots
-    /// in a project different from the source disk project.
+    /// Creates a snapshot of a specified persistent disk. For regular snapshot creation, consider using snapshots.insert instead, as that method supports more features, such as creating snapshots in a project different from the source disk project.
     pub fn create_snapshot(&self) -> super::builder::region_disks::CreateSnapshot {
         super::builder::region_disks::CreateSnapshot::new(self.inner.clone())
     }
 
-    /// Deletes the specified regional persistent disk. Deleting a regional disk
-    /// removes all the replicas of its data permanently and is irreversible.
-    /// However, deleting a disk does not delete anysnapshots
-    /// previously made from the disk. You must separatelydelete
-    /// snapshots.
+    /// Deletes the specified regional persistent disk. Deleting a regional disk removes all the replicas of its data permanently and is irreversible. However, deleting a disk does not delete any snapshots previously made from the disk. You must separately delete snapshots.
     pub fn delete(&self) -> super::builder::region_disks::Delete {
         super::builder::region_disks::Delete::new(self.inner.clone())
     }
@@ -11337,20 +10514,17 @@ impl RegionDisks {
         super::builder::region_disks::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_disks::GetIamPolicy {
         super::builder::region_disks::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a persistent regional disk in the specified project using the data
-    /// included in the request.
+    /// Creates a persistent regional disk in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_disks::Insert {
         super::builder::region_disks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of persistent disks contained within
-    /// the specified region.
+    /// Retrieves the list of persistent disks contained within the specified region.
     pub fn list(&self) -> super::builder::region_disks::List {
         super::builder::region_disks::List::new(self.inner.clone())
     }
@@ -11365,8 +10539,7 @@ impl RegionDisks {
         super::builder::region_disks::Resize::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_disks::SetIamPolicy {
         super::builder::region_disks::SetIamPolicy::new(self.inner.clone())
     }
@@ -11376,20 +10549,17 @@ impl RegionDisks {
         super::builder::region_disks::SetLabels::new(self.inner.clone())
     }
 
-    /// Starts asynchronous replication.
-    /// Must be invoked on the primary disk.
+    /// Starts asynchronous replication. Must be invoked on the primary disk.
     pub fn start_async_replication(&self) -> super::builder::region_disks::StartAsyncReplication {
         super::builder::region_disks::StartAsyncReplication::new(self.inner.clone())
     }
 
-    /// Stops asynchronous replication.
-    /// Can be invoked either on the primary or on the secondary disk.
+    /// Stops asynchronous replication. Can be invoked either on the primary or on the secondary disk.
     pub fn stop_async_replication(&self) -> super::builder::region_disks::StopAsyncReplication {
         super::builder::region_disks::StopAsyncReplication::new(self.inner.clone())
     }
 
-    /// Stops asynchronous replication for a consistency group of disks.
-    /// Can be invoked either in the primary or secondary scope.
+    /// Stops asynchronous replication for a consistency group of disks. Can be invoked either in the primary or secondary scope.
     pub fn stop_group_async_replication(
         &self,
     ) -> super::builder::region_disks::StopGroupAsyncReplication {
@@ -11401,14 +10571,12 @@ impl RegionDisks {
         super::builder::region_disks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Update the specified disk with the data included in the request. Update is
-    /// performed only on selected fields included as part of update-mask.
+    /// Update the specified disk with the data included in the request. Update is performed only on selected fields included as part of update-mask.
     pub fn update(&self) -> super::builder::region_disks::Update {
         super::builder::region_disks::Update::new(self.inner.clone())
     }
 
-    /// Rotates the customer-managed
-    /// encryption key to the latest version for the specified persistent disk.
+    /// Rotates the customer-managed encryption key to the latest version for the specified persistent disk.
     pub fn update_kms_key(&self) -> super::builder::region_disks::UpdateKmsKey {
         super::builder::region_disks::UpdateKmsKey::new(self.inner.clone())
     }
@@ -11435,6 +10603,8 @@ impl RegionDisks {
 /// # Service Description
 ///
 /// Service for the `regionHealthAggregationPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -11528,11 +10698,7 @@ impl RegionHealthAggregationPolicies {
             .map(super::tracing::RegionHealthAggregationPolicies::new)
     }
 
-    /// Retrieves the list of all HealthAggregationPolicy resources,
-    /// regional and global, available to the specified project.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all HealthAggregationPolicy resources, regional and global, available to the specified project. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(
         &self,
     ) -> super::builder::region_health_aggregation_policies::AggregatedList {
@@ -11549,8 +10715,7 @@ impl RegionHealthAggregationPolicies {
         super::builder::region_health_aggregation_policies::Get::new(self.inner.clone())
     }
 
-    /// Create a HealthAggregationPolicy in the specified project in the given
-    /// region using the parameters that are included in the request.
+    /// Create a HealthAggregationPolicy in the specified project in the given region using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::region_health_aggregation_policies::Insert {
         super::builder::region_health_aggregation_policies::Insert::new(self.inner.clone())
     }
@@ -11560,10 +10725,7 @@ impl RegionHealthAggregationPolicies {
         super::builder::region_health_aggregation_policies::List::new(self.inner.clone())
     }
 
-    /// Updates the specified regional HealthAggregationPolicy
-    /// resource with the data included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified regional HealthAggregationPolicy resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_health_aggregation_policies::Patch {
         super::builder::region_health_aggregation_policies::Patch::new(self.inner.clone())
     }
@@ -11601,6 +10763,8 @@ impl RegionHealthAggregationPolicies {
 /// # Service Description
 ///
 /// Service for the `regionHealthCheckServices` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -11692,11 +10856,7 @@ impl RegionHealthCheckServices {
             .map(super::tracing::RegionHealthCheckServices::new)
     }
 
-    /// Retrieves the list of all HealthCheckService resources,
-    /// regional and global, available to the specified project.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all HealthCheckService resources, regional and global, available to the specified project. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::region_health_check_services::AggregatedList {
         super::builder::region_health_check_services::AggregatedList::new(self.inner.clone())
     }
@@ -11711,22 +10871,17 @@ impl RegionHealthCheckServices {
         super::builder::region_health_check_services::Get::new(self.inner.clone())
     }
 
-    /// Creates a regional HealthCheckService resource in the
-    /// specified project and region using the data included in the request.
+    /// Creates a regional HealthCheckService resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_health_check_services::Insert {
         super::builder::region_health_check_services::Insert::new(self.inner.clone())
     }
 
-    /// Lists all the HealthCheckService resources that have been
-    /// configured for the specified project in the given region.
+    /// Lists all the HealthCheckService resources that have been configured for the specified project in the given region.
     pub fn list(&self) -> super::builder::region_health_check_services::List {
         super::builder::region_health_check_services::List::new(self.inner.clone())
     }
 
-    /// Updates the specified regional HealthCheckService resource
-    /// with the data included in the request.  This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified regional HealthCheckService resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_health_check_services::Patch {
         super::builder::region_health_check_services::Patch::new(self.inner.clone())
     }
@@ -11760,6 +10915,8 @@ impl RegionHealthCheckServices {
 /// # Service Description
 ///
 /// Service for the `regionHealthChecks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -11860,22 +11017,17 @@ impl RegionHealthChecks {
         super::builder::region_health_checks::Get::new(self.inner.clone())
     }
 
-    /// Creates a HealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Creates a HealthCheck resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_health_checks::Insert {
         super::builder::region_health_checks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of HealthCheck resources available to the specified
-    /// project.
+    /// Retrieves the list of HealthCheck resources available to the specified project.
     pub fn list(&self) -> super::builder::region_health_checks::List {
         super::builder::region_health_checks::List::new(self.inner.clone())
     }
 
-    /// Updates a HealthCheck resource in the specified project using the data
-    /// included in the request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates a HealthCheck resource in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_health_checks::Patch {
         super::builder::region_health_checks::Patch::new(self.inner.clone())
     }
@@ -11885,8 +11037,7 @@ impl RegionHealthChecks {
         super::builder::region_health_checks::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates a HealthCheck resource in the specified project using the data
-    /// included in the request.
+    /// Updates a HealthCheck resource in the specified project using the data included in the request.
     pub fn update(&self) -> super::builder::region_health_checks::Update {
         super::builder::region_health_checks::Update::new(self.inner.clone())
     }
@@ -11913,6 +11064,8 @@ impl RegionHealthChecks {
 /// # Service Description
 ///
 /// Service for the `regionHealthSources` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -12003,11 +11156,7 @@ impl RegionHealthSources {
             .map(super::tracing::RegionHealthSources::new)
     }
 
-    /// Retrieves the list of all HealthSource resources (all
-    /// regional) available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all HealthSource resources (all regional) available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::region_health_sources::AggregatedList {
         super::builder::region_health_sources::AggregatedList::new(self.inner.clone())
     }
@@ -12022,14 +11171,12 @@ impl RegionHealthSources {
         super::builder::region_health_sources::Get::new(self.inner.clone())
     }
 
-    /// Gets the most recent health check results for this
-    /// regional HealthSource.
+    /// Gets the most recent health check results for this regional HealthSource.
     pub fn get_health(&self) -> super::builder::region_health_sources::GetHealth {
         super::builder::region_health_sources::GetHealth::new(self.inner.clone())
     }
 
-    /// Create a HealthSource in the specified project in the given region
-    /// using the parameters that are included in the request.
+    /// Create a HealthSource in the specified project in the given region using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::region_health_sources::Insert {
         super::builder::region_health_sources::Insert::new(self.inner.clone())
     }
@@ -12039,10 +11186,7 @@ impl RegionHealthSources {
         super::builder::region_health_sources::List::new(self.inner.clone())
     }
 
-    /// Updates the specified regional HealthSource resource
-    /// with the data included in the request.  This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified regional HealthSource resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_health_sources::Patch {
         super::builder::region_health_sources::Patch::new(self.inner.clone())
     }
@@ -12076,6 +11220,8 @@ impl RegionHealthSources {
 /// # Service Description
 ///
 /// Service for the `regionInstanceGroupManagerResizeRequests` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -12175,19 +11321,14 @@ impl RegionInstanceGroupManagerResizeRequests {
             .map(super::tracing::RegionInstanceGroupManagerResizeRequests::new)
     }
 
-    /// Cancels the specified resize request.
-    /// Cancelled resize request no longer waits for the resources to be
-    /// provisioned. Cancel is only possible for requests that are in accepted
-    /// state.
+    /// Cancels the specified resize request. Cancelled resize request no longer waits for the resources to be provisioned. Cancel is only possible for requests that are in accepted state.
     pub fn cancel(&self) -> super::builder::region_instance_group_manager_resize_requests::Cancel {
         super::builder::region_instance_group_manager_resize_requests::Cancel::new(
             self.inner.clone(),
         )
     }
 
-    /// Deletes the specified, inactive resize request. Requests that are still
-    /// active cannot be deleted. Deleting request does not delete instances that
-    /// were provisioned previously.
+    /// Deletes the specified, inactive resize request. Requests that are still active cannot be deleted. Deleting request does not delete instances that were provisioned previously.
     pub fn delete(&self) -> super::builder::region_instance_group_manager_resize_requests::Delete {
         super::builder::region_instance_group_manager_resize_requests::Delete::new(
             self.inner.clone(),
@@ -12199,16 +11340,14 @@ impl RegionInstanceGroupManagerResizeRequests {
         super::builder::region_instance_group_manager_resize_requests::Get::new(self.inner.clone())
     }
 
-    /// Creates a new Resize Request that starts provisioning VMs immediately
-    /// or queues VM creation.
+    /// Creates a new Resize Request that starts provisioning VMs immediately or queues VM creation.
     pub fn insert(&self) -> super::builder::region_instance_group_manager_resize_requests::Insert {
         super::builder::region_instance_group_manager_resize_requests::Insert::new(
             self.inner.clone(),
         )
     }
 
-    /// Retrieves a list of Resize Requests that are contained in the
-    /// managed instance group.
+    /// Retrieves a list of Resize Requests that are contained in the managed instance group.
     pub fn list(&self) -> super::builder::region_instance_group_manager_resize_requests::List {
         super::builder::region_instance_group_manager_resize_requests::List::new(self.inner.clone())
     }
@@ -12239,6 +11378,8 @@ impl RegionInstanceGroupManagerResizeRequests {
 /// # Service Description
 ///
 /// Service for the `regionInstanceGroupManagers` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -12330,21 +11471,7 @@ impl RegionInstanceGroupManagers {
             .map(super::tracing::RegionInstanceGroupManagers::new)
     }
 
-    /// Flags the specified instances to be immediately removed from the managed
-    /// instance group. Abandoning an instance does not delete the
-    /// instance, but it does remove the instance from any target pools that are
-    /// applied by the managed instance group. This method reduces thetargetSize of the managed instance group by the
-    /// number of instances that you abandon. This operation is marked asDONE when the action is scheduled even if the instances have
-    /// not yet been removed from the group. You must separately verify the
-    /// status of the abandoning action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances to be immediately removed from the managed instance group. Abandoning an instance does not delete the instance, but it does remove the instance from any target pools that are applied by the managed instance group. This method reduces the targetSize of the managed instance group by the number of instances that you abandon. This operation is marked as DONE when the action is scheduled even if the instances have not yet been removed from the group. You must separately verify the status of the abandoning action with the listmanagedinstances method. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn abandon_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::AbandonInstances {
@@ -12360,47 +11487,26 @@ impl RegionInstanceGroupManagers {
         )
     }
 
-    /// Creates instances with per-instance configurations in this regional managed
-    /// instance group. Instances are created using the current instance template.
-    /// The create instances operation is marked DONE if
-    /// the createInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of thecreating or actions with the listmanagedinstances
-    /// method.
+    /// Creates instances with per-instance configurations in this regional managed instance group. Instances are created using the current instance template. The create instances operation is marked DONE if the createInstances request is successful. The underlying actions take additional time. You must separately verify the status of the creating or actions with the listmanagedinstances method.
     pub fn create_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::CreateInstances {
         super::builder::region_instance_group_managers::CreateInstances::new(self.inner.clone())
     }
 
-    /// Deletes the specified managed instance group and all of the instances
-    /// in that group.
+    /// Deletes the specified managed instance group and all of the instances in that group.
     pub fn delete(&self) -> super::builder::region_instance_group_managers::Delete {
         super::builder::region_instance_group_managers::Delete::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// immediately deleted. The instances are also removed from any target
-    /// pools of which they were a member. This method reduces thetargetSize of the managed instance group by the number of
-    /// instances that you delete.
-    /// The deleteInstances operation is marked DONE if
-    /// the deleteInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of thedeleting action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be immediately deleted. The instances are also removed from any target pools of which they were a member. This method reduces the targetSize of the managed instance group by the number of instances that you delete. The deleteInstances operation is marked DONE if the deleteInstances request is successful. The underlying actions take additional time. You must separately verify the status of the deleting action with the listmanagedinstances method. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn delete_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::DeleteInstances {
         super::builder::region_instance_group_managers::DeleteInstances::new(self.inner.clone())
     }
 
-    /// Deletes selected per-instance configurations for the managed instance
-    /// group.
+    /// Deletes selected per-instance configurations for the managed instance group.
     pub fn delete_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::DeletePerInstanceConfigs {
@@ -12414,37 +11520,22 @@ impl RegionInstanceGroupManagers {
         super::builder::region_instance_group_managers::Get::new(self.inner.clone())
     }
 
-    /// Creates a managed instance group using the information that you specify
-    /// in the request. After the group is created, instances in the group are
-    /// created using the specified instance template.
-    /// This operation is marked as DONE when the group is created
-    /// even if the instances in the group have not yet been created. You must
-    /// separately verify the status of the individual instances with thelistmanagedinstances
-    /// method.
-    ///
-    /// A regional managed instance group can contain up to 2000 instances.
+    /// Creates a managed instance group using the information that you specify in the request. After the group is created, instances in the group are created using the specified instance template. This operation is marked as DONE when the group is created even if the instances in the group have not yet been created. You must separately verify the status of the individual instances with the listmanagedinstances method. A regional managed instance group can contain up to 2000 instances.
     pub fn insert(&self) -> super::builder::region_instance_group_managers::Insert {
         super::builder::region_instance_group_managers::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of managed instance groups that are contained
-    /// within the specified region.
+    /// Retrieves the list of managed instance groups that are contained within the specified region.
     pub fn list(&self) -> super::builder::region_instance_group_managers::List {
         super::builder::region_instance_group_managers::List::new(self.inner.clone())
     }
 
-    /// Lists all errors thrown by actions on instances for a given regional
-    /// managed instance group. The filter andorderBy query parameters are not supported.
+    /// Lists all errors thrown by actions on instances for a given regional managed instance group. The filter and orderBy query parameters are not supported.
     pub fn list_errors(&self) -> super::builder::region_instance_group_managers::ListErrors {
         super::builder::region_instance_group_managers::ListErrors::new(self.inner.clone())
     }
 
-    /// Lists the instances in the managed instance group and instances that are
-    /// scheduled to be created. The list includes any current actions
-    /// that the group has scheduled for its instances. The orderBy
-    /// query parameter is not supported.   The `pageToken` query parameter is
-    /// supported only if the group's `listManagedInstancesResults` field is set
-    /// to `PAGINATED`.
+    /// Lists the instances in the managed instance group and instances that are scheduled to be created. The list includes any current actions that the group has scheduled for its instances. The orderBy query parameter is not supported. The `pageToken` query parameter is supported only if the group's `listManagedInstancesResults` field is set to `PAGINATED`.
     pub fn list_managed_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::ListManagedInstances {
@@ -12453,8 +11544,7 @@ impl RegionInstanceGroupManagers {
         )
     }
 
-    /// Lists all of the per-instance configurations defined for the managed
-    /// instance group. The orderBy query parameter is not supported.
+    /// Lists all of the per-instance configurations defined for the managed instance group. The orderBy query parameter is not supported.
     pub fn list_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::ListPerInstanceConfigs {
@@ -12463,28 +11553,12 @@ impl RegionInstanceGroupManagers {
         )
     }
 
-    /// Updates a managed instance group using the information that you specify
-    /// in the request.
-    /// This operation is marked as DONE when the group is patched
-    /// even if the instances in the group are still in the process of being
-    /// patched. You must separately verify the status of the individual instances
-    /// with the listmanagedinstances
-    /// method. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
-    ///
-    /// If you update your group to specify a new template or instance
-    /// configuration, it's possible that your intended specification for each VM
-    /// in the group is different from the current state of that VM. To learn how
-    /// to apply an updated configuration to the VMs in a MIG, seeUpdating instances in
-    /// a MIG.
+    /// Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is patched even if the instances in the group are still in the process of being patched. You must separately verify the status of the individual instances with the listmanagedinstances method. This method supports PATCH semantics and uses the JSON merge patch format and processing rules. If you update your group to specify a new template or instance configuration, it's possible that your intended specification for each VM in the group is different from the current state of that VM. To learn how to apply an updated configuration to the VMs in a MIG, see Updating instances in a MIG.
     pub fn patch(&self) -> super::builder::region_instance_group_managers::Patch {
         super::builder::region_instance_group_managers::Patch::new(self.inner.clone())
     }
 
-    /// Inserts or patches per-instance configurations for the managed instance
-    /// group. perInstanceConfig.name serves as a key used to
-    /// distinguish whether to perform insert or patch.
+    /// Inserts or patches per-instance configurations for the managed instance group. perInstanceConfig.name serves as a key used to distinguish whether to perform insert or patch.
     pub fn patch_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::PatchPerInstanceConfigs {
@@ -12493,165 +11567,59 @@ impl RegionInstanceGroupManagers {
         )
     }
 
-    /// Flags the specified VM instances in the managed instance group to be
-    /// immediately recreated. Each instance is recreated using the group's current
-    /// configuration. This operation is marked as DONE when the flag
-    /// is set even if the instances have not yet been recreated. You must
-    /// separately verify the status of each instance by checking itscurrentAction field; for more information, see Checking
-    /// the status of managed instances.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified VM instances in the managed instance group to be immediately recreated. Each instance is recreated using the group's current configuration. This operation is marked as DONE when the flag is set even if the instances have not yet been recreated. You must separately verify the status of each instance by checking its currentAction field; for more information, see Checking the status of managed instances. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted. You can specify a maximum of 1000 instances with this method per request.
     pub fn recreate_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::RecreateInstances {
         super::builder::region_instance_group_managers::RecreateInstances::new(self.inner.clone())
     }
 
-    /// Changes the intended size of the managed instance group. If you increase
-    /// the size, the group creates new instances using the current instance
-    /// template. If you decrease the size, the group deletes one or more
-    /// instances.
-    ///
-    /// The resize operation is marked DONE if theresize request is successful. The underlying actions take
-    /// additional time. You must separately verify the status of thecreating or deleting actions with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is removed or deleted.
+    /// Changes the intended size of the managed instance group. If you increase the size, the group creates new instances using the current instance template. If you decrease the size, the group deletes one or more instances. The resize operation is marked DONE if the resize request is successful. The underlying actions take additional time. You must separately verify the status of the creating or deleting actions with the listmanagedinstances method. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is removed or deleted.
     pub fn resize(&self) -> super::builder::region_instance_group_managers::Resize {
         super::builder::region_instance_group_managers::Resize::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// resumed. This method increases thetargetSize and decreases the targetSuspendedSize
-    /// of the managed instance group by the number of instances that you resume.
-    /// The resumeInstances operation is marked DONE if
-    /// the resumeInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theRESUMING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// In this request, you can only specify instances that are suspended. For
-    /// example, if an instance was previously suspended using the suspendInstances
-    /// method, it can be resumed using the resumeInstances method.
-    ///
-    /// If a health check is attached to the managed instance group, the specified
-    /// instances will be verified as healthy after they are resumed.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be resumed. This method increases the targetSize and decreases the targetSuspendedSize of the managed instance group by the number of instances that you resume. The resumeInstances operation is marked DONE if the resumeInstances request is successful. The underlying actions take additional time. You must separately verify the status of the RESUMING action with the listmanagedinstances method. In this request, you can only specify instances that are suspended. For example, if an instance was previously suspended using the suspendInstances method, it can be resumed using the resumeInstances method. If a health check is attached to the managed instance group, the specified instances will be verified as healthy after they are resumed. You can specify a maximum of 1000 instances with this method per request.
     pub fn resume_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::ResumeInstances {
         super::builder::region_instance_group_managers::ResumeInstances::new(self.inner.clone())
     }
 
-    /// Sets the instance template to use when creating new instances or recreating
-    /// instances in this group. Existing instances are not affected.
+    /// Sets the instance template to use when creating new instances or recreating instances in this group. Existing instances are not affected.
     pub fn set_instance_template(
         &self,
     ) -> super::builder::region_instance_group_managers::SetInstanceTemplate {
         super::builder::region_instance_group_managers::SetInstanceTemplate::new(self.inner.clone())
     }
 
-    /// Modifies the target pools to which all new instances in this group are
-    /// assigned. Existing instances in the group are not affected.
+    /// Modifies the target pools to which all new instances in this group are assigned. Existing instances in the group are not affected.
     pub fn set_target_pools(
         &self,
     ) -> super::builder::region_instance_group_managers::SetTargetPools {
         super::builder::region_instance_group_managers::SetTargetPools::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// started. This method increases thetargetSize and decreases the targetStoppedSize
-    /// of the managed instance group by the number of instances that you start.
-    /// The startInstances operation is marked DONE if
-    /// the startInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSTARTING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// In this request, you can only specify instances that are stopped. For
-    /// example, if an instance was previously stopped using the stopInstances
-    /// method, it can be started using the startInstances method.
-    ///
-    /// If a health check is attached to the managed instance group, the specified
-    /// instances will be verified as healthy after they are started.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be started. This method increases the targetSize and decreases the targetStoppedSize of the managed instance group by the number of instances that you start. The startInstances operation is marked DONE if the startInstances request is successful. The underlying actions take additional time. You must separately verify the status of the STARTING action with the listmanagedinstances method. In this request, you can only specify instances that are stopped. For example, if an instance was previously stopped using the stopInstances method, it can be started using the startInstances method. If a health check is attached to the managed instance group, the specified instances will be verified as healthy after they are started. You can specify a maximum of 1000 instances with this method per request.
     pub fn start_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::StartInstances {
         super::builder::region_instance_group_managers::StartInstances::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// immediately stopped. You can only specify instances that are running in
-    /// this request. This method reduces thetargetSize and increases the targetStoppedSize
-    /// of the managed instance group by the number of instances that you stop.
-    /// The stopInstances operation is marked DONE if
-    /// the stopInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSTOPPING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the standbyPolicy.initialDelaySec field is set, the group
-    /// delays stopping the instances until initialDelaySec have
-    /// passed from instance.creationTimestamp (that is, when the
-    /// instance was created). This delay gives your application time to
-    /// set itself up and initialize on the instance. If more thaninitialDelaySec seconds have passed sinceinstance.creationTimestamp when this method is called, there
-    /// will be zero delay.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is stopped.
-    ///
-    /// Stopped instances can be started using the startInstances
-    /// method.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be immediately stopped. You can only specify instances that are running in this request. This method reduces the targetSize and increases the targetStoppedSize of the managed instance group by the number of instances that you stop. The stopInstances operation is marked DONE if the stopInstances request is successful. The underlying actions take additional time. You must separately verify the status of the STOPPING action with the listmanagedinstances method. If the standbyPolicy.initialDelaySec field is set, the group delays stopping the instances until initialDelaySec have passed from instance.creationTimestamp (that is, when the instance was created). This delay gives your application time to set itself up and initialize on the instance. If more than initialDelaySec seconds have passed since instance.creationTimestamp when this method is called, there will be zero delay. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is stopped. Stopped instances can be started using the startInstances method. You can specify a maximum of 1000 instances with this method per request.
     pub fn stop_instances(&self) -> super::builder::region_instance_group_managers::StopInstances {
         super::builder::region_instance_group_managers::StopInstances::new(self.inner.clone())
     }
 
-    /// Flags the specified instances in the managed instance group to be
-    /// immediately suspended. You can only specify instances that are running in
-    /// this request. This method reduces thetargetSize and increases the targetSuspendedSize
-    /// of the managed instance group by the number of instances that you suspend.
-    /// The suspendInstances operation is marked DONE if
-    /// the suspendInstances request is successful. The underlying
-    /// actions take additional time. You must separately verify the status of theSUSPENDING action with thelistmanagedinstances
-    /// method.
-    ///
-    /// If the standbyPolicy.initialDelaySec field is set, the group
-    /// delays suspension of the instances until initialDelaySec have
-    /// passed from instance.creationTimestamp (that is, when the
-    /// instance was created). This delay gives your application time to
-    /// set itself up and initialize on the instance. If more thaninitialDelaySec seconds have passed sinceinstance.creationTimestamp when this method is called, there
-    /// will be zero delay.
-    ///
-    /// If the group is part of a backend
-    /// service that has enabled
-    /// connection draining, it can take up to 60 seconds after the connection
-    /// draining duration has elapsed before the VM instance is suspended.
-    ///
-    /// Suspended instances can be resumed using the resumeInstances
-    /// method.
-    ///
-    /// You can specify a maximum of 1000 instances with this method per request.
+    /// Flags the specified instances in the managed instance group to be immediately suspended. You can only specify instances that are running in this request. This method reduces the targetSize and increases the targetSuspendedSize of the managed instance group by the number of instances that you suspend. The suspendInstances operation is marked DONE if the suspendInstances request is successful. The underlying actions take additional time. You must separately verify the status of the SUSPENDING action with the listmanagedinstances method. If the standbyPolicy.initialDelaySec field is set, the group delays suspension of the instances until initialDelaySec have passed from instance.creationTimestamp (that is, when the instance was created). This delay gives your application time to set itself up and initialize on the instance. If more than initialDelaySec seconds have passed since instance.creationTimestamp when this method is called, there will be zero delay. If the group is part of a backend service that has enabled connection draining, it can take up to 60 seconds after the connection draining duration has elapsed before the VM instance is suspended. Suspended instances can be resumed using the resumeInstances method. You can specify a maximum of 1000 instances with this method per request.
     pub fn suspend_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::SuspendInstances {
         super::builder::region_instance_group_managers::SuspendInstances::new(self.inner.clone())
     }
 
-    /// Inserts or updates per-instance configurations for the managed instance
-    /// group. perInstanceConfig.name serves as a key used to
-    /// distinguish whether to perform insert or patch.
+    /// Inserts or updates per-instance configurations for the managed instance group. perInstanceConfig.name serves as a key used to distinguish whether to perform insert or patch.
     pub fn update_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::UpdatePerInstanceConfigs {
@@ -12682,6 +11650,8 @@ impl RegionInstanceGroupManagers {
 /// # Service Description
 ///
 /// Service for the `regionInstanceGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -12777,16 +11747,12 @@ impl RegionInstanceGroups {
         super::builder::region_instance_groups::Get::new(self.inner.clone())
     }
 
-    /// Retrieves the list of instance group resources contained within
-    /// the specified region.
+    /// Retrieves the list of instance group resources contained within the specified region.
     pub fn list(&self) -> super::builder::region_instance_groups::List {
         super::builder::region_instance_groups::List::new(self.inner.clone())
     }
 
-    /// Lists the instances in the specified instance group and displays
-    /// information about the named ports. Depending on the specified options, this
-    /// method can list all instances or only the instances that are running.
-    /// The orderBy query parameter is not supported.
+    /// Lists the instances in the specified instance group and displays information about the named ports. Depending on the specified options, this method can list all instances or only the instances that are running. The orderBy query parameter is not supported.
     pub fn list_instances(&self) -> super::builder::region_instance_groups::ListInstances {
         super::builder::region_instance_groups::ListInstances::new(self.inner.clone())
     }
@@ -12825,6 +11791,8 @@ impl RegionInstanceGroups {
 /// # Service Description
 ///
 /// Service for the `regionInstanceTemplates` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -12915,8 +11883,7 @@ impl RegionInstanceTemplates {
             .map(super::tracing::RegionInstanceTemplates::new)
     }
 
-    /// Deletes the specified instance template. Deleting an instance template is
-    /// permanent and cannot be undone.
+    /// Deletes the specified instance template. Deleting an instance template is permanent and cannot be undone.
     pub fn delete(&self) -> super::builder::region_instance_templates::Delete {
         super::builder::region_instance_templates::Delete::new(self.inner.clone())
     }
@@ -12926,14 +11893,12 @@ impl RegionInstanceTemplates {
         super::builder::region_instance_templates::Get::new(self.inner.clone())
     }
 
-    /// Creates an instance template in the specified project and region using the
-    /// global instance template whose URL is included in the request.
+    /// Creates an instance template in the specified project and region using the global instance template whose URL is included in the request.
     pub fn insert(&self) -> super::builder::region_instance_templates::Insert {
         super::builder::region_instance_templates::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of instance templates that are contained within the
-    /// specified project and region.
+    /// Retrieves a list of instance templates that are contained within the specified project and region.
     pub fn list(&self) -> super::builder::region_instance_templates::List {
         super::builder::region_instance_templates::List::new(self.inner.clone())
     }
@@ -12960,6 +11925,8 @@ impl RegionInstanceTemplates {
 /// # Service Description
 ///
 /// Service for the `regionInstances` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13049,8 +12016,7 @@ impl RegionInstances {
             .map(super::tracing::RegionInstances::new)
     }
 
-    /// Creates multiple instances in a given region. Count specifies the number of
-    /// instances to create.
+    /// Creates multiple instances in a given region. Count specifies the number of instances to create.
     pub fn bulk_insert(&self) -> super::builder::region_instances::BulkInsert {
         super::builder::region_instances::BulkInsert::new(self.inner.clone())
     }
@@ -13077,6 +12043,8 @@ impl RegionInstances {
 /// # Service Description
 ///
 /// Service for the `regionInstantSnapshotGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13173,14 +12141,12 @@ impl RegionInstantSnapshotGroups {
         super::builder::region_instant_snapshot_groups::Delete::new(self.inner.clone())
     }
 
-    /// returns the specified InstantSnapshotGroup resource in the specified
-    /// region.
+    /// returns the specified InstantSnapshotGroup resource in the specified region.
     pub fn get(&self) -> super::builder::region_instant_snapshot_groups::Get {
         super::builder::region_instant_snapshot_groups::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_instant_snapshot_groups::GetIamPolicy {
         super::builder::region_instant_snapshot_groups::GetIamPolicy::new(self.inner.clone())
     }
@@ -13190,14 +12156,12 @@ impl RegionInstantSnapshotGroups {
         super::builder::region_instant_snapshot_groups::Insert::new(self.inner.clone())
     }
 
-    /// retrieves the list of InstantSnapshotGroup resources contained within
-    /// the specified region.
+    /// retrieves the list of InstantSnapshotGroup resources contained within the specified region.
     pub fn list(&self) -> super::builder::region_instant_snapshot_groups::List {
         super::builder::region_instant_snapshot_groups::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_instant_snapshot_groups::SetIamPolicy {
         super::builder::region_instant_snapshot_groups::SetIamPolicy::new(self.inner.clone())
     }
@@ -13231,6 +12195,8 @@ impl RegionInstantSnapshotGroups {
 /// # Service Description
 ///
 /// Service for the `regionInstantSnapshots` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13321,14 +12287,7 @@ impl RegionInstantSnapshots {
             .map(super::tracing::RegionInstantSnapshots::new)
     }
 
-    /// Deletes the specified InstantSnapshot resource. Keep in mind that deleting
-    /// a single instantSnapshot might not necessarily delete all the data on that
-    /// instantSnapshot. If any data on the instantSnapshot that is marked for
-    /// deletion is needed for subsequent instantSnapshots, the data will be moved
-    /// to the next corresponding instantSnapshot.
-    ///
-    /// For more information, seeDeleting
-    /// instantSnapshots.
+    /// Deletes the specified InstantSnapshot resource. Keep in mind that deleting a single instantSnapshot might not necessarily delete all the data on that instantSnapshot. If any data on the instantSnapshot that is marked for deletion is needed for subsequent instantSnapshots, the data will be moved to the next corresponding instantSnapshot. For more information, see Deleting instantSnapshots.
     pub fn delete(&self) -> super::builder::region_instant_snapshots::Delete {
         super::builder::region_instant_snapshots::Delete::new(self.inner.clone())
     }
@@ -13338,8 +12297,7 @@ impl RegionInstantSnapshots {
         super::builder::region_instant_snapshots::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_instant_snapshots::GetIamPolicy {
         super::builder::region_instant_snapshots::GetIamPolicy::new(self.inner.clone())
     }
@@ -13349,21 +12307,17 @@ impl RegionInstantSnapshots {
         super::builder::region_instant_snapshots::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of InstantSnapshot resources contained within
-    /// the specified region.
+    /// Retrieves the list of InstantSnapshot resources contained within the specified region.
     pub fn list(&self) -> super::builder::region_instant_snapshots::List {
         super::builder::region_instant_snapshots::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_instant_snapshots::SetIamPolicy {
         super::builder::region_instant_snapshots::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a instantSnapshot in the given region. To learn more
-    /// about labels, read the Labeling
-    /// Resources documentation.
+    /// Sets the labels on a instantSnapshot in the given region. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::region_instant_snapshots::SetLabels {
         super::builder::region_instant_snapshots::SetLabels::new(self.inner.clone())
     }
@@ -13397,6 +12351,8 @@ impl RegionInstantSnapshots {
 /// # Service Description
 ///
 /// Service for the `regionNetworkEndpointGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13497,8 +12453,7 @@ impl RegionNetworkEndpointGroups {
         )
     }
 
-    /// Deletes the specified network endpoint group. Note that the NEG cannot be
-    /// deleted if it is configured as a backend of a backend service.
+    /// Deletes the specified network endpoint group. Note that the NEG cannot be deleted if it is configured as a backend of a backend service.
     pub fn delete(&self) -> super::builder::region_network_endpoint_groups::Delete {
         super::builder::region_network_endpoint_groups::Delete::new(self.inner.clone())
     }
@@ -13517,25 +12472,12 @@ impl RegionNetworkEndpointGroups {
         super::builder::region_network_endpoint_groups::Get::new(self.inner.clone())
     }
 
-    /// Creates a network endpoint group in the specified project using the
-    /// parameters that are included in the request.
-    ///
-    /// Note: Use the following APIs to manage network endpoint groups:
-    ///
-    /// - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity
-    ///   NEGs): zonal
-    ///   API
-    /// - To manage NEGs with regional scope (such as regional internet NEGs,
-    ///   serverless NEGs, Private Service Connect NEGs): regional
-    ///   API
-    /// - To manage NEGs with global scope (such as global internet NEGs):global
-    ///   API
+    /// Creates a network endpoint group in the specified project using the parameters that are included in the request. Note: Use the following APIs to manage network endpoint groups: - To manage NEGs with zonal scope (such as zonal NEGs, hybrid connectivity NEGs): zonal API - To manage NEGs with regional scope (such as regional internet NEGs, serverless NEGs, Private Service Connect NEGs): regional API - To manage NEGs with global scope (such as global internet NEGs): global API
     pub fn insert(&self) -> super::builder::region_network_endpoint_groups::Insert {
         super::builder::region_network_endpoint_groups::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of regional network endpoint groups available to the
-    /// specified project in the given region.
+    /// Retrieves the list of regional network endpoint groups available to the specified project in the given region.
     pub fn list(&self) -> super::builder::region_network_endpoint_groups::List {
         super::builder::region_network_endpoint_groups::List::new(self.inner.clone())
     }
@@ -13571,6 +12513,8 @@ impl RegionNetworkEndpointGroups {
 /// # Service Description
 ///
 /// Service for the `regionNetworkFirewallPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13705,8 +12649,7 @@ impl RegionNetworkFirewallPolicies {
         )
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_network_firewall_policies::GetIamPolicy {
         super::builder::region_network_firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
@@ -13721,8 +12664,7 @@ impl RegionNetworkFirewallPolicies {
         super::builder::region_network_firewall_policies::Insert::new(self.inner.clone())
     }
 
-    /// Lists all the network firewall policies that have been configured
-    /// for the specified project in the given region.
+    /// Lists all the network firewall policies that have been configured for the specified project in the given region.
     pub fn list(&self) -> super::builder::region_network_firewall_policies::List {
         super::builder::region_network_firewall_policies::List::new(self.inner.clone())
     }
@@ -13749,8 +12691,7 @@ impl RegionNetworkFirewallPolicies {
         super::builder::region_network_firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_network_firewall_policies::SetIamPolicy {
         super::builder::region_network_firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
@@ -13786,6 +12727,8 @@ impl RegionNetworkFirewallPolicies {
 /// # Service Description
 ///
 /// Service for the `regionNotificationEndpoints` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -13877,8 +12820,7 @@ impl RegionNotificationEndpoints {
             .map(super::tracing::RegionNotificationEndpoints::new)
     }
 
-    /// Retrieves the list of all NotificationEndpoint resources,
-    /// regional and global, available to the specified project.
+    /// Retrieves the list of all NotificationEndpoint resources, regional and global, available to the specified project.
     pub fn aggregated_list(&self) -> super::builder::region_notification_endpoints::AggregatedList {
         super::builder::region_notification_endpoints::AggregatedList::new(self.inner.clone())
     }
@@ -13893,8 +12835,7 @@ impl RegionNotificationEndpoints {
         super::builder::region_notification_endpoints::Get::new(self.inner.clone())
     }
 
-    /// Create a NotificationEndpoint in the specified project in the given region
-    /// using the parameters that are included in the request.
+    /// Create a NotificationEndpoint in the specified project in the given region using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::region_notification_endpoints::Insert {
         super::builder::region_notification_endpoints::Insert::new(self.inner.clone())
     }
@@ -13933,6 +12874,8 @@ impl RegionNotificationEndpoints {
 /// # Service Description
 ///
 /// Service for the `regionOperations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14033,30 +12976,12 @@ impl RegionOperations {
         super::builder::region_operations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of Operation resources contained within
-    /// the specified region.
+    /// Retrieves a list of Operation resources contained within the specified region.
     pub fn list(&self) -> super::builder::region_operations::List {
         super::builder::region_operations::List::new(self.inner.clone())
     }
 
-    /// Waits for the specified Operation resource to return as `DONE`
-    /// or for the request to approach the 2 minute deadline, and retrieves the
-    /// specified Operation resource. This method differs from the
-    /// `GET` method in that it waits for no more than the default
-    /// deadline (2 minutes) and then returns the current state of the operation,
-    /// which might be `DONE` or still in progress.
-    ///
-    /// This method is called on a best-effort basis. Specifically:
-    ///
-    /// ```norust
-    /// - In uncommon cases, when the server is overloaded, the request might
-    /// return before the default deadline is reached, or might return after zero
-    /// seconds.
-    /// ```
-    ///
-    /// - If the default deadline is reached, there is no guarantee that the
-    ///   operation is actually done when the method returns. Be prepared to retry
-    ///   if the operation is not `DONE`.
+    /// Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. This method differs from the `GET` method in that it waits for no more than the default deadline (2 minutes) and then returns the current state of the operation, which might be `DONE` or still in progress. This method is called on a best-effort basis. Specifically: - In uncommon cases, when the server is overloaded, the request might return before the default deadline is reached, or might return after zero seconds. - If the default deadline is reached, there is no guarantee that the operation is actually done when the method returns. Be prepared to retry if the operation is not `DONE`.
     pub fn wait(&self) -> super::builder::region_operations::Wait {
         super::builder::region_operations::Wait::new(self.inner.clone())
     }
@@ -14078,6 +13003,8 @@ impl RegionOperations {
 /// # Service Description
 ///
 /// Service for the `regionSecurityPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14188,29 +13115,22 @@ impl RegionSecurityPolicies {
         super::builder::region_security_policies::GetRule::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified project using the data included in
-    /// the request.
+    /// Creates a new policy in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_security_policies::Insert {
         super::builder::region_security_policies::Insert::new(self.inner.clone())
     }
 
-    /// List all the policies that have been configured for the specified project
-    /// and region.
+    /// List all the policies that have been configured for the specified project and region.
     pub fn list(&self) -> super::builder::region_security_policies::List {
         super::builder::region_security_policies::List::new(self.inner.clone())
     }
 
-    /// Patches the specified policy with the data included in the request. To
-    /// clear fields in the policy, leave the fields empty and specify them in the
-    /// updateMask. This cannot be used to be update the rules in the policy.
-    /// Please use the per rule methods like addRule, patchRule, and removeRule
-    /// instead.
+    /// Patches the specified policy with the data included in the request. To clear fields in the policy, leave the fields empty and specify them in the updateMask. This cannot be used to be update the rules in the policy. Please use the per rule methods like addRule, patchRule, and removeRule instead.
     pub fn patch(&self) -> super::builder::region_security_policies::Patch {
         super::builder::region_security_policies::Patch::new(self.inner.clone())
     }
 
-    /// Patches a rule at the specified priority. To clear fields in the rule,
-    /// leave the fields empty and specify them in the updateMask.
+    /// Patches a rule at the specified priority. To clear fields in the rule, leave the fields empty and specify them in the updateMask.
     pub fn patch_rule(&self) -> super::builder::region_security_policies::PatchRule {
         super::builder::region_security_policies::PatchRule::new(self.inner.clone())
     }
@@ -14220,9 +13140,7 @@ impl RegionSecurityPolicies {
         super::builder::region_security_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Sets the labels on a security policy. To learn more about labels,
-    /// read the Labeling Resources
-    /// documentation.
+    /// Sets the labels on a security policy. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::region_security_policies::SetLabels {
         super::builder::region_security_policies::SetLabels::new(self.inner.clone())
     }
@@ -14249,6 +13167,8 @@ impl RegionSecurityPolicies {
 /// # Service Description
 ///
 /// Service for the `regionSnapshotSettings` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14372,6 +13292,8 @@ impl RegionSnapshotSettings {
 ///
 /// Service for the `regionSnapshots` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `RegionSnapshots` use the `with_*` methods in the type returned
@@ -14460,14 +13382,7 @@ impl RegionSnapshots {
             .map(super::tracing::RegionSnapshots::new)
     }
 
-    /// Deletes the specified Snapshot resource. Keep in mind that deleting
-    /// a single snapshot might not necessarily delete all the data on that
-    /// snapshot. If any data on the snapshot that is marked for deletion is
-    /// needed for subsequent snapshots, the data will be moved to the next
-    /// corresponding snapshot.
-    ///
-    /// For more information, seeDeleting
-    /// snapshots.
+    /// Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot. For more information, see Deleting snapshots.
     pub fn delete(&self) -> super::builder::region_snapshots::Delete {
         super::builder::region_snapshots::Delete::new(self.inner.clone())
     }
@@ -14477,33 +13392,27 @@ impl RegionSnapshots {
         super::builder::region_snapshots::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::region_snapshots::GetIamPolicy {
         super::builder::region_snapshots::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a snapshot in the specified region using the data included
-    /// in the request.
+    /// Creates a snapshot in the specified region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_snapshots::Insert {
         super::builder::region_snapshots::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of Snapshot resources contained within
-    /// the specified region.
+    /// Retrieves the list of Snapshot resources contained within the specified region.
     pub fn list(&self) -> super::builder::region_snapshots::List {
         super::builder::region_snapshots::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::region_snapshots::SetIamPolicy {
         super::builder::region_snapshots::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a regional snapshot. To learn more about labels, read
-    /// the Labeling Resources
-    /// documentation.
+    /// Sets the labels on a regional snapshot. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::region_snapshots::SetLabels {
         super::builder::region_snapshots::SetLabels::new(self.inner.clone())
     }
@@ -14513,8 +13422,7 @@ impl RegionSnapshots {
         super::builder::region_snapshots::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Rotates the customer-managed
-    /// encryption key to the latest version for the specified snapshot.
+    /// Rotates the customer-managed encryption key to the latest version for the specified snapshot.
     pub fn update_kms_key(&self) -> super::builder::region_snapshots::UpdateKmsKey {
         super::builder::region_snapshots::UpdateKmsKey::new(self.inner.clone())
     }
@@ -14541,6 +13449,8 @@ impl RegionSnapshots {
 /// # Service Description
 ///
 /// Service for the `regionSslCertificates` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14636,21 +13546,17 @@ impl RegionSslCertificates {
         super::builder::region_ssl_certificates::Delete::new(self.inner.clone())
     }
 
-    /// Returns the specified SslCertificate resource in the specified region. Get
-    /// a list of available SSL certificates by making a list()
-    /// request.
+    /// Returns the specified SslCertificate resource in the specified region. Get a list of available SSL certificates by making a list() request.
     pub fn get(&self) -> super::builder::region_ssl_certificates::Get {
         super::builder::region_ssl_certificates::Get::new(self.inner.clone())
     }
 
-    /// Creates a SslCertificate resource in the specified project and region using
-    /// the data included in the request
+    /// Creates a SslCertificate resource in the specified project and region using the data included in the request
     pub fn insert(&self) -> super::builder::region_ssl_certificates::Insert {
         super::builder::region_ssl_certificates::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of SslCertificate resources available to the specified
-    /// project in the specified region.
+    /// Retrieves the list of SslCertificate resources available to the specified project in the specified region.
     pub fn list(&self) -> super::builder::region_ssl_certificates::List {
         super::builder::region_ssl_certificates::List::new(self.inner.clone())
     }
@@ -14677,6 +13583,8 @@ impl RegionSslCertificates {
 /// # Service Description
 ///
 /// Service for the `regionSslPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14767,9 +13675,7 @@ impl RegionSslPolicies {
             .map(super::tracing::RegionSslPolicies::new)
     }
 
-    /// Deletes the specified SSL policy. The SSL policy resource can be deleted
-    /// only if it is not in use by any TargetHttpsProxy or TargetSslProxy
-    /// resources.
+    /// Deletes the specified SSL policy. The SSL policy resource can be deleted only if it is not in use by any TargetHttpsProxy or TargetSslProxy resources.
     pub fn delete(&self) -> super::builder::region_ssl_policies::Delete {
         super::builder::region_ssl_policies::Delete::new(self.inner.clone())
     }
@@ -14779,20 +13685,17 @@ impl RegionSslPolicies {
         super::builder::region_ssl_policies::Get::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified project and region using the data
-    /// included in the request.
+    /// Creates a new policy in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_ssl_policies::Insert {
         super::builder::region_ssl_policies::Insert::new(self.inner.clone())
     }
 
-    /// Lists all the SSL policies that have been configured for the specified
-    /// project and region.
+    /// Lists all the SSL policies that have been configured for the specified project and region.
     pub fn list(&self) -> super::builder::region_ssl_policies::List {
         super::builder::region_ssl_policies::List::new(self.inner.clone())
     }
 
-    /// Lists all features that can be specified in the SSL policy when using
-    /// custom profile.
+    /// Lists all features that can be specified in the SSL policy when using custom profile.
     pub fn list_available_features(
         &self,
     ) -> super::builder::region_ssl_policies::ListAvailableFeatures {
@@ -14826,6 +13729,8 @@ impl RegionSslPolicies {
 /// # Service Description
 ///
 /// Service for the `regionTargetHttpProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -14926,14 +13831,12 @@ impl RegionTargetHttpProxies {
         super::builder::region_target_http_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetHttpProxy resource in the specified project and region
-    /// using the data included in the request.
+    /// Creates a TargetHttpProxy resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_target_http_proxies::Insert {
         super::builder::region_target_http_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetHttpProxy resources available
-    /// to the specified project in the specified region.
+    /// Retrieves the list of TargetHttpProxy resources available to the specified project in the specified region.
     pub fn list(&self) -> super::builder::region_target_http_proxies::List {
         super::builder::region_target_http_proxies::List::new(self.inner.clone())
     }
@@ -14965,6 +13868,8 @@ impl RegionTargetHttpProxies {
 /// # Service Description
 ///
 /// Service for the `regionTargetHttpsProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15066,22 +13971,17 @@ impl RegionTargetHttpsProxies {
         super::builder::region_target_https_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetHttpsProxy resource in the specified project and region
-    /// using the data included in the request.
+    /// Creates a TargetHttpsProxy resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_target_https_proxies::Insert {
         super::builder::region_target_https_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetHttpsProxy resources available
-    /// to the specified project in the specified region.
+    /// Retrieves the list of TargetHttpsProxy resources available to the specified project in the specified region.
     pub fn list(&self) -> super::builder::region_target_https_proxies::List {
         super::builder::region_target_https_proxies::List::new(self.inner.clone())
     }
 
-    /// Patches the specified regional TargetHttpsProxy resource with the data
-    /// included in the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified regional TargetHttpsProxy resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_target_https_proxies::Patch {
         super::builder::region_target_https_proxies::Patch::new(self.inner.clone())
     }
@@ -15120,6 +14020,8 @@ impl RegionTargetHttpsProxies {
 /// # Service Description
 ///
 /// Service for the `regionTargetTcpProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15220,14 +14122,12 @@ impl RegionTargetTcpProxies {
         super::builder::region_target_tcp_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetTcpProxy resource in the specified project and region using
-    /// the data included in the request.
+    /// Creates a TargetTcpProxy resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::region_target_tcp_proxies::Insert {
         super::builder::region_target_tcp_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of TargetTcpProxy resources
-    /// available to the specified project in a given region.
+    /// Retrieves a list of TargetTcpProxy resources available to the specified project in a given region.
     pub fn list(&self) -> super::builder::region_target_tcp_proxies::List {
         super::builder::region_target_tcp_proxies::List::new(self.inner.clone())
     }
@@ -15254,6 +14154,8 @@ impl RegionTargetTcpProxies {
 /// # Service Description
 ///
 /// Service for the `regionUrlMaps` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15353,35 +14255,27 @@ impl RegionUrlMaps {
         super::builder::region_url_maps::Get::new(self.inner.clone())
     }
 
-    /// Creates a UrlMap resource in the specified project using
-    /// the data included in the request.
+    /// Creates a UrlMap resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::region_url_maps::Insert {
         super::builder::region_url_maps::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of UrlMap resources available to the specified
-    /// project in the specified region.
+    /// Retrieves the list of UrlMap resources available to the specified project in the specified region.
     pub fn list(&self) -> super::builder::region_url_maps::List {
         super::builder::region_url_maps::List::new(self.inner.clone())
     }
 
-    /// Patches the specified UrlMap resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified UrlMap resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::region_url_maps::Patch {
         super::builder::region_url_maps::Patch::new(self.inner.clone())
     }
 
-    /// Updates the specified UrlMap resource with the data included in the
-    /// request.
+    /// Updates the specified UrlMap resource with the data included in the request.
     pub fn update(&self) -> super::builder::region_url_maps::Update {
         super::builder::region_url_maps::Update::new(self.inner.clone())
     }
 
-    /// Runs static validation for the UrlMap. In particular, the tests of the
-    /// provided UrlMap will be run. Calling this method does NOT create the
-    /// UrlMap.
+    /// Runs static validation for the UrlMap. In particular, the tests of the provided UrlMap will be run. Calling this method does NOT create the UrlMap.
     pub fn validate(&self) -> super::builder::region_url_maps::Validate {
         super::builder::region_url_maps::Validate::new(self.inner.clone())
     }
@@ -15408,6 +14302,8 @@ impl RegionUrlMaps {
 /// # Service Description
 ///
 /// Service for the `regionZones` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15497,8 +14393,7 @@ impl RegionZones {
             .map(super::tracing::RegionZones::new)
     }
 
-    /// Retrieves the list of Zone resources under the specific region available to
-    /// the specified project.
+    /// Retrieves the list of Zone resources under the specific region available to the specified project.
     pub fn list(&self) -> super::builder::region_zones::List {
         super::builder::region_zones::List::new(self.inner.clone())
     }
@@ -15520,6 +14415,8 @@ impl RegionZones {
 /// # Service Description
 ///
 /// Service for the `regions` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15609,47 +14506,12 @@ impl Regions {
             .map(super::tracing::Regions::new)
     }
 
-    /// Returns the specified Region resource.
-    ///
-    /// To decrease latency for this method, you can optionally omit any unneeded
-    /// information from the response by using a field mask. This practice is
-    /// especially recommended for unused quota information (the `quotas` field).
-    /// To exclude one or more fields, set your request's `fields` query parameter
-    /// to only include the fields you need. For example, to only include the `id`
-    /// and `selfLink` fields, add the query parameter `?fields=id,selfLink` to
-    /// your request.
-    ///
-    /// This method fails if the quota information is unavailable for the region
-    /// and if the organization policy constraint
-    /// compute.requireBasicQuotaInResponse is enforced. This
-    /// constraint, when enforced, disables the fail-open behaviour when quota
-    /// information (the `items.quotas` field) is unavailable for the region.
-    /// It is recommended to use the default setting
-    /// for the constraint unless your application requires the fail-closed
-    /// behaviour for this method.
+    /// Returns the specified Region resource. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. This method fails if the quota information is unavailable for the region and if the organization policy constraint compute.requireBasicQuotaInResponse is enforced. This constraint, when enforced, disables the fail-open behaviour when quota information (the `items.quotas` field) is unavailable for the region. It is recommended to use the default setting for the constraint unless your application requires the fail-closed behaviour for this method.
     pub fn get(&self) -> super::builder::regions::Get {
         super::builder::regions::Get::new(self.inner.clone())
     }
 
-    /// Retrieves the list of region resources available to the specified project.
-    ///
-    /// To decrease latency for this method, you can optionally omit any unneeded
-    /// information from the response by using a field mask. This practice is
-    /// especially recommended for unused quota information
-    /// (the `items.quotas` field).
-    /// To exclude one or more fields, set your request's `fields` query parameter
-    /// to only include the fields you need. For example, to only include the `id`
-    /// and `selfLink` fields, add the query parameter `?fields=id,selfLink` to
-    /// your request.
-    ///
-    /// This method fails if the quota information is unavailable for the region
-    /// and if the organization policy constraint
-    /// compute.requireBasicQuotaInResponse is enforced. This
-    /// constraint, when enforced, disables the fail-open behaviour when quota
-    /// information (the `items.quotas` field) is unavailable for the region.
-    /// It is recommended to use the default setting
-    /// for the constraint unless your application requires the fail-closed
-    /// behaviour for this method.
+    /// Retrieves the list of region resources available to the specified project. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `items.quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. This method fails if the quota information is unavailable for the region and if the organization policy constraint compute.requireBasicQuotaInResponse is enforced. This constraint, when enforced, disables the fail-open behaviour when quota information (the `items.quotas` field) is unavailable for the region. It is recommended to use the default setting for the constraint unless your application requires the fail-closed behaviour for this method.
     pub fn list(&self) -> super::builder::regions::List {
         super::builder::regions::List::new(self.inner.clone())
     }
@@ -15671,6 +14533,8 @@ impl Regions {
 /// # Service Description
 ///
 /// Service for the `reliabilityRisks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -15789,6 +14653,8 @@ impl ReliabilityRisks {
 ///
 /// Service for the `reservationBlocks` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `ReservationBlocks` use the `with_*` methods in the type returned
@@ -15883,8 +14749,7 @@ impl ReservationBlocks {
         super::builder::reservation_blocks::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::reservation_blocks::GetIamPolicy {
         super::builder::reservation_blocks::GetIamPolicy::new(self.inner.clone())
     }
@@ -15899,8 +14764,7 @@ impl ReservationBlocks {
         super::builder::reservation_blocks::PerformMaintenance::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::reservation_blocks::SetIamPolicy {
         super::builder::reservation_blocks::SetIamPolicy::new(self.inner.clone())
     }
@@ -15932,6 +14796,8 @@ impl ReservationBlocks {
 /// # Service Description
 ///
 /// Service for the `reservationSlots` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -16065,6 +14931,8 @@ impl ReservationSlots {
 ///
 /// Service for the `reservationSubBlocks` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `ReservationSubBlocks` use the `with_*` methods in the type returned
@@ -16159,8 +15027,7 @@ impl ReservationSubBlocks {
         super::builder::reservation_sub_blocks::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::reservation_sub_blocks::GetIamPolicy {
         super::builder::reservation_sub_blocks::GetIamPolicy::new(self.inner.clone())
     }
@@ -16187,8 +15054,7 @@ impl ReservationSubBlocks {
         super::builder::reservation_sub_blocks::ReportFaulty::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::reservation_sub_blocks::SetIamPolicy {
         super::builder::reservation_sub_blocks::SetIamPolicy::new(self.inner.clone())
     }
@@ -16222,6 +15088,8 @@ impl ReservationSubBlocks {
 /// # Service Description
 ///
 /// Service for the `reservations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -16311,10 +15179,7 @@ impl Reservations {
             .map(super::tracing::Reservations::new)
     }
 
-    /// Retrieves an aggregated list of reservations.
-    ///
-    /// To prevent failure, it is recommended that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of reservations. To prevent failure, it is recommended that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::reservations::AggregatedList {
         super::builder::reservations::AggregatedList::new(self.inner.clone())
     }
@@ -16329,20 +15194,17 @@ impl Reservations {
         super::builder::reservations::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::reservations::GetIamPolicy {
         super::builder::reservations::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a new reservation. For more information, readReserving zonal
-    /// resources.
+    /// Creates a new reservation. For more information, read Reserving zonal resources.
     pub fn insert(&self) -> super::builder::reservations::Insert {
         super::builder::reservations::Insert::new(self.inner.clone())
     }
 
-    /// A list of all the reservations that have been configured for the
-    /// specified project in specified zone.
+    /// A list of all the reservations that have been configured for the specified project in specified zone.
     pub fn list(&self) -> super::builder::reservations::List {
         super::builder::reservations::List::new(self.inner.clone())
     }
@@ -16352,15 +15214,12 @@ impl Reservations {
         super::builder::reservations::PerformMaintenance::new(self.inner.clone())
     }
 
-    /// Resizes the reservation (applicable to standalone reservations only). For
-    /// more information, readModifying
-    /// reservations.
+    /// Resizes the reservation (applicable to standalone reservations only). For more information, read Modifying reservations.
     pub fn resize(&self) -> super::builder::reservations::Resize {
         super::builder::reservations::Resize::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::reservations::SetIamPolicy {
         super::builder::reservations::SetIamPolicy::new(self.inner.clone())
     }
@@ -16397,6 +15256,8 @@ impl Reservations {
 /// # Service Description
 ///
 /// Service for the `resourcePolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -16487,10 +15348,7 @@ impl ResourcePolicies {
             .map(super::tracing::ResourcePolicies::new)
     }
 
-    /// Retrieves an aggregated list of resource policies.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of resource policies. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::resource_policies::AggregatedList {
         super::builder::resource_policies::AggregatedList::new(self.inner.clone())
     }
@@ -16505,8 +15363,7 @@ impl ResourcePolicies {
         super::builder::resource_policies::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::resource_policies::GetIamPolicy {
         super::builder::resource_policies::GetIamPolicy::new(self.inner.clone())
     }
@@ -16516,8 +15373,7 @@ impl ResourcePolicies {
         super::builder::resource_policies::Insert::new(self.inner.clone())
     }
 
-    /// A list all the resource policies that have been configured for the
-    /// specified project in specified region.
+    /// A list all the resource policies that have been configured for the specified project in specified region.
     pub fn list(&self) -> super::builder::resource_policies::List {
         super::builder::resource_policies::List::new(self.inner.clone())
     }
@@ -16527,8 +15383,7 @@ impl ResourcePolicies {
         super::builder::resource_policies::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::resource_policies::SetIamPolicy {
         super::builder::resource_policies::SetIamPolicy::new(self.inner.clone())
     }
@@ -16560,6 +15415,8 @@ impl ResourcePolicies {
 /// # Service Description
 ///
 /// Service for the `rolloutPlans` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -16691,6 +15548,8 @@ impl RolloutPlans {
 /// # Service Description
 ///
 /// Service for the `rollouts` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -16838,6 +15697,8 @@ impl Rollouts {
 ///
 /// Service for the `routers` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `Routers` use the `with_*` methods in the type returned
@@ -16926,10 +15787,7 @@ impl Routers {
             .map(super::tracing::Routers::new)
     }
 
-    /// Retrieves an aggregated list of routers.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of routers. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::routers::AggregatedList {
         super::builder::routers::AggregatedList::new(self.inner.clone())
     }
@@ -16979,8 +15837,7 @@ impl Routers {
         super::builder::routers::GetRouterStatus::new(self.inner.clone())
     }
 
-    /// Creates a Router resource in the specified project and region using
-    /// the data included in the request.
+    /// Creates a Router resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::routers::Insert {
         super::builder::routers::Insert::new(self.inner.clone())
     }
@@ -16995,22 +15852,17 @@ impl Routers {
         super::builder::routers::ListBgpRoutes::new(self.inner.clone())
     }
 
-    /// Retrieves a list of router named set subresources available to the
-    /// specified project.
+    /// Retrieves a list of router named set subresources available to the specified project.
     pub fn list_named_sets(&self) -> super::builder::routers::ListNamedSets {
         super::builder::routers::ListNamedSets::new(self.inner.clone())
     }
 
-    /// Retrieves a list of router route policy subresources available to the
-    /// specified project.
+    /// Retrieves a list of router route policy subresources available to the specified project.
     pub fn list_route_policies(&self) -> super::builder::routers::ListRoutePolicies {
         super::builder::routers::ListRoutePolicies::new(self.inner.clone())
     }
 
-    /// Patches the specified Router resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified Router resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::routers::Patch {
         super::builder::routers::Patch::new(self.inner.clone())
     }
@@ -17025,16 +15877,12 @@ impl Routers {
         super::builder::routers::PatchRoutePolicy::new(self.inner.clone())
     }
 
-    /// Preview fields auto-generated during router create andupdate operations.
-    /// Calling this method does NOT create or update the router.
+    /// Preview fields auto-generated during router create and update operations. Calling this method does NOT create or update the router.
     pub fn preview(&self) -> super::builder::routers::Preview {
         super::builder::routers::Preview::new(self.inner.clone())
     }
 
-    /// Updates the specified Router resource with the data included in the
-    /// request.  This method conforms toPUT semantics, which requests that the state of the
-    /// target resource be created or replaced with the state defined by the
-    /// representation enclosed in the request message payload.
+    /// Updates the specified Router resource with the data included in the request. This method conforms to PUT semantics, which requests that the state of the target resource be created or replaced with the state defined by the representation enclosed in the request message payload.
     pub fn update(&self) -> super::builder::routers::Update {
         super::builder::routers::Update::new(self.inner.clone())
     }
@@ -17071,6 +15919,8 @@ impl Routers {
 /// # Service Description
 ///
 /// Service for the `routes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -17170,8 +16020,7 @@ impl Routes {
         super::builder::routes::Get::new(self.inner.clone())
     }
 
-    /// Creates a Route resource in the specified project using the data included
-    /// in the request.
+    /// Creates a Route resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::routes::Insert {
         super::builder::routes::Insert::new(self.inner.clone())
     }
@@ -17208,6 +16057,8 @@ impl Routes {
 /// # Service Description
 ///
 /// Service for the `securityPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -17303,11 +16154,7 @@ impl SecurityPolicies {
         super::builder::security_policies::AddRule::new(self.inner.clone())
     }
 
-    /// Retrieves the list of all SecurityPolicy resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all SecurityPolicy resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::security_policies::AggregatedList {
         super::builder::security_policies::AggregatedList::new(self.inner.clone())
     }
@@ -17327,8 +16174,7 @@ impl SecurityPolicies {
         super::builder::security_policies::GetRule::new(self.inner.clone())
     }
 
-    /// Creates a new policy in the specified project using the data included in
-    /// the request.
+    /// Creates a new policy in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::security_policies::Insert {
         super::builder::security_policies::Insert::new(self.inner.clone())
     }
@@ -17338,25 +16184,19 @@ impl SecurityPolicies {
         super::builder::security_policies::List::new(self.inner.clone())
     }
 
-    /// Gets the current list of preconfigured Web Application Firewall (WAF)
-    /// expressions.
+    /// Gets the current list of preconfigured Web Application Firewall (WAF) expressions.
     pub fn list_preconfigured_expression_sets(
         &self,
     ) -> super::builder::security_policies::ListPreconfiguredExpressionSets {
         super::builder::security_policies::ListPreconfiguredExpressionSets::new(self.inner.clone())
     }
 
-    /// Patches the specified policy with the data included in the request. To
-    /// clear fields in the policy, leave the fields empty and specify them in the
-    /// updateMask. This cannot be used to be update the rules in the policy.
-    /// Please use the per rule methods like addRule, patchRule, and removeRule
-    /// instead.
+    /// Patches the specified policy with the data included in the request. To clear fields in the policy, leave the fields empty and specify them in the updateMask. This cannot be used to be update the rules in the policy. Please use the per rule methods like addRule, patchRule, and removeRule instead.
     pub fn patch(&self) -> super::builder::security_policies::Patch {
         super::builder::security_policies::Patch::new(self.inner.clone())
     }
 
-    /// Patches a rule at the specified priority. To clear fields in the rule,
-    /// leave the fields empty and specify them in the updateMask.
+    /// Patches a rule at the specified priority. To clear fields in the rule, leave the fields empty and specify them in the updateMask.
     pub fn patch_rule(&self) -> super::builder::security_policies::PatchRule {
         super::builder::security_policies::PatchRule::new(self.inner.clone())
     }
@@ -17366,9 +16206,7 @@ impl SecurityPolicies {
         super::builder::security_policies::RemoveRule::new(self.inner.clone())
     }
 
-    /// Sets the labels on a security policy. To learn more about labels,
-    /// read the Labeling Resources
-    /// documentation.
+    /// Sets the labels on a security policy. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::security_policies::SetLabels {
         super::builder::security_policies::SetLabels::new(self.inner.clone())
     }
@@ -17395,6 +16233,8 @@ impl SecurityPolicies {
 /// # Service Description
 ///
 /// Service for the `serviceAttachments` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -17485,11 +16325,7 @@ impl ServiceAttachments {
             .map(super::tracing::ServiceAttachments::new)
     }
 
-    /// Retrieves the list of all ServiceAttachment resources,
-    /// regional and global, available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all ServiceAttachment resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::service_attachments::AggregatedList {
         super::builder::service_attachments::AggregatedList::new(self.inner.clone())
     }
@@ -17504,14 +16340,12 @@ impl ServiceAttachments {
         super::builder::service_attachments::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::service_attachments::GetIamPolicy {
         super::builder::service_attachments::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a ServiceAttachment in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a ServiceAttachment in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::service_attachments::Insert {
         super::builder::service_attachments::Insert::new(self.inner.clone())
     }
@@ -17521,16 +16355,12 @@ impl ServiceAttachments {
         super::builder::service_attachments::List::new(self.inner.clone())
     }
 
-    /// Patches the specified ServiceAttachment resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified ServiceAttachment resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::service_attachments::Patch {
         super::builder::service_attachments::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::service_attachments::SetIamPolicy {
         super::builder::service_attachments::SetIamPolicy::new(self.inner.clone())
     }
@@ -17562,6 +16392,8 @@ impl ServiceAttachments {
 /// # Service Description
 ///
 /// Service for the `snapshotSettings` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -17685,6 +16517,8 @@ impl SnapshotSettings {
 ///
 /// Service for the `snapshots` resource.
 ///
+/// The client library was generated with API version 2026-03-01.
+///
 /// # Configuration
 ///
 /// To configure `Snapshots` use the `with_*` methods in the type returned
@@ -17773,14 +16607,7 @@ impl Snapshots {
             .map(super::tracing::Snapshots::new)
     }
 
-    /// Deletes the specified Snapshot resource. Keep in mind that deleting
-    /// a single snapshot might not necessarily delete all the data on that
-    /// snapshot. If any data on the snapshot that is marked for deletion is
-    /// needed for subsequent snapshots, the data will be moved to the next
-    /// corresponding snapshot.
-    ///
-    /// For more information, seeDeleting
-    /// snapshots.
+    /// Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot. For more information, see Deleting snapshots.
     pub fn delete(&self) -> super::builder::snapshots::Delete {
         super::builder::snapshots::Delete::new(self.inner.clone())
     }
@@ -17790,35 +16617,27 @@ impl Snapshots {
         super::builder::snapshots::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::snapshots::GetIamPolicy {
         super::builder::snapshots::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a snapshot in the specified project using the data included
-    /// in the request. For regular snapshot creation, consider using this method
-    /// instead of disks.createSnapshot,
-    /// as this method supports more features, such as creating snapshots in a
-    /// project different from the source disk project.
+    /// Creates a snapshot in the specified project using the data included in the request. For regular snapshot creation, consider using this method instead of disks.createSnapshot, as this method supports more features, such as creating snapshots in a project different from the source disk project.
     pub fn insert(&self) -> super::builder::snapshots::Insert {
         super::builder::snapshots::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of Snapshot resources contained within
-    /// the specified project.
+    /// Retrieves the list of Snapshot resources contained within the specified project.
     pub fn list(&self) -> super::builder::snapshots::List {
         super::builder::snapshots::List::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::snapshots::SetIamPolicy {
         super::builder::snapshots::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Sets the labels on a snapshot. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a snapshot. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::snapshots::SetLabels {
         super::builder::snapshots::SetLabels::new(self.inner.clone())
     }
@@ -17828,8 +16647,7 @@ impl Snapshots {
         super::builder::snapshots::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Rotates the customer-managed
-    /// encryption key to the latest version for the specified snapshot.
+    /// Rotates the customer-managed encryption key to the latest version for the specified snapshot.
     pub fn update_kms_key(&self) -> super::builder::snapshots::UpdateKmsKey {
         super::builder::snapshots::UpdateKmsKey::new(self.inner.clone())
     }
@@ -17856,6 +16674,8 @@ impl Snapshots {
 /// # Service Description
 ///
 /// Service for the `sslCertificates` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -17945,11 +16765,7 @@ impl SslCertificates {
             .map(super::tracing::SslCertificates::new)
     }
 
-    /// Retrieves the list of all SslCertificate resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all SslCertificate resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::ssl_certificates::AggregatedList {
         super::builder::ssl_certificates::AggregatedList::new(self.inner.clone())
     }
@@ -17964,14 +16780,12 @@ impl SslCertificates {
         super::builder::ssl_certificates::Get::new(self.inner.clone())
     }
 
-    /// Creates a SslCertificate resource in the specified project using the data
-    /// included in the request.
+    /// Creates a SslCertificate resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::ssl_certificates::Insert {
         super::builder::ssl_certificates::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of SslCertificate resources available to the specified
-    /// project.
+    /// Retrieves the list of SslCertificate resources available to the specified project.
     pub fn list(&self) -> super::builder::ssl_certificates::List {
         super::builder::ssl_certificates::List::new(self.inner.clone())
     }
@@ -17998,6 +16812,8 @@ impl SslCertificates {
 /// # Service Description
 ///
 /// Service for the `sslPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18087,18 +16903,12 @@ impl SslPolicies {
             .map(super::tracing::SslPolicies::new)
     }
 
-    /// Retrieves the list of all SslPolicy resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all SslPolicy resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::ssl_policies::AggregatedList {
         super::builder::ssl_policies::AggregatedList::new(self.inner.clone())
     }
 
-    /// Deletes the specified SSL policy. The SSL policy resource can be deleted
-    /// only if it is not in use by any TargetHttpsProxy or TargetSslProxy
-    /// resources.
+    /// Deletes the specified SSL policy. The SSL policy resource can be deleted only if it is not in use by any TargetHttpsProxy or TargetSslProxy resources.
     pub fn delete(&self) -> super::builder::ssl_policies::Delete {
         super::builder::ssl_policies::Delete::new(self.inner.clone())
     }
@@ -18113,14 +16923,12 @@ impl SslPolicies {
         super::builder::ssl_policies::Insert::new(self.inner.clone())
     }
 
-    /// Lists all the SSL policies that have been configured for the specified
-    /// project.
+    /// Lists all the SSL policies that have been configured for the specified project.
     pub fn list(&self) -> super::builder::ssl_policies::List {
         super::builder::ssl_policies::List::new(self.inner.clone())
     }
 
-    /// Lists all features that can be specified in the SSL policy when using
-    /// custom profile.
+    /// Lists all features that can be specified in the SSL policy when using custom profile.
     pub fn list_available_features(&self) -> super::builder::ssl_policies::ListAvailableFeatures {
         super::builder::ssl_policies::ListAvailableFeatures::new(self.inner.clone())
     }
@@ -18152,6 +16960,8 @@ impl SslPolicies {
 /// # Service Description
 ///
 /// Service for the `storagePoolTypes` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18242,10 +17052,7 @@ impl StoragePoolTypes {
             .map(super::tracing::StoragePoolTypes::new)
     }
 
-    /// Retrieves an aggregated list of storage pool types.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of storage pool types. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::storage_pool_types::AggregatedList {
         super::builder::storage_pool_types::AggregatedList::new(self.inner.clone())
     }
@@ -18255,8 +17062,7 @@ impl StoragePoolTypes {
         super::builder::storage_pool_types::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of storage pool types available to the specified
-    /// project.
+    /// Retrieves a list of storage pool types available to the specified project.
     pub fn list(&self) -> super::builder::storage_pool_types::List {
         super::builder::storage_pool_types::List::new(self.inner.clone())
     }
@@ -18278,6 +17084,8 @@ impl StoragePoolTypes {
 /// # Service Description
 ///
 /// Service for the `storagePools` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18367,43 +17175,32 @@ impl StoragePools {
             .map(super::tracing::StoragePools::new)
     }
 
-    /// Retrieves an aggregated list of storage pools.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of storage pools. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::storage_pools::AggregatedList {
         super::builder::storage_pools::AggregatedList::new(self.inner.clone())
     }
 
-    /// Deletes the specified storage pool. Deleting a storagePool
-    /// removes its data permanently and is irreversible. However, deleting a
-    /// storagePool does not delete any snapshots previously
-    /// made from the storagePool. You must separately delete
-    /// snapshots.
+    /// Deletes the specified storage pool. Deleting a storagePool removes its data permanently and is irreversible. However, deleting a storagePool does not delete any snapshots previously made from the storagePool. You must separately delete snapshots.
     pub fn delete(&self) -> super::builder::storage_pools::Delete {
         super::builder::storage_pools::Delete::new(self.inner.clone())
     }
 
-    /// Returns a specified storage pool. Gets a list of available
-    /// storage pools by making a list() request.
+    /// Returns a specified storage pool. Gets a list of available storage pools by making a list() request.
     pub fn get(&self) -> super::builder::storage_pools::Get {
         super::builder::storage_pools::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::storage_pools::GetIamPolicy {
         super::builder::storage_pools::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a storage pool in the specified project using the data
-    /// in the request.
+    /// Creates a storage pool in the specified project using the data in the request.
     pub fn insert(&self) -> super::builder::storage_pools::Insert {
         super::builder::storage_pools::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of storage pools contained within
-    /// the specified zone.
+    /// Retrieves a list of storage pools contained within the specified zone.
     pub fn list(&self) -> super::builder::storage_pools::List {
         super::builder::storage_pools::List::new(self.inner.clone())
     }
@@ -18413,8 +17210,7 @@ impl StoragePools {
         super::builder::storage_pools::ListDisks::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::storage_pools::SetIamPolicy {
         super::builder::storage_pools::SetIamPolicy::new(self.inner.clone())
     }
@@ -18424,11 +17220,7 @@ impl StoragePools {
         super::builder::storage_pools::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified storagePool with the data included in the request.
-    /// The update is performed only on selected fields included as part
-    /// of update-mask. Only the following fields can be modified:
-    /// pool_provisioned_capacity_gb, pool_provisioned_iops and
-    /// pool_provisioned_throughput.
+    /// Updates the specified storagePool with the data included in the request. The update is performed only on selected fields included as part of update-mask. Only the following fields can be modified: pool_provisioned_capacity_gb, pool_provisioned_iops and pool_provisioned_throughput.
     pub fn update(&self) -> super::builder::storage_pools::Update {
         super::builder::storage_pools::Update::new(self.inner.clone())
     }
@@ -18455,6 +17247,8 @@ impl StoragePools {
 /// # Service Description
 ///
 /// Service for the `subnetworks` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18544,10 +17338,7 @@ impl Subnetworks {
             .map(super::tracing::Subnetworks::new)
     }
 
-    /// Retrieves an aggregated list of subnetworks.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of subnetworks. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::subnetworks::AggregatedList {
         super::builder::subnetworks::AggregatedList::new(self.inner.clone())
     }
@@ -18567,20 +17358,17 @@ impl Subnetworks {
         super::builder::subnetworks::Get::new(self.inner.clone())
     }
 
-    /// Gets the access control policy for a resource. May be empty if no such
-    /// policy or resource exists.
+    /// Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     pub fn get_iam_policy(&self) -> super::builder::subnetworks::GetIamPolicy {
         super::builder::subnetworks::GetIamPolicy::new(self.inner.clone())
     }
 
-    /// Creates a subnetwork in the specified project using the data
-    /// included in the request.
+    /// Creates a subnetwork in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::subnetworks::Insert {
         super::builder::subnetworks::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of subnetworks available to the specified
-    /// project.
+    /// Retrieves a list of subnetworks available to the specified project.
     pub fn list(&self) -> super::builder::subnetworks::List {
         super::builder::subnetworks::List::new(self.inner.clone())
     }
@@ -18590,23 +17378,17 @@ impl Subnetworks {
         super::builder::subnetworks::ListUsable::new(self.inner.clone())
     }
 
-    /// Patches the specified subnetwork with the data included in the request.
-    /// Only certain fields can be updated with a patch request
-    /// as indicated in the field descriptions.
-    /// You must specify the current fingerprint of the
-    /// subnetwork resource being patched.
+    /// Patches the specified subnetwork with the data included in the request. Only certain fields can be updated with a patch request as indicated in the field descriptions. You must specify the current fingerprint of the subnetwork resource being patched.
     pub fn patch(&self) -> super::builder::subnetworks::Patch {
         super::builder::subnetworks::Patch::new(self.inner.clone())
     }
 
-    /// Sets the access control policy on the specified resource.
-    /// Replaces any existing policy.
+    /// Sets the access control policy on the specified resource. Replaces any existing policy.
     pub fn set_iam_policy(&self) -> super::builder::subnetworks::SetIamPolicy {
         super::builder::subnetworks::SetIamPolicy::new(self.inner.clone())
     }
 
-    /// Set whether VMs in this subnet can access Google services without assigning
-    /// external IP addresses through Private Google Access.
+    /// Set whether VMs in this subnet can access Google services without assigning external IP addresses through Private Google Access.
     pub fn set_private_ip_google_access(
         &self,
     ) -> super::builder::subnetworks::SetPrivateIpGoogleAccess {
@@ -18640,6 +17422,8 @@ impl Subnetworks {
 /// # Service Description
 ///
 /// Service for the `targetGrpcProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18740,8 +17524,7 @@ impl TargetGrpcProxies {
         super::builder::target_grpc_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetGrpcProxy in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a TargetGrpcProxy in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::target_grpc_proxies::Insert {
         super::builder::target_grpc_proxies::Insert::new(self.inner.clone())
     }
@@ -18751,10 +17534,7 @@ impl TargetGrpcProxies {
         super::builder::target_grpc_proxies::List::new(self.inner.clone())
     }
 
-    /// Patches the specified TargetGrpcProxy resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified TargetGrpcProxy resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::target_grpc_proxies::Patch {
         super::builder::target_grpc_proxies::Patch::new(self.inner.clone())
     }
@@ -18781,6 +17561,8 @@ impl TargetGrpcProxies {
 /// # Service Description
 ///
 /// Service for the `targetHttpProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -18871,11 +17653,7 @@ impl TargetHttpProxies {
             .map(super::tracing::TargetHttpProxies::new)
     }
 
-    /// Retrieves the list of all TargetHttpProxy resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all TargetHttpProxy resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_http_proxies::AggregatedList {
         super::builder::target_http_proxies::AggregatedList::new(self.inner.clone())
     }
@@ -18890,22 +17668,17 @@ impl TargetHttpProxies {
         super::builder::target_http_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetHttpProxy resource in the specified
-    /// project using the data included in the request.
+    /// Creates a TargetHttpProxy resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::target_http_proxies::Insert {
         super::builder::target_http_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetHttpProxy resources available
-    /// to the specified project.
+    /// Retrieves the list of TargetHttpProxy resources available to the specified project.
     pub fn list(&self) -> super::builder::target_http_proxies::List {
         super::builder::target_http_proxies::List::new(self.inner.clone())
     }
 
-    /// Patches the specified TargetHttpProxy resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified TargetHttpProxy resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::target_http_proxies::Patch {
         super::builder::target_http_proxies::Patch::new(self.inner.clone())
     }
@@ -18937,6 +17710,8 @@ impl TargetHttpProxies {
 /// # Service Description
 ///
 /// Service for the `targetHttpsProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19027,11 +17802,7 @@ impl TargetHttpsProxies {
             .map(super::tracing::TargetHttpsProxies::new)
     }
 
-    /// Retrieves the list of all TargetHttpsProxy resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all TargetHttpsProxy resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_https_proxies::AggregatedList {
         super::builder::target_https_proxies::AggregatedList::new(self.inner.clone())
     }
@@ -19046,22 +17817,17 @@ impl TargetHttpsProxies {
         super::builder::target_https_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetHttpsProxy resource in the specified
-    /// project using the data included in the request.
+    /// Creates a TargetHttpsProxy resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::target_https_proxies::Insert {
         super::builder::target_https_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetHttpsProxy resources
-    /// available to the specified project.
+    /// Retrieves the list of TargetHttpsProxy resources available to the specified project.
     pub fn list(&self) -> super::builder::target_https_proxies::List {
         super::builder::target_https_proxies::List::new(self.inner.clone())
     }
 
-    /// Patches the specified TargetHttpsProxy resource with the data included in
-    /// the request. This method supports PATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified TargetHttpsProxy resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::target_https_proxies::Patch {
         super::builder::target_https_proxies::Patch::new(self.inner.clone())
     }
@@ -19081,10 +17847,7 @@ impl TargetHttpsProxies {
         super::builder::target_https_proxies::SetSslCertificates::new(self.inner.clone())
     }
 
-    /// Sets the SSL policy for TargetHttpsProxy. The SSL policy specifies the
-    /// server-side support for SSL features. This affects connections between
-    /// clients and the HTTPS proxy load balancer. They do not affect the
-    /// connection between the load balancer and the backends.
+    /// Sets the SSL policy for TargetHttpsProxy. The SSL policy specifies the server-side support for SSL features. This affects connections between clients and the HTTPS proxy load balancer. They do not affect the connection between the load balancer and the backends.
     pub fn set_ssl_policy(&self) -> super::builder::target_https_proxies::SetSslPolicy {
         super::builder::target_https_proxies::SetSslPolicy::new(self.inner.clone())
     }
@@ -19116,6 +17879,8 @@ impl TargetHttpsProxies {
 /// # Service Description
 ///
 /// Service for the `targetInstances` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19205,10 +17970,7 @@ impl TargetInstances {
             .map(super::tracing::TargetInstances::new)
     }
 
-    /// Retrieves an aggregated list of target instances.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of target instances. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_instances::AggregatedList {
         super::builder::target_instances::AggregatedList::new(self.inner.clone())
     }
@@ -19223,21 +17985,17 @@ impl TargetInstances {
         super::builder::target_instances::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetInstance resource in the specified project and zone using
-    /// the data included in the request.
+    /// Creates a TargetInstance resource in the specified project and zone using the data included in the request.
     pub fn insert(&self) -> super::builder::target_instances::Insert {
         super::builder::target_instances::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of TargetInstance resources available to the specified
-    /// project and zone.
+    /// Retrieves a list of TargetInstance resources available to the specified project and zone.
     pub fn list(&self) -> super::builder::target_instances::List {
         super::builder::target_instances::List::new(self.inner.clone())
     }
 
-    /// Sets the Google Cloud Armor security policy for the specified target
-    /// instance. For more information, seeGoogle
-    /// Cloud Armor Overview
+    /// Sets the Google Cloud Armor security policy for the specified target instance. For more information, see Google Cloud Armor Overview
     pub fn set_security_policy(&self) -> super::builder::target_instances::SetSecurityPolicy {
         super::builder::target_instances::SetSecurityPolicy::new(self.inner.clone())
     }
@@ -19269,6 +18027,8 @@ impl TargetInstances {
 /// # Service Description
 ///
 /// Service for the `targetPools` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19368,10 +18128,7 @@ impl TargetPools {
         super::builder::target_pools::AddInstance::new(self.inner.clone())
     }
 
-    /// Retrieves an aggregated list of target pools.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of target pools. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_pools::AggregatedList {
         super::builder::target_pools::AggregatedList::new(self.inner.clone())
     }
@@ -19386,20 +18143,17 @@ impl TargetPools {
         super::builder::target_pools::Get::new(self.inner.clone())
     }
 
-    /// Gets the most recent health check results for each IP for the
-    /// instance that is referenced by the given target pool.
+    /// Gets the most recent health check results for each IP for the instance that is referenced by the given target pool.
     pub fn get_health(&self) -> super::builder::target_pools::GetHealth {
         super::builder::target_pools::GetHealth::new(self.inner.clone())
     }
 
-    /// Creates a target pool in the specified project and region using
-    /// the data included in the request.
+    /// Creates a target pool in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::target_pools::Insert {
         super::builder::target_pools::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of target pools available to the specified
-    /// project and region.
+    /// Retrieves a list of target pools available to the specified project and region.
     pub fn list(&self) -> super::builder::target_pools::List {
         super::builder::target_pools::List::new(self.inner.clone())
     }
@@ -19419,9 +18173,7 @@ impl TargetPools {
         super::builder::target_pools::SetBackup::new(self.inner.clone())
     }
 
-    /// Sets the Google Cloud Armor security policy for the specified target pool.
-    /// For more information, seeGoogle
-    /// Cloud Armor Overview
+    /// Sets the Google Cloud Armor security policy for the specified target pool. For more information, see Google Cloud Armor Overview
     pub fn set_security_policy(&self) -> super::builder::target_pools::SetSecurityPolicy {
         super::builder::target_pools::SetSecurityPolicy::new(self.inner.clone())
     }
@@ -19453,6 +18205,8 @@ impl TargetPools {
 /// # Service Description
 ///
 /// Service for the `targetSslProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19553,14 +18307,12 @@ impl TargetSslProxies {
         super::builder::target_ssl_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetSslProxy resource in the specified project using
-    /// the data included in the request.
+    /// Creates a TargetSslProxy resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::target_ssl_proxies::Insert {
         super::builder::target_ssl_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetSslProxy resources
-    /// available to the specified project.
+    /// Retrieves the list of TargetSslProxy resources available to the specified project.
     pub fn list(&self) -> super::builder::target_ssl_proxies::List {
         super::builder::target_ssl_proxies::List::new(self.inner.clone())
     }
@@ -19585,10 +18337,7 @@ impl TargetSslProxies {
         super::builder::target_ssl_proxies::SetSslCertificates::new(self.inner.clone())
     }
 
-    /// Sets the SSL policy for TargetSslProxy. The SSL policy specifies the
-    /// server-side support for SSL features. This affects connections between
-    /// clients and the load balancer. They do not affect the
-    /// connection between the load balancer and the backends.
+    /// Sets the SSL policy for TargetSslProxy. The SSL policy specifies the server-side support for SSL features. This affects connections between clients and the load balancer. They do not affect the connection between the load balancer and the backends.
     pub fn set_ssl_policy(&self) -> super::builder::target_ssl_proxies::SetSslPolicy {
         super::builder::target_ssl_proxies::SetSslPolicy::new(self.inner.clone())
     }
@@ -19620,6 +18369,8 @@ impl TargetSslProxies {
 /// # Service Description
 ///
 /// Service for the `targetTcpProxies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19710,11 +18461,7 @@ impl TargetTcpProxies {
             .map(super::tracing::TargetTcpProxies::new)
     }
 
-    /// Retrieves the list of all TargetTcpProxy resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all TargetTcpProxy resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_tcp_proxies::AggregatedList {
         super::builder::target_tcp_proxies::AggregatedList::new(self.inner.clone())
     }
@@ -19729,14 +18476,12 @@ impl TargetTcpProxies {
         super::builder::target_tcp_proxies::Get::new(self.inner.clone())
     }
 
-    /// Creates a TargetTcpProxy resource in the specified project using
-    /// the data included in the request.
+    /// Creates a TargetTcpProxy resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::target_tcp_proxies::Insert {
         super::builder::target_tcp_proxies::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves the list of TargetTcpProxy resources
-    /// available to the specified project.
+    /// Retrieves the list of TargetTcpProxy resources available to the specified project.
     pub fn list(&self) -> super::builder::target_tcp_proxies::List {
         super::builder::target_tcp_proxies::List::new(self.inner.clone())
     }
@@ -19778,6 +18523,8 @@ impl TargetTcpProxies {
 /// # Service Description
 ///
 /// Service for the `targetVpnGateways` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -19868,10 +18615,7 @@ impl TargetVpnGateways {
             .map(super::tracing::TargetVpnGateways::new)
     }
 
-    /// Retrieves an aggregated list of target VPN gateways.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of target VPN gateways. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::target_vpn_gateways::AggregatedList {
         super::builder::target_vpn_gateways::AggregatedList::new(self.inner.clone())
     }
@@ -19886,20 +18630,17 @@ impl TargetVpnGateways {
         super::builder::target_vpn_gateways::Get::new(self.inner.clone())
     }
 
-    /// Creates a target VPN gateway in the specified project and region using
-    /// the data included in the request.
+    /// Creates a target VPN gateway in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::target_vpn_gateways::Insert {
         super::builder::target_vpn_gateways::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of target VPN gateways available to the specified
-    /// project and region.
+    /// Retrieves a list of target VPN gateways available to the specified project and region.
     pub fn list(&self) -> super::builder::target_vpn_gateways::List {
         super::builder::target_vpn_gateways::List::new(self.inner.clone())
     }
 
-    /// Sets the labels on a TargetVpnGateway. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a TargetVpnGateway. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::target_vpn_gateways::SetLabels {
         super::builder::target_vpn_gateways::SetLabels::new(self.inner.clone())
     }
@@ -19926,6 +18667,8 @@ impl TargetVpnGateways {
 /// # Service Description
 ///
 /// Service for the `urlMaps` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20015,11 +18758,7 @@ impl UrlMaps {
             .map(super::tracing::UrlMaps::new)
     }
 
-    /// Retrieves the list of all UrlMap resources, regional and global,
-    /// available to the specified project.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves the list of all UrlMap resources, regional and global, available to the specified project. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::url_maps::AggregatedList {
         super::builder::url_maps::AggregatedList::new(self.inner.clone())
     }
@@ -20034,31 +18773,22 @@ impl UrlMaps {
         super::builder::url_maps::Get::new(self.inner.clone())
     }
 
-    /// Creates a UrlMap resource in the specified project using
-    /// the data included in the request.
+    /// Creates a UrlMap resource in the specified project using the data included in the request.
     pub fn insert(&self) -> super::builder::url_maps::Insert {
         super::builder::url_maps::Insert::new(self.inner.clone())
     }
 
-    /// Initiates a cache invalidation operation, invalidating the specified path,
-    /// scoped to the specified UrlMap.
-    ///
-    /// For more information, see [Invalidating cached
-    /// content](/cdn/docs/invalidating-cached-content).
+    /// Initiates a cache invalidation operation, invalidating the specified path, scoped to the specified UrlMap. For more information, see [Invalidating cached content](/cdn/docs/invalidating-cached-content).
     pub fn invalidate_cache(&self) -> super::builder::url_maps::InvalidateCache {
         super::builder::url_maps::InvalidateCache::new(self.inner.clone())
     }
 
-    /// Retrieves the list of UrlMap resources available to the specified
-    /// project.
+    /// Retrieves the list of UrlMap resources available to the specified project.
     pub fn list(&self) -> super::builder::url_maps::List {
         super::builder::url_maps::List::new(self.inner.clone())
     }
 
-    /// Patches the specified UrlMap resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and uses theJSON merge
-    /// patch format and processing rules.
+    /// Patches the specified UrlMap resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::url_maps::Patch {
         super::builder::url_maps::Patch::new(self.inner.clone())
     }
@@ -20068,15 +18798,12 @@ impl UrlMaps {
         super::builder::url_maps::TestIamPermissions::new(self.inner.clone())
     }
 
-    /// Updates the specified UrlMap resource with the data included in the
-    /// request.
+    /// Updates the specified UrlMap resource with the data included in the request.
     pub fn update(&self) -> super::builder::url_maps::Update {
         super::builder::url_maps::Update::new(self.inner.clone())
     }
 
-    /// Runs static validation for the UrlMap. In particular, the tests of the
-    /// provided UrlMap will be run. Calling this method does NOT create the
-    /// UrlMap.
+    /// Runs static validation for the UrlMap. In particular, the tests of the provided UrlMap will be run. Calling this method does NOT create the UrlMap.
     pub fn validate(&self) -> super::builder::url_maps::Validate {
         super::builder::url_maps::Validate::new(self.inner.clone())
     }
@@ -20103,6 +18830,8 @@ impl UrlMaps {
 /// # Service Description
 ///
 /// Service for the `vpnGateways` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20192,10 +18921,7 @@ impl VpnGateways {
             .map(super::tracing::VpnGateways::new)
     }
 
-    /// Retrieves an aggregated list of VPN gateways.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of VPN gateways. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::vpn_gateways::AggregatedList {
         super::builder::vpn_gateways::AggregatedList::new(self.inner.clone())
     }
@@ -20215,20 +18941,17 @@ impl VpnGateways {
         super::builder::vpn_gateways::GetStatus::new(self.inner.clone())
     }
 
-    /// Creates a VPN gateway in the specified project and region using
-    /// the data included in the request.
+    /// Creates a VPN gateway in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::vpn_gateways::Insert {
         super::builder::vpn_gateways::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of VPN gateways available to the specified
-    /// project and region.
+    /// Retrieves a list of VPN gateways available to the specified project and region.
     pub fn list(&self) -> super::builder::vpn_gateways::List {
         super::builder::vpn_gateways::List::new(self.inner.clone())
     }
 
-    /// Sets the labels on a VpnGateway. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a VpnGateway. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::vpn_gateways::SetLabels {
         super::builder::vpn_gateways::SetLabels::new(self.inner.clone())
     }
@@ -20260,6 +18983,8 @@ impl VpnGateways {
 /// # Service Description
 ///
 /// Service for the `vpnTunnels` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20349,10 +19074,7 @@ impl VpnTunnels {
             .map(super::tracing::VpnTunnels::new)
     }
 
-    /// Retrieves an aggregated list of VPN tunnels.
-    ///
-    /// To prevent failure, Google recommends that you set the
-    /// `returnPartialSuccess` parameter to `true`.
+    /// Retrieves an aggregated list of VPN tunnels. To prevent failure, Google recommends that you set the `returnPartialSuccess` parameter to `true`.
     pub fn aggregated_list(&self) -> super::builder::vpn_tunnels::AggregatedList {
         super::builder::vpn_tunnels::AggregatedList::new(self.inner.clone())
     }
@@ -20367,20 +19089,17 @@ impl VpnTunnels {
         super::builder::vpn_tunnels::Get::new(self.inner.clone())
     }
 
-    /// Creates a VpnTunnel resource in the specified project and region using
-    /// the data included in the request.
+    /// Creates a VpnTunnel resource in the specified project and region using the data included in the request.
     pub fn insert(&self) -> super::builder::vpn_tunnels::Insert {
         super::builder::vpn_tunnels::Insert::new(self.inner.clone())
     }
 
-    /// Retrieves a list of VpnTunnel resources contained in the specified
-    /// project and region.
+    /// Retrieves a list of VpnTunnel resources contained in the specified project and region.
     pub fn list(&self) -> super::builder::vpn_tunnels::List {
         super::builder::vpn_tunnels::List::new(self.inner.clone())
     }
 
-    /// Sets the labels on a VpnTunnel. To learn more about labels, read theLabeling
-    /// Resources documentation.
+    /// Sets the labels on a VpnTunnel. To learn more about labels, read the Labeling Resources documentation.
     pub fn set_labels(&self) -> super::builder::vpn_tunnels::SetLabels {
         super::builder::vpn_tunnels::SetLabels::new(self.inner.clone())
     }
@@ -20407,6 +19126,8 @@ impl VpnTunnels {
 /// # Service Description
 ///
 /// Service for the `wireGroups` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20506,8 +19227,7 @@ impl WireGroups {
         super::builder::wire_groups::Get::new(self.inner.clone())
     }
 
-    /// Creates a wire group in the specified project in the given scope
-    /// using the parameters that are included in the request.
+    /// Creates a wire group in the specified project in the given scope using the parameters that are included in the request.
     pub fn insert(&self) -> super::builder::wire_groups::Insert {
         super::builder::wire_groups::Insert::new(self.inner.clone())
     }
@@ -20517,10 +19237,7 @@ impl WireGroups {
         super::builder::wire_groups::List::new(self.inner.clone())
     }
 
-    /// Updates the specified wire group resource with the data included in the
-    /// request. This method supportsPATCH
-    /// semantics and usesJSON merge
-    /// patch format and processing rules.
+    /// Updates the specified wire group resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     pub fn patch(&self) -> super::builder::wire_groups::Patch {
         super::builder::wire_groups::Patch::new(self.inner.clone())
     }
@@ -20547,6 +19264,8 @@ impl WireGroups {
 /// # Service Description
 ///
 /// Service for the `zoneOperations` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20646,29 +19365,12 @@ impl ZoneOperations {
         super::builder::zone_operations::Get::new(self.inner.clone())
     }
 
-    /// Retrieves a list of Operation resources contained within
-    /// the specified zone.
+    /// Retrieves a list of Operation resources contained within the specified zone.
     pub fn list(&self) -> super::builder::zone_operations::List {
         super::builder::zone_operations::List::new(self.inner.clone())
     }
 
-    /// Waits for the specified Operation resource to return as `DONE`
-    /// or for the request to approach the 2 minute deadline, and retrieves the
-    /// specified Operation resource. This method waits for no more than the
-    /// 2 minutes and then returns the current state of the
-    /// operation, which might be `DONE` or still in progress.
-    ///
-    /// This method is called on a best-effort basis. Specifically:
-    ///
-    /// ```norust
-    /// - In uncommon cases, when the server is overloaded, the request might
-    /// return before the default deadline is reached, or might return after zero
-    /// seconds.
-    /// ```
-    ///
-    /// - If the default deadline is reached, there is no guarantee that the
-    ///   operation is actually done when the method returns. Be prepared to retry
-    ///   if the operation is not `DONE`.
+    /// Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. This method waits for no more than the 2 minutes and then returns the current state of the operation, which might be `DONE` or still in progress. This method is called on a best-effort basis. Specifically: - In uncommon cases, when the server is overloaded, the request might return before the default deadline is reached, or might return after zero seconds. - If the default deadline is reached, there is no guarantee that the operation is actually done when the method returns. Be prepared to retry if the operation is not `DONE`.
     pub fn wait(&self) -> super::builder::zone_operations::Wait {
         super::builder::zone_operations::Wait::new(self.inner.clone())
     }
@@ -20690,6 +19392,8 @@ impl ZoneOperations {
 /// # Service Description
 ///
 /// Service for the `zoneVmExtensionPolicies` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
@@ -20827,6 +19531,8 @@ impl ZoneVmExtensionPolicies {
 /// # Service Description
 ///
 /// Service for the `zones` resource.
+///
+/// The client library was generated with API version 2026-03-01.
 ///
 /// # Configuration
 ///
